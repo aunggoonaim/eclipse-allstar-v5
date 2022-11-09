@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<title>possible bug fix, npc editor animations - Source - Eclipse Community</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="http://www.touchofdeathforums.com/community/favicon.ico">
+		<link rel="image_src" href="http://www.touchofdeathforums.com/community/public/style_images/eclipse31/meta_image.png">
+                <link href="bug%20fix,%20npc%20editor%20animations.php_files/css.css" rel="stylesheet" type="text/css">
+		<script async="" src="bug%20fix,%20npc%20editor%20animations.php_files/cbgapi.loaded_0"></script><script src="bug%20fix,%20npc%20editor%20animations.php_files/all.js" id="facebook-jssdk"></script><script type="text/javascript">
+		//<![CDATA[
+			jsDebug			= 0; /* Must come before JS includes */
+			USE_RTE			= 1;
+			DISABLE_AJAX	= parseInt(0); /* Disables ajax requests where text is sent to the DB; helpful for charset issues */
+			inACP			= false;
+			var isRTL		= false;
+			var rtlIe		= '';
+			var rtlFull		= '';
+		//]]>
+		</script>
+		
+	
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+
+				
+	
+	
+		<link rel="stylesheet" type="text/css" media="screen,print" href="bug%20fix,%20npc%20editor%20animations.php_files/index.css">
+	
+
+<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" title='Main' media="screen" href="http://www.touchofdeathforums.com/community/public/style_css/css_4/ipb_ie.css" />
+<![endif]-->
+<!--[if lte IE 8]>
+	<style type='text/css'>
+		.ipb_table { table-layout: fixed; }
+		.ipsLayout_content { width: 99.5%; }
+	</style>
+<![endif]-->
+<!--[if IE 9]>
+	<style type='text/css'>
+</style>
+<![endif]-->
+
+	<style type="text/css">
+		img.bbc_img { max-width: 100% !important; }
+	</style>
+
+		<meta property="og:title" content="possible bug fix, npc editor animations - Source">
+		<meta property="og:site_name" content="Eclipse Community">
+		<meta property="og:image" content="http://www.touchofdeathforums.com/community/public/style_images/eclipse31/meta_image.png">
+		<meta property="og:type" content="article">
+		
+	
+		
+			<meta name="keywords" content="possible,bug,fix,npc,editor,animations,setting,npcs,noticed,attack,saving,correctly,would,set,back">
+		
+		
+		
+	
+
+		
+			<meta name="description" content="possible bug fix, npc editor animations - posted in Source: so i was setting up my npcs and i noticed that their attack animations were not saving correctly.&nbsp; i would set it and go back in to find the slider back at 0 every time.&nbsp; so i added this to the npceditor in modgameeditors search for Public Sub NpcEditorInit()underneath .scrlDrop.Value = 1add this..scrlAnimation.Value = NPC(EditorIndex).Animationi cant remember if it did this in a fresh copy of eo2.0 but it does not have...">
+		
+		
+		
+			<meta property="og:description" content="possible bug fix, npc editor animations - posted in Source: so i was setting up my npcs and i noticed that their attack animations were not saving correctly.&nbsp; i would set it and go back in to find the slider back at 0 every time.&nbsp; so i added this to the npceditor in modgameeditors search for Public Sub NpcEditorInit()underneath .scrlDrop.Value = 1add this..scrlAnimation.Value = NPC(EditorIndex).Animationi cant remember if it did this in a fresh copy of eo2.0 but it does not have...">
+		
+	
+
+		
+			<meta name="identifier-url" content="http://www.touchofdeathforums.com/community/index.php?/topic/120880-possible-bug-fix-npc-editor-animations/">
+		
+		
+			<meta property="og:url" content="http://www.touchofdeathforums.com/community/index.php?/topic/120880-possible-bug-fix-npc-editor-animations/">
+		
+		
+	
+
+		
+		
+		
+		<script type="text/javascript" src="bug%20fix,%20npc%20editor%20animations.php_files/index_002.js"></script>
+	
+	<script type="text/javascript" src="bug%20fix,%20npc%20editor%20animations.php_files/index.js" charset="UTF-8"></script>
+
+
+	
+		
+			
+			
+			
+			
+				<link id="ipsCanonical" rel="canonical" href="http://www.touchofdeathforums.com/community/index.php?/topic/120880-possible-bug-fix-npc-editor-animations/">
+			
+		
+
+			
+			
+			
+			
+				<link rel="stylesheet" type="text/css" title="Main" media="print" href="bug%20fix,%20npc%20editor%20animations.php_files/ipb_print.css">
+			
+		
+
+			
+			
+			
+			
+				<link rel="up" href="http://www.touchofdeathforums.com/community/index.php?/forum/76-source/">
+			
+		
+
+			
+			
+			
+			
+				<link rel="author" href="http://www.touchofdeathforums.com/community/index.php?/user/65943-sotvotkong/">
+			
+		
+	
+
+		
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Gallery" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4-gallery/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3-wiki/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Articles: Articles" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c1-articles/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Articles: Pages" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c4-pages/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Articles: Miscellaneous" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c5-miscellaneous/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Articles: Forum Integration" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c2-forum-integration/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Articles: Frontpage" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c3-frontpage/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Articles: Databases" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c6-databases/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Articles: Templates" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c7-templates/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Articles: Media" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c8-media/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Gallery: Sprites" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c26-sprites/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Gallery: Tiles" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c30-tiles/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Gallery: GUI" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c31-gui/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Gallery: Music" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c32-music/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Gallery: Items" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c33-items/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Gallery: Spells" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c34-spells/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Gallery: Other" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c35-other/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Gallery: Tools" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c36-tools/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Media Demo: Sprites" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/2c10-sprites/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Media Demo: Tiles" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/2c27-tiles/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Media Demo: GUI" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/2c28-gui/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Media Demo: Music" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/2c29-music/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Eclipse Nightly" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c15-eclipse-nightly/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Event System" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c13-event-system/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Eclipse Origins" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c16-eclipse-origins/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Visual Basic 6" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c17-visual-basic-6/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: C++" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c23-c/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Eclipse.net" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c37-eclipsenet/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Website" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c40-website/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Tutorials" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c19-tutorials/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Source Tutorials" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c20-source-tutorials/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Tutorials" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c21-tutorials/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Source Tutorials" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c22-source-tutorials/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Source Tutorials" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c18-source-tutorials/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Tutorials" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c24-tutorials/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Codebase" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c25-codebase/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Tutorials" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c38-tutorials/">
+			
+			
+			
+		
+
+			
+			
+				<link rel="alternate" type="application/rss+xml" title="Wiki: Source Tutorials" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c39-source-tutorials/">
+			
+			
+			
+		
+	
+
+	
+
+
+
+		
+		<script type="text/javascript">
+	//<![CDATA[
+		/* ---- URLs ---- */
+		ipb.vars['base_url'] 			= 'http://www.touchofdeathforums.com/community/index.php?s=48a6058f8ba627e38d39c679c0378ba3&';
+		ipb.vars['board_url']			= 'http://www.touchofdeathforums.com/community';
+		ipb.vars['img_url'] 			= "http://www.touchofdeathforums.com/community/public/style_images/eclipse31";
+		ipb.vars['loading_img'] 		= 'http://www.touchofdeathforums.com/community/public/style_images/eclipse31/loading.gif';
+		ipb.vars['active_app']			= 'forums';
+		ipb.vars['upload_url']			= 'http://www.touchofdeathforums.com/community/uploads';
+		/* ---- Member ---- */
+		ipb.vars['member_id']			= parseInt( 56158 );
+		ipb.vars['is_supmod']			= parseInt( 0 );
+		ipb.vars['is_admin']			= parseInt( 0 );
+		ipb.vars['secure_hash'] 		= 'bebd230150525e2b52ebad4aacd61915';
+		ipb.vars['session_id']			= '48a6058f8ba627e38d39c679c0378ba3';
+		ipb.vars['twitter_id']			= 0;
+		ipb.vars['fb_uid']				= 0;
+		ipb.vars['auto_dst']			= parseInt( 1 );
+		ipb.vars['dst_in_use']			= parseInt( 0 );
+		ipb.vars['is_touch']			= false;
+		ipb.vars['member_group']		= {"g_mem_info":"1"}
+		/* ---- cookies ----- */
+		ipb.vars['cookie_id'] 			= '';
+		ipb.vars['cookie_domain'] 		= '';
+		ipb.vars['cookie_path']			= '/';
+		/* ---- Rate imgs ---- */
+		ipb.vars['rate_img_on']			= 'http://www.touchofdeathforums.com/community/public/style_images/eclipse31/star.png';
+		ipb.vars['rate_img_off']		= 'http://www.touchofdeathforums.com/community/public/style_images/eclipse31/star_off.png';
+		ipb.vars['rate_img_rated']		= 'http://www.touchofdeathforums.com/community/public/style_images/eclipse31/star_rated.png';
+		/* ---- Uploads ---- */
+		ipb.vars['swfupload_swf']		= 'http://www.touchofdeathforums.com/community/public/js/3rd_party/swfupload/swfupload.swf';
+		ipb.vars['swfupload_enabled']	= true;
+		ipb.vars['use_swf_upload']		= ( 'default' == 'flash' ) ? true : false;
+		ipb.vars['swfupload_debug']		= false;
+		/* ---- other ---- */
+		ipb.vars['highlight_color']     = "#ade57a";
+		ipb.vars['charset']				= "UTF-8";
+		ipb.vars['seo_enabled']			= 1;
+		
+		ipb.vars['seo_params']			= {"start":"-","end":"\/","varBlock":"\/page__","varSep":"__"};
+		
+		/* Templates/Language */
+		ipb.templates['inlineMsg']		= "";
+		ipb.templates['ajax_loading'] 	= "<div id='ajax_loading'><img src='http://www.touchofdeathforums.com/community/public/style_images/eclipse31/ajax_loading.gif' alt='" + ipb.lang['loading'] + "' /></div>";
+		ipb.templates['close_popup']	= "<img src='http://www.touchofdeathforums.com/community/public/style_images/eclipse31/close_popup.png' alt='x' />";
+		ipb.templates['rss_shell']		= new Template("<ul id='rss_menu' class='ipbmenu_content'>#{items}</ul>");
+		ipb.templates['rss_item']		= new Template("<li><a href='#{url}' title='#{title}'>#{title}</a></li>");
+		
+			ipb.templates['m_add_friend']	= new Template("<a href='http://www.touchofdeathforums.com/community/index.php?app=members&amp;module=profile&amp;section=friends&amp;do=add&amp;member_id=#{id}' title='Add as Friend' class='ipsButton_secondary'><img src='http://www.touchofdeathforums.com/community/public/style_images/eclipse31/user_add.png' alt='Add as Friend' /></a>");
+			ipb.templates['m_rem_friend']	= new Template("<a href='http://www.touchofdeathforums.com/community/index.php?app=members&amp;module=profile&amp;section=friends&amp;do=remove&amp;member_id=#{id}' title='Remove Friend' class='ipsButton_secondary'><img src='http://www.touchofdeathforums.com/community/public/style_images/eclipse31/user_delete.png' alt='Remove Friend' /></a>");
+		
+		ipb.templates['autocomplete_wrap'] = new Template("<ul id='#{id}' class='ipb_autocomplete' style='width: 250px;'></ul>");
+		ipb.templates['autocomplete_item'] = new Template("<li id='#{id}' data-url='#{url}'><img src='#{img}' alt='' class='ipsUserPhoto ipsUserPhoto_mini' />&nbsp;&nbsp;#{itemvalue}</li>");
+		ipb.templates['page_jump']		= new Template("<div id='#{id}_wrap' class='ipbmenu_content'><h3 class='bar'>Jump to page</h3><p class='ipsPad'><input type='text' class='input_text' id='#{id}_input' size='8' /> <input type='submit' value='Go' class='input_submit add_folder' id='#{id}_submit' /></p></div>");
+		ipb.templates['global_notify'] 	= new Template("<div class='popupWrapper'><div class='popupInner'><div class='ipsPad'>#{message} #{close}</div></div></div>");
+		
+		
+		ipb.templates['header_menu'] 	= new Template("<div id='#{id}' class='ipsHeaderMenu boxShadow'></div>");
+		
+			ipb.global.checkDST();
+		
+		Loader.boot();
+	//]]>
+	</script>
+	<script src="bug%20fix,%20npc%20editor%20animations.php_files/ips_config.js" type="text/javascript"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}
+.fb_invisible{display:none}
+.fb_reset{background:none;border-spacing:0;border:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
+.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
+.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px}
+.fb_dialog_content{background:#fff;color:#333}
+.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/y6/x/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}
+.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}
+.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
+.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/y6/x/s816eWC-2sl.gif)}
+.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/y6/x/s816eWC-2sl.gif)}
+.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}
+.fb_dialog_top_left,
+.fb_dialog_top_right,
+.fb_dialog_bottom_left,
+.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}
+.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}
+.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}
+.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}
+.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right,
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right{width:10px;height:100%}
+.fb_dialog_vert_left{margin-left:-10px}
+.fb_dialog_vert_right{right:0;margin-right:-10px}
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{width:100%;height:10px}
+.fb_dialog_horiz_top{margin-top:-10px}
+.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}
+.fb_dialog_iframe{line-height:0}
+.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}
+.fb_dialog_content .dialog_title > span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yD/x/Cou7n-nqK52.gif)
+no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}
+body.fb_hidden{-webkit-transform:none;height:100%;margin:0;left:-10000px;overflow:visible;position:absolute;top:-10000px;width:100%
+}
+.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yc/x/3rhSv5V8j3o.gif)
+white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
+.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}
+#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}
+#fb-root #fb_dialog_ipad_overlay.hidden{display:none}
+.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
+.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0 0, 0 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
+.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%
+}
+.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0 0, 0 100%, from(#4966A6),
+color-stop(0.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset,
+rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}
+.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
+.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yJ/x/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}
+.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}
+#fb_dialog_loader_close{float:left}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{position:relative;display:-moz-inline-block;display:inline-block}
+.fb_iframe_widget iframe{position:absolute}
+.fb_iframe_widget_lift{z-index:1}
+.fb_iframe_widget span{position:relative;display:inline-block;vertical-align:text-bottom;text-align:justify}
+.fb_hide_iframes iframe{position:relative;left:-10000px}
+.fb_iframe_widget_loader{position:relative;display:inline-block}
+.fb_iframe_widget_fluid{display:inline}
+.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}
+.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yJ/x/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_button_simple,
+.fb_button_simple_rtl{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yH/x/eIpbnVKI9lR.png);background-repeat:no-repeat;cursor:pointer;outline:none;text-decoration:none}
+.fb_button_simple_rtl{background-position:right 0}
+.fb_button_simple .fb_button_text{margin:0 0 0 20px;padding-bottom:1px}
+.fb_button_simple_rtl .fb_button_text{margin:0 10px 0 0}
+a.fb_button_simple:hover .fb_button_text,
+a.fb_button_simple_rtl:hover .fb_button_text,
+.fb_button_simple:hover .fb_button_text,
+.fb_button_simple_rtl:hover .fb_button_text{text-decoration:underline}
+.fb_button,
+.fb_button_rtl{background:#29447e url(http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png);background-repeat:no-repeat;cursor:pointer;display:inline-block;padding:0 0 0 1px;text-decoration:none;outline:none}
+.fb_button .fb_button_text,
+.fb_button_rtl .fb_button_text{background:#5f78ab url(http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png);border-top:solid 1px #879ac0;border-bottom:solid 1px #1a356e;color:#fff;display:block;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-weight:bold;padding:2px 6px 3px 6px;margin:1px 1px 0 21px;text-shadow:none}
+a.fb_button,
+a.fb_button_rtl,
+.fb_button,
+.fb_button_rtl{text-decoration:none}
+a.fb_button:active .fb_button_text,
+a.fb_button_rtl:active .fb_button_text,
+.fb_button:active .fb_button_text,
+.fb_button_rtl:active .fb_button_text{border-bottom:solid 1px #29447e;border-top:solid 1px #45619d;background:#4f6aa3;text-shadow:none}
+.fb_button_xlarge,
+.fb_button_xlarge_rtl{background-position:left -60px;font-size:24px;line-height:30px}
+.fb_button_xlarge .fb_button_text{padding:3px 8px 3px 12px;margin-left:38px}
+a.fb_button_xlarge:active{background-position:left -99px}
+.fb_button_xlarge_rtl{background-position:right -268px}
+.fb_button_xlarge_rtl .fb_button_text{padding:3px 8px 3px 12px;margin-right:39px}
+a.fb_button_xlarge_rtl:active{background-position:right -307px}
+.fb_button_large,
+.fb_button_large_rtl{background-position:left -138px;font-size:13px;line-height:16px}
+.fb_button_large .fb_button_text{margin-left:24px;padding:2px 6px 4px 6px}
+a.fb_button_large:active{background-position:left -163px}
+.fb_button_large_rtl{background-position:right -346px}
+.fb_button_large_rtl .fb_button_text{margin-right:25px}
+a.fb_button_large_rtl:active{background-position:right -371px}
+.fb_button_medium,
+.fb_button_medium_rtl{background-position:left -188px;font-size:11px;line-height:14px}
+a.fb_button_medium:active{background-position:left -210px}
+.fb_button_medium_rtl{background-position:right -396px}
+.fb_button_text_rtl,
+.fb_button_medium_rtl .fb_button_text{padding:2px 6px 3px 6px;margin-right:22px}
+a.fb_button_medium_rtl:active{background-position:right -418px}
+.fb_button_small,
+.fb_button_small_rtl{background-position:left -232px;font-size:10px;line-height:10px}
+.fb_button_small .fb_button_text{padding:2px 6px 3px;margin-left:17px}
+a.fb_button_small:active,
+.fb_button_small:active{background-position:left -250px}
+.fb_button_small_rtl{background-position:right -440px}
+.fb_button_small_rtl .fb_button_text{padding:2px 6px;margin-right:18px}
+a.fb_button_small_rtl:active{background-position:right -458px}
+.fb_share_count_wrapper{position:relative;float:left}
+.fb_share_count{background:#b0b9ec none repeat scroll 0 0;color:#333;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;text-align:center}
+.fb_share_count_inner{background:#e8ebf2;display:block}
+.fb_share_count_right{margin-left:-1px;display:inline-block}
+.fb_share_count_right .fb_share_count_inner{border-top:solid 1px #e8ebf2;border-bottom:solid 1px #b0b9ec;margin:1px 1px 0 1px;font-size:10px;line-height:10px;padding:2px 6px 3px;font-weight:bold}
+.fb_share_count_top{display:block;letter-spacing:-1px;line-height:34px;margin-bottom:7px;font-size:22px;border:solid 1px #b0b9ec}
+.fb_share_count_nub_top{border:none;display:block;position:absolute;left:7px;top:35px;margin:0;padding:0;width:6px;height:7px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yP/x/bSOHtKbCGYI.png)}
+.fb_share_count_nub_right{border:none;display:inline-block;padding:0;width:5px;height:10px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/x/i_oIVTKMYsL.png);vertical-align:top;background-position:right 5px;z-index:10;left:2px;margin:0 2px 0 0;position:relative}
+.fb_share_no_count{display:none}
+.fb_share_size_Small .fb_share_count_right .fb_share_count_inner{font-size:10px}
+.fb_share_size_Medium .fb_share_count_right .fb_share_count_inner{font-size:11px;padding:2px 6px 3px;letter-spacing:-1px;line-height:14px}
+.fb_share_size_Large .fb_share_count_right .fb_share_count_inner{font-size:13px;line-height:16px;padding:2px 6px 4px;font-weight:normal;letter-spacing:-1px}
+.fb_share_count_hidden .fb_share_count_nub_top,
+.fb_share_count_hidden .fb_share_count_top,
+.fb_share_count_hidden .fb_share_count_nub_right,
+.fb_share_count_hidden .fb_share_count_right{visibility:hidden}
+.fb_connect_bar_container div,
+.fb_connect_bar_container span,
+.fb_connect_bar_container a,
+.fb_connect_bar_container img,
+.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}
+.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}
+.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}
+.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}
+.fb_connect_bar a:hover{color:#fff}
+.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}
+.fb_connect_bar div a,
+.fb_connect_bar span,
+.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}
+.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fb_edge_widget_with_comment{position:relative;*z-index:1000}
+.fb_edge_widget_with_comment span.fb_edge_comment_widget{position:absolute}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget{z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget .FB_Loader{left:0;top:1px;margin-top:6px;margin-left:0;background-position:50% 50%;background-color:#fff;height:150px;width:394px;border:1px #666 solid;border-bottom:2px solid #283e6c;z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.dark .FB_Loader{background-color:#000;border-bottom:2px solid #ccc}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.siderender
+.FB_Loader{margin-top:0}
+.fbpluginrecommendationsbarleft,
+.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}
+/* @noflip */
+.fbpluginrecommendationsbarleft{left:10px}
+/* @noflip */
+.fbpluginrecommendationsbarright{right:10px}
+</style><script src="bug%20fix,%20npc%20editor%20animations.php_files/skin.js" type="text/javascript"></script><link href="bug%20fix,%20npc%20editor%20animations.php_files/editor.css" type="text/css" rel="stylesheet"><script src="bug%20fix,%20npc%20editor%20animations.php_files/ipb.js" type="text/javascript"></script><script src="bug%20fix,%20npc%20editor%20animations.php_files/default.js" type="text/javascript"></script></head>
+	<body onpageshow='event.persisted &amp;&amp; (function(){var allInstances = CKEDITOR.instances, editor, doc;for ( var i in allInstances ){	editor = allInstances[ i ];	doc = editor.document;	if ( doc )	{		doc.$.designMode = "off";		doc.$.designMode = "on";	}}})();' id="ipboard_body">
+
+				<div class="main_width">
+				</div>
+				<script type="text/javascript">
+					if( $('primary_nav') ){	ipb.global.activateMainMenu(); }
+				</script>
+				
+		<p id="content_jump" class="hide"><a id="top"></a><a href="#j_content" title="Jump to content" accesskey="m">Jump to content</a></p>
+		<div id="ipbwrapper">
+			<!-- ::: TOP BAR: Sign in / register or user drop down and notification alerts ::: -->
+			<div id="header_bar" class="clearfix">
+
+			</div>
+			<!-- ::: BRANDING STRIP: Logo and search box ::: -->
+			<div id="branding">
+				<div class="main_width">
+					
+	<div id="shoutbox-tab-count-wrap"><span id="shoutbox-tab-count" class="ipsHasNotifications" style="display: none;">2</span></div>
+	<script type="text/javascript">
+		document.observe("dom:loaded", function(){
+			var _thisHtml	= $('nav_app_shoutbox').innerHTML;
+			_thisHtml = _thisHtml.replace( /\<\/a\>/ig, '' ) + $('shoutbox-tab-count-wrap').innerHTML + "</a>";
+			$('nav_app_shoutbox').update( _thisHtml );
+			$('shoutbox-tab-count-wrap').remove();
+			$('shoutbox-tab-count').show();
+		});
+	</script>
+
+<div class="user_links_header">
+					<div id="user_navigation" class="logged_in">
+							<ul class="ipsList_inline right main">
+								<li><a data-clicklaunch="getInboxList" id="inbox_link" href="http://www.touchofdeathforums.com/community/index.php?app=members&amp;module=messaging" title="Messenger">&nbsp;</a></li>
+									<li><a data-clicklaunch="getNotificationsList" id="notify_link" href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=usercp&amp;area=notificationlog" title="Notifications">&nbsp;</a></li>
+								<li><a class="" id="user_link" href="http://www.touchofdeathforums.com/community/index.php?/user/56158-vakarieser/" title="Your Profile">vakarieser &nbsp;<span id="user_link_dd"></span></a></li>
+															
+								<li class="mainlink"><a href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=global&amp;section=login&amp;do=logout&amp;k=bebd230150525e2b52ebad4aacd61915" class="last_top_nav">Sign Out</a></li>								
+							</ul>
+						</div>
+						<!-- ::: USER DROP DOWN MENU ::: -->
+						<div id="user_link_menucontent" class="ipsHeaderMenu clearfix boxShadow" style="display: none; position: absolute; z-index: 9999; opacity: 0.0228798;">
+							<a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/user/56158-vakarieser/" title="Your Profile" class="ipsUserPhotoLink left">
+								<img style="z-index: 10000;" src="bug%20fix,%20npc%20editor%20animations.php_files/dd945e8ab186f3fa04a312fb8ad4b5fa.png" alt="vakarieser's Photo" class="ipsUserPhoto ipsUserPhoto_medium photo">
+							</a>
+							
+							<div style="z-index: 10000;" class="left">
+								<form style="z-index: 10000;" id="statusForm" action="http://www.touchofdeathforums.com/community/index.php?app=members&amp;module=profile&amp;section=status&amp;do=new&amp;k=bebd230150525e2b52ebad4aacd61915&amp;id=56158" method="post">
+										<input placeholder="What's on your mind?" id="statusUpdateGlobal" name="content" class="input_text" style="width: 97%; z-index: 10000;" type="text"><br style="z-index: 10000;">
+										<input style="z-index: 10000;" id="statusSubmitGlobal" class="ipsButton_secondary" value="Update" type="submit">
+										
+										<br style="z-index: 10000;">
+										<hr style="z-index: 10000;">
+									</form>
+									<ul style="z-index: 10000;" id="links">
+										<li style="z-index: 10000;" id="user_profile"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/user/56158-vakarieser/" title="Your Profile">My Profile</a></li>
+										<li style="z-index: 10000;" id="user_ucp"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=usercp" title="Edit my settings, such as signature, photo and more...">My Settings</a></li>
+										<li style="z-index: 10000;" id="user_content"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=search&amp;do=user_activity&amp;mid=56158" title="My Content">My Content</a></li>
+										
+											<li style="z-index: 10000;" id="user_likes"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=search&amp;do=followed" title="Content I Follow">Content I Follow</a></li>
+										
+										
+											<li style="z-index: 10000;" id="user_friends"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=members&amp;module=profile&amp;section=friends&amp;do=list" title="Manage Friends" class="manage_friends">Manage Friends</a></li>
+										
+										<li style="z-index: 10000;" id="user_enemies"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=usercp&amp;tab=core&amp;area=ignoredusers" title="Manage Ignore Prefs" class="manage_enemies">Manage Ignore Prefs</a></li>
+										
+										
+											<li style="z-index: 10000;" id="user_pm"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=members&amp;module=messaging">Personal Messenger</a></li>
+										
+										
+										
+									</ul>
+							</div>
+						</div>
+</div>
+				</div>
+				<div class="main_width">
+					<div id="logo">
+						
+							<a href="http://www.touchofdeathforums.com/community" title="Go to community index" rel="home" accesskey="1"><img src="bug%20fix,%20npc%20editor%20animations.php_files/4_logu_03.png" alt="Logo"></a>
+						
+					</div>
+<div class="nav_search_bar">
+					
+						<div id="search" class="right">
+	<form action="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=search&amp;do=search&amp;fromMainBar=1" method="post" id="search-box">
+		<fieldset>
+			<label for="main_search" class="hide">Search</label>
+			<a href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=search&amp;search_in=forums" title="Advanced Search" accesskey="4" rel="search" id="adv_search" class="right">Advanced</a>
+			<span id="search_wrap" class="right">
+				<input placeholder="Search..." id="main_search" name="search_term" class="" size="17" tabindex="6" type="text">
+				<span class="choice ipbmenu clickable" id="search_options" style="">This topic</span>
+				<ul id="search_options_menucontent" class="ipbmenu_content ipsPad" style="display: none; position: absolute; z-index: 9999; opacity: 0.0244717;">
+					<li style="z-index: 10000;" class="title"><strong style="z-index: 10000;">Search section:</strong></li>
+					<li style="z-index: 10000;" class="special">
+							<label style="z-index: 10000;" for="s_topic" title="This topic">
+								
+									<input style="z-index: 10000;" name="search_app" value="forums:topic:120880" class="input_radio" id="s_topic" checked="checked" type="radio"> 
+								
+								<strong style="z-index: 10000;">This topic</strong>
+							</label>
+						</li>
+					
+					
+					<li style="z-index: 10000;" class="app"><label style="z-index: 10000;" for="s_forums" title="Forums"><input style="z-index: 10000;" name="search_app" class="input_radio" id="s_forums" value="forums" type="radio">Forums</label></li><li style="z-index: 10000;" class="app"><label style="z-index: 10000;" for="s_members" title="Members"><input style="z-index: 10000;" name="search_app" class="input_radio" id="s_members" value="members" type="radio">Members</label></li><li style="z-index: 10000;" class="app"><label style="z-index: 10000;" for="s_core" title="Help Files"><input style="z-index: 10000;" name="search_app" class="input_radio" id="s_core" value="core" type="radio">Help Files</label></li>
+						
+					
+
+						<li style="z-index: 10000;" class="app"><label style="z-index: 10000;" for="s_ccs" title="Home"><input style="z-index: 10000;" name="search_app" class="input_radio" id="s_ccs" value="ccs" type="radio">Home</label></li>
+					
+
+						
+					
+
+						
+					
+
+						
+					
+
+						<li style="z-index: 10000;" class="app"><label style="z-index: 10000;" for="s_tracker" title="Bug Tracker"><input style="z-index: 10000;" name="search_app" class="input_radio" id="s_tracker" value="tracker" type="radio">Bug Tracker</label></li>
+					
+
+						
+					
+
+						
+					
+
+						
+					
+				</ul>
+				<input class="submit_input clickable" value="" type="submit">
+			</span>
+			
+		</fieldset>
+	</form>
+</div>
+					
+
+<div class="navigation">
+
+
+
+					<ul class="nav_inline" id="community_app_menu">
+						
+								
+		
+			
+				
+										
+				
+			
+			
+		
+
+			
+				
+										
+				
+			
+			<li id="nav_app_ccs" class="left "><a href="http://www.touchofdeathforums.com/community/index.php?/page/index.html/index.html" title="Go to Home">Home</a></li>
+		
+
+			
+				
+										
+				
+			
+			<li id="nav_app_forums" class="left active"><a href="http://www.touchofdeathforums.com/community/" title="Go to Forums">Forums</a></li>
+		
+
+			
+				
+										
+				
+			
+			<li id="nav_app_members" class="left "><a href="http://www.touchofdeathforums.com/community/index.php?/members/" title="Go to Members">Members</a></li>
+		
+
+			
+				
+										
+				
+			
+			
+		
+
+			
+				
+										
+				
+			
+			
+		
+
+			
+				
+										
+				
+			
+			
+		
+
+			
+				
+										
+				
+			
+			
+		
+
+			
+				
+										
+				
+			
+			
+		
+	
+	
+		
+						<li id="nav_menu_2" class="left  ">
+					<a id="nav_menu_2_trigger" href="http://www.touchofdeathforums.com/community/index.php?/page/index.html/tinychat.html" title="">Tinychat </a>
+					
+					
+				</li>
+		
+	
+						
+						
+							<li class="right">
+								<a href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=global&amp;section=navigation&amp;inapp=forums" rel="quickNavigation" accesskey="9" id="quickNavLaunch" title="Open Quick Navigation"><span> </span></a>
+							</li>
+						
+<li id="nav_explore" class="right">
+							<a href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=search&amp;do=viewNewContent&amp;search_app=forums" accesskey="2">View New Content</a>
+						</li>
+						
+						<li id="nav_other_apps" style="display: none">
+							<a href="#" class="ipbmenu" id="more_apps">More <img src="bug%20fix,%20npc%20editor%20animations.php_files/useropts_arrow.png"></a>
+						</li>
+					</ul>
+
+
+
+</div>
+</div>
+				</div>
+			</div>
+
+			<!-- ::: APPLICATION TABS ::: -->
+<!--			-->
+			<!-- ::: MAIN CONTENT AREA ::: -->
+			<div id="content" class="clearfix">
+<div class="announcement_notice">
+<div class="announcement_notice-p">
+
+<strong>Eclipse Design &amp; Code Contest!</strong><br><br>
+Are you bored? Sitting on a chair, staring at your screen? Or are you 
+sitting on the toilet, doing absolutely nothing? Well, this ends now! 
+Test your luck in contest with numerous prizes, as a reward! <br><br>
+
+Visit this <a href="http://www.touchofdeathforums.com/community/index.php?/topic/128967-contest-eclipse-design-code/#entry847041">link</a> to see what the contest is about and what you can win!
+
+</div>
+</div><br>		<!-- ::: NAVIGATION BREADCRUMBS ::: -->
+				<div id="secondary_navigation" class="clearfix">
+						<ol class="breadcrumb top ipsList_inline left">
+														<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+									<a href="http://www.touchofdeathforums.com/community/" itemprop="url">
+										<span itemprop="title">Eclipse Community</span>
+									</a>
+								</li>
+								
+							
+								<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+									<span class="nav_sep">→</span>
+									 <a href="http://www.touchofdeathforums.com/community/index.php?/forum/6-development/" title="Return to Development" itemprop="url"><span itemprop="title">Development</span></a>
+								</li>
+								
+							
+
+								<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+									<span class="nav_sep">→</span>
+									 <a href="http://www.touchofdeathforums.com/community/index.php?/forum/17-tutorials/" title="Return to Tutorials" itemprop="url"><span itemprop="title">Tutorials</span></a>
+								</li>
+								
+							
+
+								<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+									<span class="nav_sep">→</span>
+									 <a href="http://www.touchofdeathforums.com/community/index.php?/forum/76-source/" title="Return to Source" itemprop="url"><span itemprop="title">Source</span></a>
+								</li>
+								
+							
+						</ol>
+					</div>
+				<noscript>
+					<div class='message error'>
+						<strong>Javascript Disabled Detected</strong>
+						<p>You currently have javascript disabled. Several functions may not work. Please re-enable javascript to access full functionality.</p>
+					</div>
+					<br />
+				</noscript>
+				<!-- ::: CONTENT ::: -->
+				
+				
+
+<script type="text/javascript">
+//<![CDATA[
+	ipb.topic.inSection = 'topicview';
+	ipb.topic.topic_id  = 120880;
+	ipb.topic.forum_id  = 76;
+	ipb.topic.start_id  = 0;
+	ipb.topic.topPid    = 0;
+	ipb.topic.counts    = { postTotal: 1,
+							curStart:  ipb.topic.start_id,
+							perPage:   20 };
+	//Search Setup
+	ipb.vars['search_type']			= 'forum';
+	ipb.vars['search_type_id']		= 76;
+	ipb.vars['search_type_2']		= 'topic';
+	ipb.vars['search_type_id_2']	= 120880;
+	
+	
+	// Delete stuff set up
+	ipb.topic.deleteUrls['hardDelete'] = new Template( ipb.vars['base_url'] + "app=forums&module=moderate&section=moderate&do=04&f=76&t=120880&st=&auth_key=bebd230150525e2b52ebad4aacd61915&p=#{pid}" );
+	ipb.topic.deleteUrls['softDelete'] = new Template( ipb.vars['base_url'] + "app=forums&module=moderate&section=moderate&do=postchoice&tact=sdelete&t=120880&f=76&auth_key=bebd230150525e2b52ebad4aacd61915&selectedpids[#{pid}]=#{pid}&pid=#{pid}" );
+	
+	
+	ipb.templates['post_moderation'] = new Template("<div id='comment_moderate_box' class='ipsFloatingAction' style='display: none'><span class='desc'>With <span id='comment_count'>#{count}</span> checked posts: </span><select id='tactInPopup' class='input_select'><option value='approve'>Approve</option><option value='delete'>Hide</option><option value='sundelete'>Unhide</option><option value='deletedo'>Delete</option><option value='merge'>Merge</option><option value='split'>Split</option><option value='move'>Move</option></select>&nbsp;&nbsp;<input type='button' class='input_submit' id='submitModAction' value='Go' /></div>");
+	
+//]]>
+</script>
+
+
+
+
+<div class="__like right" data-app="forums" data-area="topics" data-relid="120880" data-isfave="">
+	<span class="ipsButton_extra right " title="0 member(s) follow this topic" data-tooltip="0 member(s) follow this topic"><img src="bug%20fix,%20npc%20editor%20animations.php_files/icon_users.png"> <strong>0</strong></span>
+<a href="#" title="Follow this topic and receive notifications on updates" class="ftoggle ipsButton_secondary">Follow this topic</a>
+</div>
+<script type="text/javascript">
+	var FAVE_TEMPLATE = new Template( "<h3>Unfollow this topic</h3><div class='ipsPad'><span class='desc'>If you unfollow this topic you will no longer receive any notifications</span><br /><p class='ipsForm_center'><input type='button' value='Unfollow this topic' class='input_submit _funset' /></p></div>");
+</script>
+
+<a href="http://www.touchofdeathforums.com/community/index.php?/user/65943-sotvotkong/" class="ipsUserPhotoLink">
+
+	<img src="bug%20fix,%20npc%20editor%20animations.php_files/photo-thumb-65943.jpg" class="ipsUserPhoto ipsUserPhoto_medium left">
+
+</a>
+
+<div itemscope="" itemtype="http://schema.org/Article" class="ipsBox_withphoto">
+	
+	<h1 itemprop="name" class="ipsType_pagetitle">possible bug fix, npc editor animations</h1>
+	<div class="desc lighter blend_links">
+		 Started by <span itemprop="creator"><a id="anonymous_element_1" hovercard-ref="member" hovercard-id="65943" class="url fn name  ___hover___member _hoversetup" href="http://www.touchofdeathforums.com/community/index.php?/user/65943-sotvotkong/" title=""><span itemprop="name">sotvotkong</span></a></span>, <span itemprop="dateCreated">Aug 11 2011 04:52 AM</span>
+	</div>
+	
+	<meta itemprop="interactionCount" content="UserComments:1">
+</div>
+
+
+<br>
+<div class="topic_controls">
+	
+	<ul class="topic_buttons">
+			
+						<li><a href="http://www.touchofdeathforums.com/community/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=76&amp;t=120880" title="Reply to this topic" accesskey="r">Reply to this topic</a></li>
+					
+			
+			
+		</ul>
+</div>
+
+<div class="maintitle clear clearfix">
+	<span class="ipsType_small">
+		
+			No replies to this topic
+		
+	</span>
+		
+</div>
+
+<div class="topic hfeed clear clearfix">
+	
+	
+
+	<div class="ipsBox">
+		<div class="ipsBox_container" id="ips_Posts">
+			
+				<!--post:760202-->
+
+<div class="post_block hentry clear clearfix " id="post_id_760202">
+		<a id="entry760202"></a>
+		
+	
+		
+		<div class="post_wrap">
+			
+				<h3 class="row2">
+			
+				
+				<span class="post_id right ipsType_small desc blend_links">
+					
+						<a itemprop="replyToUrl" href="http://www.touchofdeathforums.com/community/index.php?/topic/120880-possible-bug-fix-npc-editor-animations/#entry760202" rel="bookmark" title="possible bug fix, npc editor animations: post #1">
+					
+					#1
+					</a>
+				</span>
+				
+					<span itemprop="creator name" class="author vcard"><a id="anonymous_element_2" hovercard-ref="member" hovercard-id="65943" class="url fn name  ___hover___member _hoversetup" href="http://www.touchofdeathforums.com/community/index.php?/user/65943-sotvotkong/" title=""><span itemprop="name">sotvotkong</span></a></span>
+				
+			
+				
+			</h3>
+			<div class="author_info">
+				<div itemscope="" itemtype="http://schema.org/Person" class="user_details">
+	<span class="hide" itemprop="name">sotvotkong</span>
+	<ul class="basic_info">
+		
+			<p class="desc member_title">Advanced Member</p>
+		
+		<li class="avatar">
+				
+				<a itemprop="url" href="http://www.touchofdeathforums.com/community/index.php?/user/65943-sotvotkong/" title="View Profile: sotvotkong" class="ipsUserPhotoLink">
+				
+				
+					<img itemprop="image" src="bug%20fix,%20npc%20editor%20animations.php_files/photo-thumb-65943.jpg" class="ipsUserPhoto ipsUserPhoto_large">
+				
+				
+				</a>
+				
+			</li>
+		<li class="group_title">
+			<span style="color:#8080C0">Junior Member
+		</span></li>
+		<li class="group_icon">
+			
+				<img src="bug%20fix,%20npc%20editor%20animations.php_files/member2.png" alt="">
+			
+			</li>
+		
+		<li class="post_count desc lighter">
+			177 posts
+		</li>
+		
+		
+	</ul>
+	
+	
+		<ul class="custom_fields">
+			
+				
+					
+						<li>
+							<span class="ft">Location</span><span class="fc">utah</span>
+						</li>
+					
+				
+			
+		</ul>
+	
+	
+</div>
+			</div>
+			<div class="post_body">
+				<p class="posted_info desc lighter ipsType_small">
+					Posted <abbr class="published" itemprop="commentTime" title="2011-08-11T04:52:59+00:00">11 August 2011 - 04:52 AM</abbr>
+				</p>
+				
+				<div itemprop="commentText" class="post entry-content ">
+					so i was setting up my npcs and i noticed that their attack 
+animations were not saving correctly.&nbsp; i would set it and go back 
+in to find the slider back at 0 every time.&nbsp; so i added this to the
+ npceditor in modgameeditors <br><br>search for <pre class="prettyprint"><span class="typ">Public</span><span class="pln"> </span><span class="typ">Sub</span><span class="pln"> </span><span class="typ">NpcEditorInit</span><span class="pun">()</span></pre><br>underneath <br><pre class="prettyprint"><span class="pun">.</span><span class="pln">scrlDrop</span><span class="pun">.</span><span class="typ">Value</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span></pre><br>add this.<br><br><pre class="prettyprint"><span class="pun">.</span><span class="pln">scrlAnimation</span><span class="pun">.</span><span class="typ">Value</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> NPC</span><span class="pun">(</span><span class="typ">EditorIndex</span><span class="pun">).</span><span class="typ">Animation</span></pre><br><br>i
+ cant remember if it did this in a fresh copy of eo2.0 but it does not 
+have the line i added, so i dont know for sure, but in my case, adding 
+this fixed my problem with it not saving what i set as the animation in 
+the npc editor.<br><br>if im wrong, or i deleted something or messed 
+something else up somewere i dont know, and thats why i call it a 
+possible fix.&nbsp; untill its confirmed by a few peps.<br><br>if its not a fix for anyone but me ill just delete the post.&nbsp; we will see in a few days or sooner i guess.
+					
+					<br>
+					
+				</div>
+				
+				
+				<div class="ipsLikeBar right clearfix" id="rep_post_760202">
+				<ul class="ipsList_inline">
+					<li id="like_post_760202" class="ipsLikeBar_info" style="display:none">
+							
+						</li>
+					<li>
+							<a class="ipsLikeButton ipsLikeButton_enabled rep_up" href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=global&amp;section=reputation&amp;do=add_rating&amp;app_rate=forums&amp;type=pid&amp;type_id=760202&amp;rating=1&amp;secure_key=bebd230150525e2b52ebad4aacd61915&amp;post_return=760202" title="Like this item">Like This</a>
+						</li>
+						<li style="display:none">
+							<a class="ipsLikeButton ipsLikeButton_disabled rep_down" href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=global&amp;section=reputation&amp;do=add_rating&amp;app_rate=forums&amp;type=pid&amp;type_id=760202&amp;rating=-1&amp;secure_key=bebd230150525e2b52ebad4aacd61915&amp;post_return=760202" title="Remove like for this item">Unlike</a>
+						</li>
+				</ul>
+			</div>
+<script type="text/javascript">
+	ipb.global.registerReputation( 'rep_post_760202', { domLikeStripId: 'like_post_760202', app: 'forums', type: 'pid', typeid: '760202' }, parseInt('0') );
+</script>
+				
+								
+				
+				
+				
+			
+				<ul id="postControlsNormal_760202" class="post_controls clear clearfix">
+					<li class="top hide"><a href="#ipboard_body" class="top" title="Back to top">Back to top</a></li>
+					<li><a href="http://www.touchofdeathforums.com/community/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=76&amp;t=120880&amp;qpid=760202" class="_ips_trigger_quote ipsButton_secondary" pid="760202" title="Reply directly to this post">Quote</a></li>
+							
+								<li class="multiquote" id="multiq_760202" style="">
+							
+								<a href="http://www.touchofdeathforums.com/community/index.php?app=forums&amp;module=post&amp;section=post&amp;do=reply_post&amp;f=76&amp;t=120880&amp;qpid=760202" title="MultiQuote allows you to select multiple posts across multiple topics, then reply to them all at once" class="ipsButton_secondary">MultiQuote</a>
+							</li>
+					
+					
+					
+					
+					<li class="report">
+							<a href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=reports&amp;rcom=post&amp;tid=120880&amp;pid=760202&amp;st=">Report</a>
+						</li>
+						
+				</ul>
+					
+			</div>
+		</div>
+	</div>
+		
+		
+		<hr>
+		
+		
+<script type="text/javascript">
+var pid = parseInt(760202);
+if ( pid > ipb.topic.topPid ){
+	ipb.topic.topPid = pid;
+}
+
+	// Show multiquote for JS browsers
+	if ( $('multiq_760202') )
+	{
+		$('multiq_760202').show();
+	}
+	
+	if( $('toggle_post_760202') )
+	{
+		$('toggle_post_760202').show();
+	}
+	
+	// Add perm data
+	ipb.topic.deletePerms[760202] = { 'canDelete' : 0, 'canSoftDelete' : 0 };
+
+</script>
+			
+		</div>
+	</div>
+
+<hr>
+<div class="topic_controls clear ipsPad_top_bottom_half">
+	
+	<div class="ipsPad_top_slimmer right">
+		
+		<a href="http://www.touchofdeathforums.com/community/index.php?/forum/76-source/" class="ipsType_small desc">Back to Source</a>
+		
+			· <a href="http://www.touchofdeathforums.com/community/index.php?/topic/120880-possible-bug-fix-npc-editor-animations/nextunread/" class="ipsType_small desc">Next Unread Topic →</a>
+		
+	</div>	
+</div>
+<hr>
+<div class="ipsBox" id="fast_reply_wrapper">
+	<div class="ipsBox_container ipsPad">
+		<h1 class="ipsType_subtitle">Reply to this topic</h1>
+		
+		<br>
+		
+			<a href="http://www.touchofdeathforums.com/community/index.php?/user/56158-vakarieser/" title="Your Profile" class="ipsUserPhotoLink left"><img src="bug%20fix,%20npc%20editor%20animations.php_files/dd945e8ab186f3fa04a312fb8ad4b5fa.png" alt="vakarieser's Photo" class="ipsUserPhoto ipsUserPhoto_medium"></a>
+		
+		<div class="ipsBox_withphoto clearfix">
+			<form action="http://www.touchofdeathforums.com/community/index.php?" method="post" id="ips_fastReplyForm">
+				<input name="app" value="forums" type="hidden">
+				<input name="module" value="post" type="hidden">
+				<input name="section" value="post" type="hidden">
+				<input name="do" value="reply_post_do" type="hidden">
+				<input name="f" value="76" type="hidden">
+				<input name="t" value="120880" type="hidden">
+				<input name="st" value="" type="hidden">
+				<input name="auth_key" value="bebd230150525e2b52ebad4aacd61915" type="hidden">
+				<input name="fast_reply_used" value="1" type="hidden">
+				<input name="enableemo" value="yes" type="hidden">
+				<input name="enablesig" value="yes" type="hidden">
+				
+		
+		
+		<script type="text/javascript" src="bug%20fix,%20npc%20editor%20animations.php_files/ckeditor.js"></script>
+	
+	<script type="text/javascript">
+		/* Dynamic items */
+		CKEDITOR.config.IPS_BBCODE          = {"acronym":{"id":"8","title":"Acronym","desc":"Allows you to make an acronym that will display a description when moused over","tag":"acronym","useoption":"1","example":"[acronym='Laugh Out Loud']lol[/acronym]","switch_option":"0","menu_option_text":"Enter the description for this acronym (EG: Laugh Out Loud)","menu_content_text":"Enter the acronym (EG: lol)","single_tag":"0","optional_option":"0","image":""},"background":{"id":"27","title":"Background-color","desc":"Adds a background color behind the text","tag":"background","useoption":"1","example":"[background=red]Red background behind this text[/background]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"code":{"id":"13","title":"Code","desc":"Allows you to enter general code","tag":"code","useoption":"0","example":"[code]$text = 'Some long code here';[/code]","switch_option":"0","menu_option_text":"","menu_content_text":"Code","single_tag":"0","optional_option":"0","image":""},"hr":{"id":"12","title":"Horizontal Rule","desc":"Adds a horizontal rule to separate text","tag":"hr","useoption":"0","example":"[hr]","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"1","optional_option":"0","image":""},"html":{"id":"15","title":"HTML Code","desc":"Allows you to enter formatted/syntax-highlighted HTML code","tag":"html","useoption":"0","example":"[html]<div class='outer'>\n  <p>Hello World</p>\n </div>[/html]","switch_option":"0","menu_option_text":"","menu_content_text":"HTML Code","single_tag":"0","optional_option":"0","image":""},"media":{"id":"32","title":"Media","desc":"Allows a user to post media content from certain common media sites","tag":"media","useoption":"1","example":"[media]http://www.youtube.com/watch?v=YqqLx-2vUr0[/media]","switch_option":"0","menu_option_text":"Dimensions (Flash Only)","menu_content_text":"Media URL","single_tag":"0","optional_option":"1","image":""},"member":{"id":"31","title":"Member","desc":"Given a member name, a link is automatically generated to the member's profile","tag":"member","useoption":"1","example":"[member=admin] runs this site.","switch_option":"0","menu_option_text":"Member Name","menu_content_text":"","single_tag":"1","optional_option":"0","image":""},"move":{"id":"43","title":"Move","desc":"Allows movement of text via the non-standard tag marquee. This is added for compatibility with the SMF system, it may be removed in the near future.","tag":"move","useoption":"0","example":"[move]Moving text[/move]","switch_option":"0","menu_option_text":"","menu_content_text":"Moving text.","single_tag":"0","optional_option":"0","image":""},"page":{"id":"36","title":"Multi-Page Articles","desc":"This tag can be used to create multi-page articles.  Page links are automatically added based on the number of times this tag is used, and the content is hidden until you reach the specified \"page\".","tag":"page","useoption":"0","example":"Content 1\n[page]\nContent 2\n[page]\nContent 3","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"1","optional_option":"0","image":""},"php":{"id":"14","title":"PHP Code","desc":"Allows you to enter PHP code into a formatted/highlighted syntax box","tag":"php","useoption":"0","example":"[php]$variable = true;\n\nprint_r($variable);[/php]","switch_option":"0","menu_option_text":"","menu_content_text":"PHP Code","single_tag":"0","optional_option":"0","image":""},"post":{"id":"6","title":"Post Link","desc":"This tag provides an easy way to link to a post.","tag":"post","useoption":"1","example":"[post=1]Click me![/post]","switch_option":"0","menu_option_text":"Enter the Post ID","menu_content_text":"Enter the title for this link","single_tag":"0","optional_option":"0","image":""},"spoiler":{"id":"7","title":"Spoiler","desc":"Spoiler tag","tag":"spoiler","useoption":"1","example":"[spoiler=Teaser]Some hidden text[/spoiler]","switch_option":"0","menu_option_text":"Enter the teaser (title)","menu_content_text":"Enter the text to be masked","single_tag":"0","optional_option":"1","image":""},"sql":{"id":"16","title":"SQL Code","desc":"Allows you to enter formatted/syntax-highlighted SQL code","tag":"sql","useoption":"0","example":"[sql]SELECT p.*, t.* FROM posts p LEFT JOIN topics t ON t.tid=p.topic_id WHERE t.tid=7[/sql]","switch_option":"0","menu_option_text":"","menu_content_text":"SQL Commands","single_tag":"0","optional_option":"0","image":""},"table":{"id":"37","title":"Table start","desc":"This defines the start of an table.","tag":"table","useoption":"0","example":"","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"td":{"id":"38","title":"Td start","desc":"","tag":"td","useoption":"0","example":"","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"topic":{"id":"5","title":"Topic Link","desc":"This tag provides an easy way to link to a topic","tag":"topic","useoption":"1","example":"[topic=1]Click me![/topic]","switch_option":"0","menu_option_text":"Enter the topic ID","menu_content_text":"Enter the title for this link","single_tag":"0","optional_option":"0","image":""},"tr":{"id":"39","title":"Tr start","desc":"","tag":"tr","useoption":"0","example":"","switch_option":"0","menu_option_text":"","menu_content_text":"","single_tag":"0","optional_option":"0","image":""},"twitter":{"id":"33","title":"Twitter","desc":"A tag to link to a user's twitter account","tag":"twitter","useoption":"0","example":"[twitter]userName[/twitter]","switch_option":"0","menu_option_text":"","menu_content_text":"Twitter Username","single_tag":"0","optional_option":"0","image":"twitter.png"},"vb":{"id":"42","title":"vb","desc":"Vb Code","tag":"vb","useoption":"0","example":"[vb]code[/vb]","switch_option":"0","menu_option_text":"a","menu_content_text":"a","single_tag":"0","optional_option":"0","image":"a"},"xml":{"id":"17","title":"XML Code","desc":"Allows you to enter formatted/syntax-highlighted XML code","tag":"xml","useoption":"0","example":"[xml]<outer>\n <inner>\n  <tag param='1'>Test</tag>\n </inner>\n</outer>[/xml]","switch_option":"0","menu_option_text":"","menu_content_text":"XML Code","single_tag":"0","optional_option":"0","image":""}};
+		CKEDITOR.config.IPS_BBCODE_IMG_URL  = "http://www.touchofdeathforums.com/community/public/style_extra/bbcode_icons";
+		CKEDITOR.config.IPS_BBCODE_BUTTONS  = [];
+		
+		/* Has to go before config load */
+		var IPS_smiley_path			= "http://www.touchofdeathforums.com/community/public/style_emoticons/default/";
+		var IPS_smiles       		= {"total":20,"count":20,"emoticons":[{"src":"smile.png","text":":)"},{"src":"wink.png","text":";)"},{"src":"tongue.png","text":":P"},{"src":"biggrin.png","text":":D"},{"src":"laugh.png","text":":lol:"},{"src":"sad.png","text":":("},{"src":"angry.png","text":":angry:"},{"src":"mellow.png","text":":mellow:"},{"src":"huh.png","text":":huh:"},{"src":"happy.png","text":"^_^"},{"src":"ohmy.png","text":":o"},{"src":"cool.png","text":"B)"},{"src":"rolleyes.gif","text":":rolleyes:"},{"src":"sleep.png","text":"-_-"},{"src":"dry.png","text":"&lt;_&lt;"},{"src":"wub.png","text":":wub:"},{"src":"unsure.png","text":":unsure:"},{"src":"wacko.png","text":":wacko:"},{"src":"blink.png","text":":blink:"},{"src":"ph34r.png","text":":ph34r:"}]};
+		var IPS_remove_plugins      = [];
+		var IPS_hide_contextMenu    = 0;
+		var IPS_rclick_contextMenu  = 0;
+		
+		/* Load our configuration */
+		CKEDITOR.config.customConfig  = 'http://www.touchofdeathforums.com/community/public/js/3rd_party/ckeditor/ips_config.js';
+	</script>
+
+	
+	<input name="isRte" id="isRte_editor_503dffeed7779" value="1" type="hidden">
+	<input name="noSmilies" id="noSmilies_editor_503dffeed7779" value="0" type="hidden">
+	<textarea style="visibility: hidden; display: none;" id="editor_503dffeed7779" name="Post" class="ipsEditor_textarea input_text"></textarea><span id="cke_editor_503dffeed7779" class="cke_skin_ips cke_1 cke_editor_editor_503dffeed7779" dir="ltr" title=" " role="application" aria-labelledby="cke_editor_503dffeed7779_arialbl" lang="ipb"><span id="cke_editor_503dffeed7779_arialbl" class="cke_voice_label">Rich Text Editor</span><span class="cke_browser_gecko" role="presentation"><span class="cke_wrapper cke_ltr" role="presentation"><table class="cke_editor" role="presentation" border="0" cellpadding="0" cellspacing="0"><tbody><tr style="-moz-user-select: none;" role="presentation"><td style="" id="cke_top_editor_503dffeed7779" class="cke_top" role="presentation"><div class="cke_toolbox" role="group" aria-labelledby="cke_4" onmousedown="return false;" style=""><span id="cke_4" class="cke_voice_label"></span><span id="cke_5" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_6" class="cke_off cke_button_ipsswitch" title="Toggle editing mode" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_6_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(1, event);" onfocus="return CKEDITOR.tools.callFunction(2, event);" onclick="CKEDITOR.tools.callFunction(3, this); return false;"><span class="cke_icon" style="background-image:url(http://www.touchofdeathforums.com/community/public/js/3rd_party/ckeditor/plugins/ipsswitch/images/switch.png?t=B8DJ5M3);background-position:0 0px;">&nbsp;</span><span id="cke_6_label" class="cke_label">Toggle editing mode</span></a></span><span class="cke_button"><a id="cke_7" class="cke_off cke_button_removeFormat" title="Remove Format" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_7_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(4, event);" onfocus="return CKEDITOR.tools.callFunction(5, event);" onclick="CKEDITOR.tools.callFunction(6, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_7_label" class="cke_label">Remove Format</span></a></span><span class="cke_button"><a id="cke_8" class="cke_off cke_button_ipsbbcode" title="Special BBCode" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_8_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(7, event);" onfocus="return CKEDITOR.tools.callFunction(8, event);" onclick="CKEDITOR.tools.callFunction(9, this); return false;"><span class="cke_icon" style="background-image:url(http://www.touchofdeathforums.com/community/public/js/3rd_party/ckeditor/plugins/ipsbbcode/images/ips_bbcode.png?t=B8DJ5M3);background-position:0 0px;">&nbsp;</span><span id="cke_8_label" class="cke_label">Special BBCode</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_9" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_separator" role="separator"></span><span class="cke_rcombo" role="presentation"><span id="cke_10" class="cke_font cke_off" role="presentation"><span id="cke_10_label" class="cke_label">Font</span><a hidefocus="true" title="Font Name" tabindex="-1" role="button" aria-labelledby="cke_10_label" aria-describedby="cke_10_text" aria-haspopup="true" onblur="this.style.cssText = this.style.cssText;" onkeydown="CKEDITOR.tools.callFunction( 11, event, this );" onfocus="return CKEDITOR.tools.callFunction(12, event);" onclick="CKEDITOR.tools.callFunction(10, this); return false;"><span><span id="cke_10_text" class="cke_text cke_inline_label">Font</span></span><span class="cke_openbutton"><span class="cke_icon"></span></span></a></span></span><span class="cke_rcombo" role="presentation"><span id="cke_11" class="cke_fontSize cke_off" role="presentation"><span id="cke_11_label" class="cke_label">Size</span><a hidefocus="true" title="Font Size" tabindex="-1" role="button" aria-labelledby="cke_11_label" aria-describedby="cke_11_text" aria-haspopup="true" onblur="this.style.cssText = this.style.cssText;" onkeydown="CKEDITOR.tools.callFunction( 14, event, this );" onfocus="return CKEDITOR.tools.callFunction(15, event);" onclick="CKEDITOR.tools.callFunction(13, this); return false;"><span><span id="cke_11_text" class="cke_text cke_inline_label">Size</span></span><span class="cke_openbutton"><span class="cke_icon"></span></span></a></span></span></span><span class="cke_toolbar_end"></span></span><span id="cke_12" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_13" class="cke_off cke_button_textcolor" title="Text Color" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_13_label" aria-haspopup="true" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(16, event);" onfocus="return CKEDITOR.tools.callFunction(17, event);" onclick="CKEDITOR.tools.callFunction(18, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_13_label" class="cke_label">Text Color</span><span class="cke_buttonarrow">&nbsp;</span></a></span><span class="cke_button"><a id="cke_14" class="cke_off cke_button_ipsemoticon" title="Smiley" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_14_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(19, event);" onfocus="return CKEDITOR.tools.callFunction(20, event);" onclick="CKEDITOR.tools.callFunction(21, this); return false;"><span class="cke_icon" style="background-image:url(http://www.touchofdeathforums.com/community/public/js/3rd_party/ckeditor/plugins/ipsemoticon/images/ips_emoticon.png?t=B8DJ5M3);background-position:0 0px;">&nbsp;</span><span id="cke_14_label" class="cke_label">Smiley</span></a></span><span class="cke_button"><a id="cke_15" class="cke_off cke_button_ipsmedia" title="My Media" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_15_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(22, event);" onfocus="return CKEDITOR.tools.callFunction(23, event);" onclick="CKEDITOR.tools.callFunction(24, this); return false;"><span class="cke_icon" style="background-image:url(http://www.touchofdeathforums.com/community/public/js/3rd_party/ckeditor/plugins/ipsmedia/images/mymedia.png?t=B8DJ5M3);background-position:0 0px;">&nbsp;</span><span id="cke_15_label" class="cke_label">My Media</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_16" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_separator" role="separator"></span><span class="cke_button"><a id="cke_17" class="cke_off cke_button_find" title="Find" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_17_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(25, event);" onfocus="return CKEDITOR.tools.callFunction(26, event);" onclick="CKEDITOR.tools.callFunction(27, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_17_label" class="cke_label">Find</span></a></span><span class="cke_button"><a id="cke_18" class="cke_off cke_button_replace" title="Replace" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_18_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(28, event);" onfocus="return CKEDITOR.tools.callFunction(29, event);" onclick="CKEDITOR.tools.callFunction(30, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_18_label" class="cke_label">Replace</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_19" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_separator" role="separator"></span></span><span class="cke_toolbar_end"></span></span><span id="cke_20" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a aria-disabled="true" id="cke_21" class="cke_button_undo cke_disabled" title="Undo" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_21_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(31, event);" onfocus="return CKEDITOR.tools.callFunction(32, event);" onclick="CKEDITOR.tools.callFunction(33, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_21_label" class="cke_label">Undo</span></a></span><span class="cke_button"><a aria-disabled="true" id="cke_22" class="cke_button_redo cke_disabled" title="Redo" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_22_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(34, event);" onfocus="return CKEDITOR.tools.callFunction(35, event);" onclick="CKEDITOR.tools.callFunction(36, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_22_label" class="cke_label">Redo</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_23" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_separator" role="separator"></span></span><span class="cke_toolbar_end"></span></span><span id="cke_24" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a aria-disabled="true" id="cke_25" class="cke_button_copy cke_disabled" title="Copy" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_25_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(37, event);" onfocus="return CKEDITOR.tools.callFunction(38, event);" onclick="CKEDITOR.tools.callFunction(39, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_25_label" class="cke_label">Copy</span></a></span><span class="cke_button"><a id="cke_26" class="cke_off cke_button_paste" title="Paste" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_26_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(40, event);" onfocus="return CKEDITOR.tools.callFunction(41, event);" onclick="CKEDITOR.tools.callFunction(42, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_26_label" class="cke_label">Paste</span></a></span><span class="cke_button"><a id="cke_27" class="cke_off cke_button_pastetext" title="Paste as Plain Text" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_27_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(43, event);" onfocus="return CKEDITOR.tools.callFunction(44, event);" onclick="CKEDITOR.tools.callFunction(45, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_27_label" class="cke_label">Paste as Plain Text</span></a></span><span class="cke_button"><a id="cke_28" class="cke_off cke_button_pastefromword" title="Paste from Word" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_28_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(46, event);" onfocus="return CKEDITOR.tools.callFunction(47, event);" onclick="CKEDITOR.tools.callFunction(48, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_28_label" class="cke_label">Paste from Word</span></a></span></span><span class="cke_toolbar_end"></span></span><div class="cke_break"></div><span id="cke_29" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_30" class="cke_off cke_button_bold" title="Bold" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_30_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(49, event);" onfocus="return CKEDITOR.tools.callFunction(50, event);" onclick="CKEDITOR.tools.callFunction(51, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_30_label" class="cke_label">Bold</span></a></span><span class="cke_button"><a id="cke_31" class="cke_off cke_button_italic" title="Italic" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_31_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(52, event);" onfocus="return CKEDITOR.tools.callFunction(53, event);" onclick="CKEDITOR.tools.callFunction(54, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_31_label" class="cke_label">Italic</span></a></span><span class="cke_button"><a id="cke_32" class="cke_off cke_button_underline" title="Underline" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_32_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(55, event);" onfocus="return CKEDITOR.tools.callFunction(56, event);" onclick="CKEDITOR.tools.callFunction(57, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_32_label" class="cke_label">Underline</span></a></span><span class="cke_button"><a id="cke_33" class="cke_off cke_button_strike" title="Strike Through" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_33_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(58, event);" onfocus="return CKEDITOR.tools.callFunction(59, event);" onclick="CKEDITOR.tools.callFunction(60, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_33_label" class="cke_label">Strike Through</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_34" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_35" class="cke_off cke_button_subscript" title="Subscript" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_35_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(61, event);" onfocus="return CKEDITOR.tools.callFunction(62, event);" onclick="CKEDITOR.tools.callFunction(63, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_35_label" class="cke_label">Subscript</span></a></span><span class="cke_button"><a id="cke_36" class="cke_off cke_button_superscript" title="Superscript" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_36_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(64, event);" onfocus="return CKEDITOR.tools.callFunction(65, event);" onclick="CKEDITOR.tools.callFunction(66, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_36_label" class="cke_label">Superscript</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_37" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_38" class="cke_off cke_button_bulletedlist" title="Insert/Remove Bulleted List" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_38_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(67, event);" onfocus="return CKEDITOR.tools.callFunction(68, event);" onclick="CKEDITOR.tools.callFunction(69, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_38_label" class="cke_label">Insert/Remove Bulleted List</span></a></span><span class="cke_button"><a id="cke_39" class="cke_off cke_button_numberedlist" title="Insert/Remove Numbered List" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_39_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(70, event);" onfocus="return CKEDITOR.tools.callFunction(71, event);" onclick="CKEDITOR.tools.callFunction(72, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_39_label" class="cke_label">Insert/Remove Numbered List</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_40" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_41" class="cke_off cke_button_link" title="Link" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_41_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(73, event);" onfocus="return CKEDITOR.tools.callFunction(74, event);" onclick="CKEDITOR.tools.callFunction(75, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_41_label" class="cke_label">Link</span></a></span><span class="cke_button"><a aria-disabled="true" id="cke_42" class="cke_button_unlink cke_disabled" title="Unlink" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_42_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(76, event);" onfocus="return CKEDITOR.tools.callFunction(77, event);" onclick="CKEDITOR.tools.callFunction(78, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_42_label" class="cke_label">Unlink</span></a></span><span class="cke_button"><a id="cke_43" class="cke_off cke_button_image" title="Image" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_43_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(79, event);" onfocus="return CKEDITOR.tools.callFunction(80, event);" onclick="CKEDITOR.tools.callFunction(81, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_43_label" class="cke_label">Image</span></a></span><span class="cke_button"><a id="cke_44" class="cke_off cke_button_ipscode" title="Code" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_44_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(82, event);" onfocus="return CKEDITOR.tools.callFunction(83, event);" onclick="CKEDITOR.tools.callFunction(84, this); return false;"><span class="cke_icon" style="background-image:url(http://www.touchofdeathforums.com/community/public/js/3rd_party/ckeditor/plugins/ipscode/images/code.png?t=B8DJ5M3);background-position:0 0px;">&nbsp;</span><span id="cke_44_label" class="cke_label">Code</span></a></span><span class="cke_button"><a id="cke_45" class="cke_off cke_button_ipsquote" title="Quote" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_45_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(85, event);" onfocus="return CKEDITOR.tools.callFunction(86, event);" onclick="CKEDITOR.tools.callFunction(87, this); return false;"><span class="cke_icon" style="background-image:url(http://www.touchofdeathforums.com/community/public/js/3rd_party/ckeditor/plugins/ipsquote/images/quote.png?t=B8DJ5M3);background-position:0 0px;">&nbsp;</span><span id="cke_45_label" class="cke_label">Quote</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_46" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a id="cke_47" class="cke_off cke_button_ipsbbcode_twitter" title="Twitter" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_47_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(88, event);" onfocus="return CKEDITOR.tools.callFunction(89, event);" onclick="CKEDITOR.tools.callFunction(90, this); return false;"><span class="cke_icon" style="background-image:url(http://www.touchofdeathforums.com/community/public/style_extra/bbcode_icons/twitter.png?t=B8DJ5M3);background-position:0 0px;">&nbsp;</span><span id="cke_47_label" class="cke_label">Twitter</span></a></span><span class="cke_button cke_noalphafix"><a id="cke_48" class="cke_off cke_button_ipsbbcode_vb" title="vb" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_48_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(91, event);" onfocus="return CKEDITOR.tools.callFunction(92, event);" onclick="CKEDITOR.tools.callFunction(93, this); return false;"><span class="cke_icon" style="background-image:url(http://www.touchofdeathforums.com/community/public/style_extra/bbcode_icons/a?t=B8DJ5M3);background-position:0 0px;">&nbsp;</span><span id="cke_48_label" class="cke_label">vb</span></a></span></span><span class="cke_toolbar_end"></span></span><span id="cke_49" class="cke_toolbar" role="toolbar"><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><span class="cke_button"><a aria-disabled="true" id="cke_50" class="cke_button_outdent cke_disabled" title="Decrease Indent" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_50_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(94, event);" onfocus="return CKEDITOR.tools.callFunction(95, event);" onclick="CKEDITOR.tools.callFunction(96, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_50_label" class="cke_label">Decrease Indent</span></a></span><span class="cke_button"><a id="cke_51" class="cke_off cke_button_indent" title="Increase Indent" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_51_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(97, event);" onfocus="return CKEDITOR.tools.callFunction(98, event);" onclick="CKEDITOR.tools.callFunction(99, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_51_label" class="cke_label">Increase Indent</span></a></span><span class="cke_button"><a aria-pressed="true" id="cke_52" class="cke_button_justifyleft cke_on" title="Align Left" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_52_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(100, event);" onfocus="return CKEDITOR.tools.callFunction(101, event);" onclick="CKEDITOR.tools.callFunction(102, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_52_label" class="cke_label">Align Left</span></a></span><span class="cke_button"><a id="cke_53" class="cke_off cke_button_justifycenter" title="Center" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_53_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(103, event);" onfocus="return CKEDITOR.tools.callFunction(104, event);" onclick="CKEDITOR.tools.callFunction(105, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_53_label" class="cke_label">Center</span></a></span><span class="cke_button"><a id="cke_54" class="cke_off cke_button_justifyright" title="Align Right" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_54_label" onblur="this.style.cssText = this.style.cssText;" onkeydown="return CKEDITOR.tools.callFunction(106, event);" onfocus="return CKEDITOR.tools.callFunction(107, event);" onclick="CKEDITOR.tools.callFunction(108, this); return false;"><span class="cke_icon">&nbsp;</span><span id="cke_54_label" class="cke_label">Align Right</span></a></span></span><span class="cke_toolbar_end"></span></span></div><a style="" title="Collapse Toolbar" id="cke_55" tabindex="-1" class="cke_toolbox_collapser" onclick="CKEDITOR.tools.callFunction(109)"><span>▲</span></a></td></tr><tr role="presentation"><td id="cke_contents_editor_503dffeed7779" class="cke_contents" style="height: 133px; padding: 0px ! important;" role="presentation"><iframe style="width:100%;height:100%" title="Rich text editor, editor_503dffeed7779, press ALT 0 for help." src="" tabindex="2" allowtransparency="true" frameborder="0"></iframe></td></tr><tr style="-moz-user-select: none;" role="presentation"><td style="background: none repeat scroll 0% 0% transparent ! important; padding: 0px ! important;" id="cke_bottom_editor_503dffeed7779" class="cke_bottom" role="presentation"><div class="cke_resizer cke_resizer_ltr" title="Drag to resize" onmousedown="CKEDITOR.tools.callFunction(0, event)"></div></td></tr></tbody></table><style>.cke_skin_ips{visibility:hidden;}</style></span></span><span tabindex="-1" style="position:absolute;" role="presentation"></span></span>
+	<p class="desc ipsPad" style="display: none" id="editor_html_message_editor_503dffeed7779">HTML
+ mode is enabled. The rich text editor is not available while HTML is 
+enabled. You may lose some formatting when you deselect HTML mode and 
+switch back to the rich text editor.</p>
+	<script type="text/javascript">
+		ipb.textEditor.initialize('editor_503dffeed7779', { type: 'full',
+																height: 180,
+																minimize: '1',
+																bypassCKEditor: 0,
+																delayInit: 0,
+																isHtml: 0,
+																isRte: 1,
+																noSmilies: 0,
+																isTypingCallBack: ipb.topic.isTypingCallBack,
+																ips_AutoSaveKey: 'ddbddbe6962dff654f27e3f0706974e6',
+												                ips_AutoSaveData: [] } );
+	</script>
+				<br>
+				
+				<fieldset class="right" id="fast_reply_controls">
+					<input name="submit" class="input_submit" value="Post" tabindex="3" accesskey="s" id="submit_post" type="submit">&nbsp;&nbsp;<input name="preview" class="input_submit alt" value="More Reply Options" tabindex="0" id="full_compose" type="submit">			
+				</fieldset>
+			</form>
+		</div>
+		<div id="ips_HasReplies"></div>
+	</div>
+</div>
+<script type="text/javascript">
+	ipb.topic.fastReplyId	= 'editor_503dffeed7779';
+</script>
+<!-- Close topic -->
+</div>
+<!-- BOTTOM BUTTONS -->
+
+	<br>
+	<div class="clear clearfix left">
+		
+
+	<ul class="topic_share left shareButtons ipsList_inline">
+	
+		<li><a href="http://www.touchofdeathforums.com/community/index.php?sharelink=twitter;aHR0cDovL3d3dy50b3VjaG9mZGVhdGhmb3J1bXMuY29tL2NvbW11bml0eS9pbmRleC5waHA_L3RvcGljLzEyMDg4MC1wb3NzaWJsZS1idWctZml4LW5wYy1lZGl0b3ItYW5pbWF0aW9ucy8,;cG9zc2libGUgYnVnIGZpeCwgbnBjIGVkaXRvciBhbmltYXRpb25z" rel="nofollow" target="_blank" title="Share this link via Twitter" class="_slink" id="slink_twitter"><img src="bug%20fix,%20npc%20editor%20animations.php_files/twitter.png"></a></li>
+	
+
+		
+				<li class="fbLike"><div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://www.touchofdeathforums.com/community/index.php?/topic/120880-possible-bug-fix-npc-editor-animations/" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false" data-action="like"><span style="height: 20px; width: 71px;"><iframe src="bug%20fix,%20npc%20editor%20animations.php_files/like.htm" class="fb_ltr " title="Like this content on Facebook." style="border: medium none; overflow: hidden; height: 20px; width: 71px;" name="f1d535168e74218" id="f1662253ce46648" scrolling="no"></iframe></span></div><div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="bug%20fix,%20npc%20editor%20animations.php_files/xd_arbiter.htm" name="fb_xdm_frame_http" id="fb_xdm_frame_http"></iframe><iframe src="bug%20fix,%20npc%20editor%20animations.php_files/xd_arbiter_002.htm" name="fb_xdm_frame_https" id="fb_xdm_frame_https"></iframe></div><div></div></div></div></li>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+			
+	
+
+		
+				<script gapi_processed="true" type="text/javascript" src="bug%20fix,%20npc%20editor%20animations.php_files/plusone.js">
+	
+		{lang: 'en-GB'}
+	
+</script>
+<li><div class="googlePlusOne"><div id="___plusone_0" style="height: 15px; width: 24px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline;"><iframe title="+1" src="bug%20fix,%20npc%20editor%20animations.php_files/fastbutton.htm" name="I0_1346178448701" id="I0_1346178448701" vspace="0" tabindex="0" style="position: static; top: 0px; width: 24px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true" frameborder="0" scrolling="no" width="100%"></iframe></div></div></li>
+			
+	
+
+		<li><a href="http://www.touchofdeathforums.com/community/index.php?sharelink=digg;aHR0cDovL3d3dy50b3VjaG9mZGVhdGhmb3J1bXMuY29tL2NvbW11bml0eS9pbmRleC5waHA_L3RvcGljLzEyMDg4MC1wb3NzaWJsZS1idWctZml4LW5wYy1lZGl0b3ItYW5pbWF0aW9ucy8,;cG9zc2libGUgYnVnIGZpeCwgbnBjIGVkaXRvciBhbmltYXRpb25z" rel="nofollow" target="_blank" title="Share this link via Digg" class="_slink" id="slink_digg"><img src="bug%20fix,%20npc%20editor%20animations.php_files/digg.png"></a></li>
+	
+
+		<li><a href="http://www.touchofdeathforums.com/community/index.php?sharelink=delicious;aHR0cDovL3d3dy50b3VjaG9mZGVhdGhmb3J1bXMuY29tL2NvbW11bml0eS9pbmRleC5waHA_L3RvcGljLzEyMDg4MC1wb3NzaWJsZS1idWctZml4LW5wYy1lZGl0b3ItYW5pbWF0aW9ucy8,;cG9zc2libGUgYnVnIGZpeCwgbnBjIGVkaXRvciBhbmltYXRpb25z" rel="nofollow" target="_blank" title="Share this link via Del.icio.us" class="_slink" id="slink_delicious"><img src="bug%20fix,%20npc%20editor%20animations.php_files/delicious.png"></a></li>
+	
+
+		<li><a href="http://www.touchofdeathforums.com/community/index.php?sharelink=reddit;aHR0cDovL3d3dy50b3VjaG9mZGVhdGhmb3J1bXMuY29tL2NvbW11bml0eS9pbmRleC5waHA_L3RvcGljLzEyMDg4MC1wb3NzaWJsZS1idWctZml4LW5wYy1lZGl0b3ItYW5pbWF0aW9ucy8,;cG9zc2libGUgYnVnIGZpeCwgbnBjIGVkaXRvciBhbmltYXRpb25z" rel="nofollow" target="_blank" title="Share this link via Reddit" class="_slink" id="slink_reddit"><img src="bug%20fix,%20npc%20editor%20animations.php_files/reddit.png"></a></li>
+	
+
+		<li><a href="http://www.touchofdeathforums.com/community/index.php?sharelink=stumble;aHR0cDovL3d3dy50b3VjaG9mZGVhdGhmb3J1bXMuY29tL2NvbW11bml0eS9pbmRleC5waHA_L3RvcGljLzEyMDg4MC1wb3NzaWJsZS1idWctZml4LW5wYy1lZGl0b3ItYW5pbWF0aW9ucy8,;cG9zc2libGUgYnVnIGZpeCwgbnBjIGVkaXRvciBhbmltYXRpb25z" rel="nofollow" target="_blank" title="Share this link via StumbleUpon" class="_slink" id="slink_stumble"><img src="bug%20fix,%20npc%20editor%20animations.php_files/stumble.png"></a></li>
+	
+
+		<li><a href="http://www.touchofdeathforums.com/community/index.php?sharelink=email;aHR0cDovL3d3dy50b3VjaG9mZGVhdGhmb3J1bXMuY29tL2NvbW11bml0eS9pbmRleC5waHA_L3RvcGljLzEyMDg4MC1wb3NzaWJsZS1idWctZml4LW5wYy1lZGl0b3ItYW5pbWF0aW9ucy8,;cG9zc2libGUgYnVnIGZpeCwgbnBjIGVkaXRvciBhbmltYXRpb25z" rel="nofollow" target="_blank" title="Share this link via Email" class="_slink" id="slink_email"><img src="bug%20fix,%20npc%20editor%20animations.php_files/email.png"></a></li>
+	
+
+		<li><a href="http://www.touchofdeathforums.com/community/index.php?sharelink=print;aHR0cDovL3d3dy50b3VjaG9mZGVhdGhmb3J1bXMuY29tL2NvbW11bml0eS9pbmRleC5waHA_L3RvcGljLzEyMDg4MC1wb3NzaWJsZS1idWctZml4LW5wYy1lZGl0b3ItYW5pbWF0aW9ucy8,;cG9zc2libGUgYnVnIGZpeCwgbnBjIGVkaXRvciBhbmltYXRpb25z" rel="nofollow" target="_blank" title="Print" class="_slink" id="slink_print"><img src="bug%20fix,%20npc%20editor%20animations.php_files/print.png"></a></li>
+	
+
+		<li><a href="http://www.touchofdeathforums.com/community/index.php?sharelink=download;aHR0cDovL3d3dy50b3VjaG9mZGVhdGhmb3J1bXMuY29tL2NvbW11bml0eS9pbmRleC5waHA_L3RvcGljLzEyMDg4MC1wb3NzaWJsZS1idWctZml4LW5wYy1lZGl0b3ItYW5pbWF0aW9ucy8,;cG9zc2libGUgYnVnIGZpeCwgbnBjIGVkaXRvciBhbmltYXRpb25z" rel="nofollow" target="_blank" title="Download" class="_slink" id="slink_download"><img src="bug%20fix,%20npc%20editor%20animations.php_files/download.png"></a></li>
+	
+	</ul>
+	<script type="text/javascript">
+		ipb.sharelinks.url   = "http://www.touchofdeathforums.com/community/index.php?/topic/120880-possible-bug-fix-npc-editor-animations/";
+		ipb.sharelinks.title = "possible bug fix, npc editor animations";
+		ipb.sharelinks.bname = "Eclipse Community";
+	</script>
+
+	</div>
+	<br>
+
+<!-- SAME TAGGED -->
+
+<!-- ACTIVE USERS -->
+<div id="topic_stats" class="statistics clear clearfix">
+		<div id="topic_active_users" class="active_users">
+			<h4 class="statistics_head">1 user(s) are reading this topic</h4>
+			<p class="statistics_brief desc">1 members, 0 guests, 0 anonymous users</p>
+			
+				<br>
+				<ul class="ipsList_inline">
+					<a id="anonymous_element_3" hovercard-ref="member" hovercard-id="56158" class="url fn name   ___hover___member _hoversetup" href="http://www.touchofdeathforums.com/community/index.php?/user/56158-vakarieser/" title=""><span itemprop="name"><span style="color:green">vakarieser</span></span></a>
+				</ul>
+			
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="bug%20fix,%20npc%20editor%20animations.php_files/prettify.js"></script>
+	<script type="text/javascript" src="bug%20fix,%20npc%20editor%20animations.php_files/lang-sql.js"></script>
+	<!-- By default we load generic code, php, css, sql and xml/html; load others here if desired -->
+	<script type="text/javascript">
+	//<![CDATA[
+		Event.observe( window, 'load', function(e){ prettyPrint() });
+	//]]>
+	</script>
+<div id="multiQuoteInsert" style="display: none;" class="ipsFloatingAction">
+	<span class="ipsButton no_width" id="mqbutton">Reply to quoted posts</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" id="multiQuoteClear" class="ipsType_smaller desc" title="Clear the posts you have selected with MultiQuote">Clear</a> &nbsp;&nbsp;&nbsp;
+</div>
+<form id="modform" method="post" action="http://www.touchofdeathforums.com/community/index.php?">
+	<input name="app" value="forums" type="hidden">
+	<input name="module" value="moderate" type="hidden">
+	<input name="section" value="moderate" type="hidden">
+	<input name="do" value="postchoice" type="hidden">
+	<input name="f" value="76" type="hidden">
+	<input name="t" value="120880" type="hidden">
+	<input name="auth_key" value="bebd230150525e2b52ebad4aacd61915" type="hidden">
+	<input name="st" value="" type="hidden">
+	<input value="" name="selectedpidsJS" id="selectedpidsJS" type="hidden">
+	<input name="tact" id="tact" value="" type="hidden">
+</form>
+				
+					<div class="ipsAd"><center><iframe src="bug%20fix,%20npc%20editor%20animations.php_files/affiliation.htm" frameborder="0" height="181" width="740"></iframe></center></div>
+				
+				<ol class="breadcrumb bottom ipsList_inline left clearfix clear">
+Theme Designed by: Glenn van Cauter (Socuine), Coded by: Elliott Brown (Aero/EBrown)<br>
+											<li><a href="http://www.touchofdeathforums.com/community/">Eclipse Community</a></li>
+							
+						
+							<li><span class="nav_sep">→</span> <a href="http://www.touchofdeathforums.com/community/index.php?/forum/6-development/" title="Return to Development">Development</a></li>
+							
+						
+
+							<li><span class="nav_sep">→</span> <a href="http://www.touchofdeathforums.com/community/index.php?/forum/17-tutorials/" title="Return to Tutorials">Tutorials</a></li>
+							
+						
+
+							<li><span class="nav_sep">→</span> <a href="http://www.touchofdeathforums.com/community/index.php?/forum/76-source/" title="Return to Source">Source</a></li>
+							
+						
+
+					
+					<li class="right ipsType_smaller">
+						<a rel="nofollow" href="http://www.touchofdeathforums.com/community/index.php?/privacypolicy/">Privacy Policy</a>
+					</li>
+					
+						
+				</ol>
+			</div>
+			<!-- ::: FOOTER (Change skin, language, mark as read, etc) ::: -->
+			<div id="footer_utilities" class="main_width clearfix clear">
+				<a rel="nofollow" href="#top" id="backtotop" title="Go to top"><img src="bug%20fix,%20npc%20editor%20animations.php_files/top.png" alt=""></a>
+				<ul class="ipsList_inline left">
+					<li>
+						<img src="bug%20fix,%20npc%20editor%20animations.php_files/feed.png" alt="RSS Feed" id="rss_feed" class="clickable"><ul style="position: absolute; display: none; z-index: 9999; opacity: 0.0228798;" id="rss_menu" class="ipbmenu_content"><li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4-gallery/" title="Gallery">Gallery</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3-wiki/" title="Wiki">Wiki</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c1-articles/" title="Articles: Articles">Articles: Articles</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c4-pages/" title="Articles: Pages">Articles: Pages</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c5-miscellaneous/" title="Articles: Miscellaneous">Articles: Miscellaneous</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c2-forum-integration/" title="Articles: Forum Integration">Articles: Forum Integration</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c3-frontpage/" title="Articles: Frontpage">Articles: Frontpage</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c6-databases/" title="Articles: Databases">Articles: Databases</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c7-templates/" title="Articles: Templates">Articles: Templates</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/1c8-media/" title="Articles: Media">Articles: Media</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c26-sprites/" title="Gallery: Sprites">Gallery: Sprites</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c30-tiles/" title="Gallery: Tiles">Gallery: Tiles</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c31-gui/" title="Gallery: GUI">Gallery: GUI</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c32-music/" title="Gallery: Music">Gallery: Music</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c33-items/" title="Gallery: Items">Gallery: Items</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c34-spells/" title="Gallery: Spells">Gallery: Spells</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c35-other/" title="Gallery: Other">Gallery: Other</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/4c36-tools/" title="Gallery: Tools">Gallery: Tools</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/2c10-sprites/" title="Media Demo: Sprites">Media Demo: Sprites</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/2c27-tiles/" title="Media Demo: Tiles">Media Demo: Tiles</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/2c28-gui/" title="Media Demo: GUI">Media Demo: GUI</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/2c29-music/" title="Media Demo: Music">Media Demo: Music</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c15-eclipse-nightly/" title="Wiki: Eclipse Nightly">Wiki: Eclipse Nightly</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c13-event-system/" title="Wiki: Event System">Wiki: Event System</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c16-eclipse-origins/" title="Wiki: Eclipse Origins">Wiki: Eclipse Origins</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c17-visual-basic-6/" title="Wiki: Visual Basic 6">Wiki: Visual Basic 6</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c23-c/" title="Wiki: C++">Wiki: C++</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c37-eclipsenet/" title="Wiki: Eclipse.net">Wiki: Eclipse.net</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c40-website/" title="Wiki: Website">Wiki: Website</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c19-tutorials/" title="Wiki: Tutorials">Wiki: Tutorials</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c20-source-tutorials/" title="Wiki: Source Tutorials">Wiki: Source Tutorials</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c21-tutorials/" title="Wiki: Tutorials">Wiki: Tutorials</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c22-source-tutorials/" title="Wiki: Source Tutorials">Wiki: Source Tutorials</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c18-source-tutorials/" title="Wiki: Source Tutorials">Wiki: Source Tutorials</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c24-tutorials/" title="Wiki: Tutorials">Wiki: Tutorials</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c25-codebase/" title="Wiki: Codebase">Wiki: Codebase</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c38-tutorials/" title="Wiki: Tutorials">Wiki: Tutorials</a></li>
+<li style="z-index: 10000;"><a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?/rss/ccs/3c39-source-tutorials/" title="Wiki: Source Tutorials">Wiki: Source Tutorials</a></li></ul>
+					</li>
+					
+							
+								<li>
+									<a class="" rel="nofollow" id="new_skin" href="#">Change Theme</a>			
+									<ul id="new_skin_menucontent" class="ipbmenu_content with_checks" style="display: none; position: absolute; z-index: 9999; opacity: 0.0228798;">
+										
+											<li style="z-index: 10000;" class="selected">
+												<a style="z-index: 10000;" href="#" data-clicklaunch="changeSkin" data-skinid="4">Eclipse 3.1 (Import)</a>
+											</li>
+										
+
+											<li style="z-index: 10000;">
+												<a style="z-index: 10000;" href="#" data-clicklaunch="changeSkin" data-skinid="5">MLP Renewed</a>
+											</li>
+										
+
+											<li style="z-index: 10000;">
+												<a style="z-index: 10000;" href="#" data-clicklaunch="changeSkin" data-skinid="6">MLP2</a>
+											</li>
+										
+									</ul>
+								</li>
+							
+					
+					
+						<li>
+							<a class="" rel="nofollow" id="mark_all_read" href="http://www.touchofdeathforums.com/community/index.php?app=forums&amp;module=forums&amp;section=markasread&amp;marktype=all&amp;k=bebd230150525e2b52ebad4aacd61915" title="Mark all as read">Mark Community Read</a>
+							<ul id="mark_all_read_menucontent" class="ipbmenu_content" style="display: none; position: absolute; z-index: 9999; opacity: 0.0228798;">
+								
+									<li style="z-index: 10000;">
+										
+									</li>
+								
+
+									<li style="z-index: 10000;">
+										<a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=forums&amp;module=forums&amp;section=markasread&amp;marktype=app&amp;markApp=ccs&amp;k=bebd230150525e2b52ebad4aacd61915">Home</a>
+									</li>
+								
+
+									<li style="z-index: 10000;">
+										<a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=forums&amp;module=forums&amp;section=markasread&amp;marktype=app&amp;markApp=forums&amp;k=bebd230150525e2b52ebad4aacd61915">Forums</a>
+									</li>
+								
+
+									<li style="z-index: 10000;">
+										<a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=forums&amp;module=forums&amp;section=markasread&amp;marktype=app&amp;markApp=members&amp;k=bebd230150525e2b52ebad4aacd61915">Members</a>
+									</li>
+								
+
+									<li style="z-index: 10000;">
+										<a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=forums&amp;module=forums&amp;section=markasread&amp;marktype=app&amp;markApp=tracker&amp;k=bebd230150525e2b52ebad4aacd61915">Bug Tracker</a>
+									</li>
+								
+								<li style="z-index: 10000;">
+									<a style="z-index: 10000;" href="http://www.touchofdeathforums.com/community/index.php?app=forums&amp;module=forums&amp;section=markasread&amp;marktype=all&amp;k=bebd230150525e2b52ebad4aacd61915"><strong style="z-index: 10000;">Mark all as read</strong></a>
+								</li>
+							</ul>
+						</li>
+					
+					<li>
+						<a href="http://www.touchofdeathforums.com/community/index.php?app=core&amp;module=help" title="View help" rel="help" accesskey="6">Help</a>
+					</li>	
+				</ul>
+				<!-- Copyright Information -->
+        				  <p id="copyright">
+        				  	<a href="http://www.invisionpower.com/products/board/" title="Community Forum Software by Invision Power Services">Community Forum Software by IP.Board</a><br>Licensed to: Eclipse</p>
+		<!-- / Copyright -->
+			</div>
+			
+			
+			
+				<script type="text/javascript" src="bug%20fix,%20npc%20editor%20animations.php_files/lightbox.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	// Lightbox Configuration
+	LightboxOptions = Object.extend({
+	    fileLoadingImage:        'http://www.touchofdeathforums.com/community/public/style_images/eclipse31/lightbox/loading.gif',     
+	    fileBottomNavCloseImage: 'http://www.touchofdeathforums.com/community/public/style_images/eclipse31/lightbox/closelabel.gif',
+	    overlayOpacity: 0.8,   // controls transparency of shadow overlay
+	    animate: true,         // toggles resizing animations
+	    resizeSpeed: 7,        // controls the speed of the image resizing animations (1=slowest and 10=fastest)
+	    borderSize: 10,         //if you adjust the padding in the CSS, you will need to update this variable
+		// When grouping images this is used to write: Image # of #.
+		// Change it for non-english localization
+		labelImage: "Image",
+		labelOf: "of"
+	}, window.LightboxOptions || {});
+/* Watch for a lightbox image and set up our downloadbutton watcher */
+document.observe('click', (function(event){
+    var target = event.findElement('a[rel*="lightbox"]') || event.findElement('area[rel*="lightbox"]') || event.findElement('span[rel*="lightbox"]');
+    if (target) {
+        event.stop();
+        gbl_addDownloadButton();
+    }
+}).bind(this));
+var _to    = '';
+var _last  = '';
+function gbl_addDownloadButton()
+{
+	if ( typeof( ipsLightbox.lightboxImage ) != 'undefined' && ipsLightbox.lightboxImage.src )
+	{
+		if ( _last != ipsLightbox.lightboxImage.src )
+		{
+			if ( ! $('gbl_d') )
+			{
+				$('bottomNav').insert( { top: "<div id='gbl_d' style='text-align:right;padding-bottom:4px;'></div>" } );
+			}
+			
+			$('gbl_d').update( "<a href='"+ ipsLightbox.lightboxImage.src + "' target='_blank'><img src='http://www.touchofdeathforums.com/community/public/style_images/eclipse31/lightbox/download-icon.png' /></a>" );
+			
+			_last = ipsLightbox.lightboxImage.src;
+		}
+	}
+	
+	/* Check for init and then keep checking for new image */
+	_to = setTimeout( "gbl_addDownloadButton()", 1000 );
+}
+//]]>
+</script>
+			
+			
+		</div>
+		
+		
+	
+<div style="display: none;" id="overlay"></div><div style="display: none;" id="lightbox"><div style="width: 250px; height: 250px;" id="outerImageContainer"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="#"></a><a id="nextLink" href="#"></a></div><div id="loading"><a id="loadingLink" href="#"><img src="bug%20fix,%20npc%20editor%20animations.php_files/loading.gif"></a></div></div></div><div id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="#"><img src="bug%20fix,%20npc%20editor%20animations.php_files/closelabel.gif"></a></div></div></div></div></body></html>

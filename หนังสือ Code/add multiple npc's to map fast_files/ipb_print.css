@@ -1,0 +1,288 @@
+* {
+	FONT-FAMILY: Georgia, "Times New Roman", serif
+}
+HTML #content {
+	FONT-SIZE: 10pt
+}
+H1 {
+	MARGIN: 0px
+}
+OL {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+UL {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+.pagination .back {
+	DISPLAY: none
+}
+.pagination .forward {
+	DISPLAY: none
+}
+.pagination .pages {
+	PADDING-LEFT: 0px
+}
+.pagination A {
+	COLOR: gray; TEXT-DECORATION: none
+}
+#admin_bar {
+	DISPLAY: none
+}
+#header {
+	DISPLAY: none
+}
+#footer_utilities {
+	DISPLAY: none
+}
+#utility_links {
+	DISPLAY: none
+}
+.post_mod {
+	DISPLAY: none
+}
+.author_info {
+	DISPLAY: none
+}
+.rep_bar {
+	DISPLAY: none
+}
+.post_controls {
+	DISPLAY: none
+}
+.top {
+	DISPLAY: none
+}
+#content_jump {
+	DISPLAY: none
+}
+.topic_buttons {
+	DISPLAY: none
+}
+.topic_options {
+	DISPLAY: none
+}
+.post_id {
+	DISPLAY: none
+}
+H3 IMG {
+	DISPLAY: none
+}
+.ip {
+	DISPLAY: none
+}
+HR {
+	DISPLAY: none
+}
+.moderation_bar {
+	DISPLAY: none
+}
+.topic_jump {
+	DISPLAY: none
+}
+.topic_share {
+	DISPLAY: none
+}
+#fast_reply {
+	DISPLAY: none
+}
+#reputation_filter {
+	DISPLAY: none
+}
+.statistics {
+	DISPLAY: none
+}
+.rating {
+	DISPLAY: none
+}
+.message {
+	DISPLAY: none
+}
+#debug_wrapper {
+	DISPLAY: none
+}
+FIELDSET {
+	DISPLAY: none
+}
+.signature {
+	DISPLAY: none
+}
+.ipsUserPhotoLink {
+	DISPLAY: none
+}
+.maintitle {
+	DISPLAY: none
+}
+.__like {
+	DISPLAY: none
+}
+#logo {
+	DISPLAY: none
+}
+#header_bar {
+	DISPLAY: none
+}
+#community_app_menu {
+	DISPLAY: none
+}
+.ipsLikeButton {
+	DISPLAY: none
+}
+.ipsLikeBar {
+	DISPLAY: none
+}
+#fast_reply_wrapper {
+	DISPLAY: none
+}
+.breadcrumb .right {
+	DISPLAY: none
+}
+.nexusad {
+	DISPLAY: none
+}
+#ipsDebug_footer {
+	DISPLAY: none
+}
+LI.page {
+	DISPLAY: none
+}
+LI.next {
+	DISPLAY: none
+}
+LI.prev {
+	DISPLAY: none
+}
+LI.last {
+	DISPLAY: none
+}
+LI.first {
+	DISPLAY: none
+}
+.ipsButton {
+	DISPLAY: none
+}
+.ipsButton_secondary {
+	DISPLAY: none
+}
+#profile_photo {
+	DISPLAY: none
+}
+.ipsVerticalTabbed_tabs {
+	DISPLAY: none
+}
+.ipsUserPhotoLink {
+	DISPLAY: inline-block
+}
+.ipsUserPhoto_large {
+	WIDTH: 90px; HEIGHT: 90px
+}
+.ipsUserPhoto_medium {
+	WIDTH: 50px; HEIGHT: 50px
+}
+.ipsUserPhoto_mini {
+	WIDTH: 30px; HEIGHT: 30px
+}
+.ipsUserPhoto_tiny {
+	WIDTH: 20px; HEIGHT: 20px
+}
+.breadcrumb {
+	PADDING-LEFT: 0px; DISPLAY: block !important; CLEAR: both
+}
+.breadcrumb LI {
+	FLOAT: left
+}
+.breadcrumb:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.breadcrumb A {
+	COLOR: gray; TEXT-DECORATION: none
+}
+.breadcrumb {
+	COLOR: gray; TEXT-DECORATION: none
+}
+.breadcrumb .nav_sep {
+	MARGIN: 0px 5px
+}
+.topic {
+	CLEAR: both
+}
+.hfeed {
+	CLEAR: both
+}
+.post_block {
+	POSITION: relative; LINE-HEIGHT: 60%; MARGIN-BOTTOM: 10pt; BORDER-TOP: gray 2pt solid; PADDING-TOP: 10px
+}
+.posted_info {
+	POSITION: absolute; PADDING-BOTTOM: 3px; COLOR: gray !important; FONT-SIZE: 8pt !important; TOP: 3px; RIGHT: 0px; TEXT-DECORATION: none !important
+}
+.post_block H3 {
+	PADDING-BOTTOM: 0px !important; LINE-HEIGHT: 11pt; MARGIN: 0px 0px 10px; PADDING-LEFT: 0px !important; PADDING-RIGHT: 0px !important; DISPLAY: inline !important; FONT-SIZE: 11pt; PADDING-TOP: 0px !important
+}
+.post_block H3 A {
+	FONT-STYLE: normal !important; COLOR: black !important; TEXT-DECORATION: none !important
+}
+.post_block .post_body A:after {
+	CONTENT: " (" attr(href) ") "
+}
+.post_block A.snapback {
+	DISPLAY: none
+}
+P.citation {
+	FONT-STYLE: italic; MARGIN: 0px; COLOR: #7b7b7b
+}
+P.citation {
+	BORDER-LEFT: #b4b4b4 8px solid; PADDING-LEFT: 10px
+}
+DIV.blockquote {
+	BORDER-LEFT: #b4b4b4 8px solid; PADDING-LEFT: 10px
+}
+.post_body {
+	PADDING-BOTTOM: 10px; LINE-HEIGHT: 100%; MARGIN-TOP: 15px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; CLEAR: both; BORDER-TOP: #d3d3d3 1pt solid; PADDING-TOP: 10px
+}
+H1 {
+	FONT-WEIGHT: bold
+}
+H2 {
+	FONT-WEIGHT: bold
+}
+H3 {
+	FONT-WEIGHT: bold
+}
+#copyright {
+	TEXT-ALIGN: center; COLOR: gray; FONT-SIZE: 9pt
+}
+A IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+ABBR.published {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; TEXT-DECORATION: none !important
+}
+.post {
+	LINE-HEIGHT: 1.5
+}
+.ipsTag {
+	FONT-STYLE: italic; COLOR: gray; TEXT-DECORATION: none
+}
+.ipsTag:after {
+	CONTENT: ","
+}
+.clearfix.ipsComment {
+	CLEAR: both
+}
+.ipsComment_author {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.3; PADDING-LEFT: 10px; WIDTH: 160px; PADDING-RIGHT: 10px; FLOAT: left; PADDING-TOP: 0px
+}
+.ipsComment_comment {
+	LINE-HEIGHT: 1.5; MARGIN-LEFT: 190px
+}
+.ipsComment_author .blend_links {
+	DISPLAY: none
+}
+.ipsComment_comment .ipsComment_controls {
+	DISPLAY: none
+}
+.navigation {
+	PADDING-BOTTOM: 10px; MARGIN: 0px auto; PADDING-LEFT: 10px; WIDTH: 960px; PADDING-RIGHT: 10px; BACKGROUND: #fff; HEIGHT: 30px; PADDING-TOP: 10px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px
+}
+.thead {
+	BORDER-BOTTOM: #bababa 1px solid; FILTER: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#bababa',GradientType=0 ); BORDER-LEFT: #bababa 1px solid; WIDTH: auto; BACKGROUND: #ededed; FLOAT: left; HEIGHT: 35px; BORDER-TOP: #bababa 1px solid; BORDER-RIGHT: #bababa 1px solid; box-shadow: inset 0px 1px 0px #FFF
+}

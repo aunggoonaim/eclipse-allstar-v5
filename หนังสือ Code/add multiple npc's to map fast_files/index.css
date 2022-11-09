@@ -1,0 +1,3257 @@
+.calendar_date_select {
+	Z-INDEX: 1000; BORDER-BOTTOM: #777 1px solid; BORDER-LEFT: #777 1px solid; WIDTH: 195px; DISPLAY: block; COLOR: white; BORDER-TOP: #777 1px solid; BORDER-RIGHT: #777 1px solid
+}
+IFRAME.ie6_blocker {
+	Z-INDEX: 999; POSITION: absolute
+}
+.calendar_date_select THEAD TH {
+	BORDER-BOTTOM: #777 1px solid; BACKGROUND-COLOR: #aaa; COLOR: white !important; BORDER-TOP: #777 1px solid; FONT-WEIGHT: bold
+}
+.calendar_date_select .cds_buttons {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #555; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+.calendar_date_select .cds_footer {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: black; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-SIZE: 12px; PADDING-TOP: 3px
+}
+.calendar_date_select TABLE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.calendar_date_select .cds_header {
+	BORDER-BOTTOM: #aaa 2px solid; TEXT-ALIGN: center; BACKGROUND-COLOR: #ccc
+}
+.calendar_date_select .cds_header SPAN {
+	COLOR: black; FONT-SIZE: 15px; FONT-WEIGHT: bold
+}
+.calendar_date_select SELECT {
+	FONT-SIZE: 11px
+}
+.calendar_date_select .cds_header A:hover {
+	COLOR: white
+}
+.calendar_date_select .cds_header A {
+	WIDTH: 22px; HEIGHT: 20px; COLOR: black !important; FONT-SIZE: 14px; TEXT-DECORATION: none
+}
+.calendar_date_select .cds_header A.prev {
+	FLOAT: left
+}
+.calendar_date_select .cds_header A.next {
+	FLOAT: right
+}
+.calendar_date_select .cds_header A.close {
+	DISPLAY: none; FLOAT: right
+}
+.calendar_date_select .cds_header SELECT.month {
+	WIDTH: 90px
+}
+.calendar_date_select .cds_header SELECT.year {
+	WIDTH: 61px
+}
+.calendar_date_select .cds_buttons A {
+	COLOR: white; FONT-SIZE: 9px
+}
+.calendar_date_select TD {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #fff; WIDTH: 24px; HEIGHT: 21px; FONT-SIZE: 12px; VERTICAL-ALIGN: middle
+}
+.calendar_date_select TD.weekend {
+	BORDER-LEFT: #ddd 1px solid; BACKGROUND-COLOR: #eee; BORDER-RIGHT: #ddd 1px solid
+}
+.calendar_date_select TD DIV {
+	COLOR: #000
+}
+.calendar_date_select TD DIV.other {
+	COLOR: #ccc
+}
+.calendar_date_select TD.selected DIV {
+	COLOR: white
+}
+.calendar_date_select TBODY TD {
+	BORDER-BOTTOM: #ddd 1px solid
+}
+.calendar_date_select TD.selected {
+	BACKGROUND-COLOR: #777
+}
+.calendar_date_select TD:hover {
+	BACKGROUND-COLOR: #ccc
+}
+.calendar_date_select TD.today {
+	BORDER-BOTTOM: #999 1px dashed; BORDER-LEFT: #999 1px dashed; BORDER-TOP: #999 1px dashed; BORDER-RIGHT: #999 1px dashed
+}
+.calendar_date_select TD.disabled DIV {
+	COLOR: #e6e6e6
+}
+.fieldWithErrors .calendar_date_select {
+	BORDER-BOTTOM: red 2px solid; BORDER-LEFT: red 2px solid; BORDER-TOP: red 2px solid; BORDER-RIGHT: red 2px solid
+}
+#lightbox {
+	Z-INDEX: 16000 !important; POSITION: absolute; TEXT-ALIGN: center; LINE-HEIGHT: 0; WIDTH: 100%; LEFT: 0px
+}
+#lightbox IMG {
+	WIDTH: auto; HEIGHT: auto
+}
+#lightbox A IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#outerImageContainer {
+	POSITION: relative; BACKGROUND-COLOR: #fff; MARGIN: 0px auto; WIDTH: 250px; HEIGHT: 250px
+}
+#imageContainer {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+#loading {
+	POSITION: absolute; TEXT-ALIGN: center; LINE-HEIGHT: 0; WIDTH: 100%; HEIGHT: 25%; TOP: 40%; LEFT: 0%
+}
+#hoverNav {
+	Z-INDEX: 10; POSITION: absolute; WIDTH: 100%; HEIGHT: 100%; TOP: 0px; LEFT: 0px
+}
+#imageContainer > #hoverNav {
+	LEFT: 0px
+}
+#hoverNav A {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+#prevLink {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/spacer.gif); WIDTH: 49%; DISPLAY: block; HEIGHT: 100%
+}
+#nextLink {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/spacer.gif); WIDTH: 49%; DISPLAY: block; HEIGHT: 100%
+}
+#prevLink {
+	FLOAT: left; LEFT: 0px
+}
+#nextLink {
+	FLOAT: right; RIGHT: 0px
+}
+#prevLink:hover {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/lightbox/prevlabel.gif) no-repeat left 15%
+}
+#prevLink:hover:visited {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/lightbox/prevlabel.gif) no-repeat left 15%
+}
+#nextLink:hover {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/lightbox/nextlabel.gif) no-repeat right 15%
+}
+#nextLink:hover:visited {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/lightbox/nextlabel.gif) no-repeat right 15%
+}
+#imageDataContainer {
+	BACKGROUND-COLOR: #fff; MARGIN: 0px auto; WIDTH: 100%; FONT: 10px/1.4em Verdana, Helvetica, sans-serif; OVERFLOW: auto
+}
+#imageData {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #666; PADDING-TOP: 0px
+}
+#imageData #imageDetails {
+	TEXT-ALIGN: left; WIDTH: 70%; FLOAT: left
+}
+#imageData #caption {
+	FONT-WEIGHT: bold
+}
+#imageData #numberDisplay {
+	PADDING-BOTTOM: 1em; DISPLAY: block; CLEAR: left
+}
+#imageData #bottomNavClose {
+	PADDING-BOTTOM: 0.7em; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 66px; FLOAT: right
+}
+#overlay {
+	Z-INDEX: 15000 !important; POSITION: fixed; BACKGROUND-COLOR: #000; WIDTH: 100%; HEIGHT: 500px; TOP: 0px; LEFT: 0px
+}
+STRONG.bbc {
+	FONT-WEIGHT: bold !important
+}
+EM.bbc {
+	FONT-STYLE: italic !important
+}
+SPAN.bbc_underline {
+	TEXT-DECORATION: underline !important
+}
+ACRONYM.bbc {
+	BORDER-BOTTOM: #000 1px dotted
+}
+SPAN.bbc_center {
+	TEXT-ALIGN: center; DISPLAY: block
+}
+DIV.bbc_center {
+	TEXT-ALIGN: center; DISPLAY: block
+}
+P.bbc_center {
+	TEXT-ALIGN: center; DISPLAY: block
+}
+SPAN.bbc_left {
+	TEXT-ALIGN: left; DISPLAY: block
+}
+DIV.bbc_left {
+	TEXT-ALIGN: left; DISPLAY: block
+}
+P.bbc_left {
+	TEXT-ALIGN: left; DISPLAY: block
+}
+SPAN.bbc_right {
+	TEXT-ALIGN: right; DISPLAY: block
+}
+DIV.bbc_right {
+	TEXT-ALIGN: right; DISPLAY: block
+}
+P.bbc_right {
+	TEXT-ALIGN: right; DISPLAY: block
+}
+DIV.bbc_indent {
+	MARGIN-LEFT: 50px
+}
+DEL.bbc {
+	TEXT-DECORATION: line-through !important
+}
+.entry-content.post UL {
+	LIST-STYLE-POSITION: outside; LIST-STYLE-TYPE: disc; MARGIN: 12px 0px 12px 40px
+}
+UL.bbc {
+	LIST-STYLE-POSITION: outside; LIST-STYLE-TYPE: disc; MARGIN: 12px 0px 12px 40px
+}
+.entry-content.post UL {
+	LIST-STYLE-TYPE: circle
+}
+UL.bbc UL.bbc {
+	LIST-STYLE-TYPE: circle
+}
+.entry-content.post UL {
+	LIST-STYLE-TYPE: square
+}
+UL.bbc UL.bbc UL.bbc {
+	LIST-STYLE-TYPE: square
+}
+.entry-content.post UL.decimal {
+	LIST-STYLE-TYPE: decimal; MARGIN: 12px 0px 12px 40px
+}
+UL.decimal.bbcol {
+	LIST-STYLE-TYPE: decimal; MARGIN: 12px 0px 12px 40px
+}
+.entry-content.post UL.lower-alpha {
+	LIST-STYLE-TYPE: lower-alpha; MARGIN-LEFT: 40px
+}
+UL.lower-alpha.bbcol {
+	LIST-STYLE-TYPE: lower-alpha; MARGIN-LEFT: 40px
+}
+.entry-content.post UL.upper-alpha {
+	LIST-STYLE-TYPE: upper-alpha; MARGIN-LEFT: 40px
+}
+UL.upper-alpha.bbcol {
+	LIST-STYLE-TYPE: upper-alpha; MARGIN-LEFT: 40px
+}
+.entry-content.post UL.lower-roman {
+	LIST-STYLE-TYPE: lower-roman; MARGIN-LEFT: 40px
+}
+UL.lower-roman.bbcol {
+	LIST-STYLE-TYPE: lower-roman; MARGIN-LEFT: 40px
+}
+.entry-content.post UL.upper-roman {
+	LIST-STYLE-TYPE: upper-roman; MARGIN-LEFT: 40px
+}
+UL.upper-roman.bbcol {
+	LIST-STYLE-TYPE: upper-roman; MARGIN-LEFT: 40px
+}
+HR.bbc {
+	DISPLAY: block; BORDER-TOP: #777 2px solid
+}
+DIV.bbc_spoiler {
+	
+}
+DIV.bbc_spoiler SPAN.spoiler_title {
+	FONT-WEIGHT: bold
+}
+DIV.bbc_spoiler_wrapper {
+	BORDER-BOTTOM: #777 1px inset; BORDER-LEFT: #777 1px inset; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BORDER-TOP: #777 1px inset; BORDER-RIGHT: #777 1px inset; PADDING-TOP: 4px
+}
+DIV.bbc_spoiler_content {
+	
+}
+INPUT.bbc_spoiler_show {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 45px; PADDING-RIGHT: 0px; FONT-SIZE: 0.7em; PADDING-TOP: 0px
+}
+PRE.prettyprint {
+	BORDER-BOTTOM: #c9c9c9 1px solid; BORDER-LEFT: #c9c9c9 1px solid; PADDING-BOTTOM: 5px; LINE-HEIGHT: 140%; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f8f8f8; MARGIN-LEFT: 10px; FONT-SIZE: 11px; OVERFLOW: auto; BORDER-TOP: #c9c9c9 1px solid; BORDER-RIGHT: #c9c9c9 1px solid; PADDING-TOP: 5px
+}
+IMG.bbc_img {
+	CURSOR: pointer
+}
+.signature IMG.bbc_img {
+	CURSOR: default
+}
+.signature A IMG.bbc_img {
+	CURSOR: pointer
+}
+P.citation {
+	BORDER-LEFT: #989898 2px solid; PADDING-BOTTOM: 8px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #f6f6f6; FONT-SIZE: 12px; BORDER-TOP: #e5e5e5 2px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #e5e5e5 2px solid; PADDING-TOP: 8px; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0
+}
+DIV.blockquote {
+	BORDER-BOTTOM: #e5e5e5 2px solid; BORDER-LEFT: #989898 2px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #f7f7f7; FONT-SIZE: 12px; BORDER-RIGHT: #e5e5e5 2px solid; PADDING-TOP: 10px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px
+}
+DIV.blockquote DIV.blockquote {
+	MARGIN: 0px 10px 0px 0px
+}
+DIV.blockquote P.citation {
+	MARGIN: 6px 10px 0px 0px
+}
+._sharedMediaBbcode {
+	BORDER-BOTTOM: #dbdbdb 1px solid; BORDER-LEFT: #dbdbdb 1px solid; PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; WIDTH: 500px; PADDING-RIGHT: 15px; DISPLAY: inline-block; MARGIN-BOTTOM: 5px; BACKGROUND: #f6f6f6; COLOR: #616161; BORDER-TOP: #dbdbdb 1px solid; MARGIN-RIGHT: 15px; BORDER-RIGHT: #dbdbdb 1px solid; PADDING-TOP: 15px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0px 1px 3px rgba(255, 255, 255, 1) inset, 0px 1px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 1px 3px rgba(255, 255, 255, 1) inset, 0px 1px 1px rgba(0, 0, 0, 0.2); box-shadow: 0px 1px 3px rgba(255, 255, 255, 1) inset, 0px 1px 2px rgba(0, 0, 0, 0.2)
+}
+.bbcode_mediaWrap .details {
+	LINE-HEIGHT: 1.5; COLOR: #616161; MARGIN-LEFT: 95px; FONT-SIZE: 12px
+}
+.bbcode_mediaWrap .details A {
+	COLOR: #616161; TEXT-DECORATION: none
+}
+.bbcode_mediaWrap .details H5 {
+	FONT: 400 20px/1.3 "Helvetica Neue", Helvetica, Arial, sans-serif; MAX-WIDTH: 420px; WORD-WRAP: break-word; COLOR: #2c2c2c
+}
+.bbcode_mediaWrap .details H5 A {
+	FONT: 400 20px/1.3 "Helvetica Neue", Helvetica, Arial, sans-serif; MAX-WIDTH: 420px; WORD-WRAP: break-word; COLOR: #2c2c2c
+}
+.bbcode_mediaWrap IMG.sharedmedia_image {
+	POSITION: relative; MAX-WIDTH: 80px; FLOAT: left
+}
+.bbcode_mediaWrap IMG.sharedmedia_screenshot {
+	POSITION: relative; MAX-WIDTH: 80px; FLOAT: left
+}
+.cke_button_ipsmedia SPAN.cke_label {
+	DISPLAY: inline !important
+}
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+PRE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TEXTAREA {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BLOCKQUOTE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TH {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TABLE {
+	BORDER-SPACING: 0; BORDER-COLLAPSE: collapse
+}
+FIELDSET {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+ADDRESS {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CAPTION {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CITE {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CODE {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+DFN {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+TH {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+VAR {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+OL {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+UL {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+CAPTION {
+	TEXT-ALIGN: left
+}
+TH {
+	TEXT-ALIGN: left
+}
+H1 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H2 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H3 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H4 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H5 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+H6 {
+	FONT-SIZE: 100%; FONT-WEIGHT: normal
+}
+Q:before {
+	CONTENT: ''
+}
+Q:after {
+	CONTENT: ''
+}
+ABBR {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+ACRONYM {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+HR {
+	DISPLAY: none
+}
+ADDRESS {
+	DISPLAY: inline
+}
+HTML {
+	BACKGROUND: url(http://www.burstingforce.com/eclipse/img/bg-1.png) #2e2e2e; COLOR: #5a5a5a
+}
+BODY {
+	BACKGROUND: url(http://www.burstingforce.com/eclipse/img/bg-1.png) #2e2e2e; COLOR: #5a5a5a
+}
+BODY {
+	POSITION: relative; FONT: 13px helvetica, arial, sans-serif
+}
+INPUT {
+	FONT: 13px helvetica, arial, sans-serif
+}
+SELECT {
+	FONT: 13px helvetica, arial, sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold
+}
+STRONG {
+	FONT-WEIGHT: bold
+}
+EM {
+	FONT-STYLE: italic
+}
+IMG {
+	VERTICAL-ALIGN: middle
+}
+.input_check {
+	VERTICAL-ALIGN: middle
+}
+.input_radio {
+	VERTICAL-ALIGN: middle
+}
+LEGEND {
+	DISPLAY: none
+}
+TABLE {
+	WIDTH: 100%
+}
+TD {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+A {
+	COLOR: #225985; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #328586
+}
+.ipsList_inline > LI {
+	MARGIN: 0px 3px; DISPLAY: inline-block
+}
+.ipsList_inline > LI:first-child {
+	MARGIN-LEFT: 0px
+}
+.ipsList_reset.ipsList_inline > LI:first-child {
+	MARGIN-LEFT: 3px
+}
+.ipsList_nowrap.ipsList_inline {
+	WHITE-SPACE: nowrap
+}
+.ipsList_withminiphoto > LI {
+	MARGIN-BOTTOM: 8px
+}
+.ipsList_withmediumphoto > LI .list_content {
+	MARGIN-LEFT: 60px
+}
+.ipsList_withminiphoto > LI .list_content {
+	MARGIN-LEFT: 40px
+}
+.ipsList_withtinyphoto > LI .list_content {
+	MARGIN-LEFT: 30px
+}
+.list_content {
+	WORD-WRAP: break-word
+}
+.ipsList_data LI {
+	LINE-HEIGHT: 1.3; MARGIN-BOTTOM: 6px
+}
+.ipsList_data .row_data {
+	DISPLAY: inline-block; MAX-WIDTH: 100%; WORD-WRAP: break-word
+}
+.ipsList_data .row_title {
+	TEXT-ALIGN: right; WIDTH: 120px; PADDING-RIGHT: 10px; DISPLAY: inline-block; FLOAT: left; FONT-WEIGHT: bold
+}
+.ipsList_data .ft {
+	TEXT-ALIGN: right; WIDTH: 120px; PADDING-RIGHT: 10px; DISPLAY: inline-block; FLOAT: left; FONT-WEIGHT: bold
+}
+.ipsList_data_thin.ipsList_data .row_title {
+	WIDTH: 80px
+}
+.ipsList_data_thin.ipsList_data .ft {
+	WIDTH: 80px
+}
+.ipsType_pagetitle {
+	FONT: 300 26px/1.3 Helvetica, Arial, sans-serif; COLOR: #323232
+}
+.ipsType_subtitle {
+	FONT: 300 26px/1.3 Helvetica, Arial, sans-serif; COLOR: #323232
+}
+.ipsType_subtitle {
+	FONT-SIZE: 18px
+}
+.ipsType_sectiontitle {
+	BORDER-BOTTOM: #ececec 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #595959; FONT-SIZE: 16px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.ipsType_pagedesc {
+	LINE-HEIGHT: 1.5; COLOR: #7f7f7f
+}
+.ipsType_pagedesc A {
+	TEXT-DECORATION: underline
+}
+.ipsType_textblock {
+	LINE-HEIGHT: 1.5; COLOR: #282828
+}
+.ipsType_small {
+	FONT-SIZE: 12px
+}
+.ipsType_smaller {
+	FONT-SIZE: 11px !important
+}
+.ipsType_smaller A {
+	FONT-SIZE: 11px !important
+}
+.ipsReset {
+	PADDING-BOTTOM: 0px !important; MARGIN: 0px; PADDING-LEFT: 0px !important; PADDING-RIGHT: 0px !important; PADDING-TOP: 0px !important
+}
+#content {
+	MIN-WIDTH: 960px; MARGIN: 0px auto; WIDTH: 960px
+}
+.main_width {
+	MIN-WIDTH: 960px; MARGIN: 0px auto; WIDTH: 960px
+}
+#branding {
+	MIN-WIDTH: 980px
+}
+#header_bar {
+	MIN-WIDTH: 980px
+}
+#primary_nav {
+	MIN-WIDTH: 980px
+}
+#content {
+	PADDING-BOTTOM: 10px; LINE-HEIGHT: 120%; MARGIN: 10px auto 0px; PADDING-LEFT: 10px; WIDTH: 960px; PADDING-RIGHT: 10px; BACKGROUND: #fff; PADDING-TOP: 10px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1); box-shadow: 0px 1px 1px 0px #1d1d1d
+}
+.row1 {
+	BACKGROUND-COLOR: #fff
+}
+.row1.post_block {
+	BACKGROUND-COLOR: #fff
+}
+.row2 {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.row2.post_block {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.unread {
+	BACKGROUND-COLOR: #f7fbfc
+}
+.unread .altrow {
+	BACKGROUND-COLOR: #e2e9f0
+}
+.altrow.unread {
+	BACKGROUND-COLOR: #e2e9f0
+}
+.highlighted {
+	BACKGROUND-COLOR: #d6e4f0
+}
+.highlighted .altrow {
+	BACKGROUND-COLOR: #d6e4f0
+}
+.ipsBox {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: white; PADDING-TOP: 0px
+}
+.ipsBox_notice {
+	BORDER-BOTTOM: #cae9f5 1px solid; BACKGROUND: #f4fcff
+}
+.ipsBox_highlight {
+	BORDER-BOTTOM: #cae9f5 1px solid; BACKGROUND: #f4fcff
+}
+A.ipsBadge:hover {
+	COLOR: #fff
+}
+.ipsBadge_green {
+	BACKGROUND: #7ba60d
+}
+.ipsBadge_purple {
+	BACKGROUND: #af286d
+}
+.ipsBadge_grey {
+	BACKGROUND: #5b5b5b
+}
+.ipsBadge_lightgrey {
+	BACKGROUND: #b3b3b3
+}
+.ipsBadge_orange {
+	BACKGROUND: #ed7710
+}
+.ipsBadge_red {
+	BACKGROUND: #bf1d00
+}
+.bar {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #eff4f7; PADDING-TOP: 8px
+}
+.altbar.bar {
+	BACKGROUND: #b6c7db; COLOR: #1d3652
+}
+.header {
+	BACKGROUND: #b6c7db; COLOR: #1d3652
+}
+BODY .ipb_table .header A {
+	COLOR: #1d3652
+}
+BODY .topic_options A {
+	COLOR: #1d3652
+}
+.post_block {
+	BORDER-BOTTOM: #d6e2eb 1px solid; BACKGROUND: #fff
+}
+.post_body .post {
+	COLOR: #282828
+}
+.bbc_url {
+	COLOR: #0f72da; TEXT-DECORATION: underline
+}
+.bbc_email {
+	COLOR: #0f72da; TEXT-DECORATION: underline
+}
+.date {
+	COLOR: #747474; FONT-SIZE: 11px
+}
+.poll_question .votes {
+	COLOR: #747474; FONT-SIZE: 11px
+}
+.no_messages {
+	PADDING-BOTTOM: 15px; BACKGROUND-COLOR: #f6f8fa; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #1c2837; PADDING-TOP: 15px
+}
+.tab_bar {
+	BACKGROUND-COLOR: #e4ebf2; COLOR: #4a6784
+}
+.tab_bar LI.active {
+	BACKGROUND-COLOR: #243f5c; COLOR: #fff
+}
+.mini.no_title.tab_bar {
+	BORDER-BOTTOM: #243f5c 8px solid
+}
+.ipbmenu_content {
+	BORDER-BOTTOM: #d5dde5 1px solid; BORDER-LEFT: #d5dde5 1px solid; BACKGROUND-COLOR: #f7f9fb; BORDER-TOP: #d5dde5 1px solid; BORDER-RIGHT: #d5dde5 1px solid; -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 6px; box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 6px
+}
+.ipb_autocomplete {
+	BORDER-BOTTOM: #d5dde5 1px solid; BORDER-LEFT: #d5dde5 1px solid; BACKGROUND-COLOR: #f7f9fb; BORDER-TOP: #d5dde5 1px solid; BORDER-RIGHT: #d5dde5 1px solid; -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 6px; box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 6px
+}
+.ipbmenu_content LI {
+	BORDER-BOTTOM: #d5dde5 1px solid
+}
+.ipb_autocomplete LI {
+	BORDER-BOTTOM: #d5dde5 1px solid
+}
+.ipb_autocomplete LI.active {
+	BACKGROUND: #d5dde5
+}
+.ipbmenu_content A:hover {
+	BACKGROUND: #d5dde5
+}
+.input_submit {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit.png); BORDER-BOTTOM-COLOR: #80ae1b; BORDER-TOP-COLOR: #80ae1b; COLOR: #fff; BORDER-RIGHT-COLOR: #80ae1b; MARGIN-LEFT: 3px; BORDER-LEFT-COLOR: #80ae1b; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #cae33e; -webkit-box-shadow: inset 0 1px 0 0 #cae33e; box-shadow: inset 0 1px 0 0 #cae33e
+}
+.input_submit:hover {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit_hover.png); BORDER-BOTTOM-COLOR: #000; BORDER-TOP-COLOR: #000; COLOR: #fff; BORDER-RIGHT-COLOR: #000; BORDER-LEFT-COLOR: #000; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #535353; -webkit-box-shadow: inset 0 1px 0 0 #535353; box-shadow: inset 0 1px 0 0 #535353
+}
+.alt.input_submit {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit.png); BORDER-BOTTOM-COLOR: #80ae1b; BORDER-TOP-COLOR: #80ae1b; COLOR: #fff; BORDER-RIGHT-COLOR: #80ae1b; MARGIN-LEFT: 3px; BORDER-LEFT-COLOR: #80ae1b; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #cae33e; -webkit-box-shadow: inset 0 1px 0 0 #cae33e; box-shadow: inset 0 1px 0 0 #cae33e
+}
+.alt.input_submit:hover {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit_hover.png); BORDER-BOTTOM-COLOR: #0f0f0f; BORDER-TOP-COLOR: #0f0f0f; COLOR: #fff; BORDER-RIGHT-COLOR: #0f0f0f; BORDER-LEFT-COLOR: #0f0f0f; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #535353; -webkit-box-shadow: inset 0 1px 0 0 #535353; box-shadow: inset 0 1px 0 0 #535353
+}
+.delete.input_submit {
+	BORDER-BOTTOM-COLOR: #962d29; BORDER-TOP-COLOR: #c8a5a4; BACKGROUND: #ad2930; COLOR: #fff; BORDER-RIGHT-COLOR: #962d29; BORDER-LEFT-COLOR: #c8a5a4; -moz-box-shadow: inset 0 1px 0 0 #C8A5A4, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #C8A5A4, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #C8A5A4, 0px 2px 3px rgba(0, 0, 0, 0.2)
+}
+.delete.input_submit:hover {
+	COLOR: #fff
+}
+BODY#ipboard_body FIELDSET.submit {
+	BACKGROUND-COLOR: #d1ddea
+}
+BODY#ipboard_body P.submit {
+	BACKGROUND-COLOR: #d1ddea
+}
+.moderated {
+	BACKGROUND-COLOR: #f8f1f3
+}
+BODY .moderated TD {
+	BACKGROUND-COLOR: #f8f1f3
+}
+.moderated TD.altrow {
+	BACKGROUND-COLOR: #f8f1f3
+}
+.moderated.post_block {
+	BACKGROUND-COLOR: #f8f1f3
+}
+BODY TD.moderated {
+	BACKGROUND-COLOR: #f8f1f3
+}
+BODY TD.moderated {
+	BACKGROUND-COLOR: #f8f1f3
+}
+.moderated.post_block {
+	BORDER-BOTTOM-COLOR: #e9d2d7; BORDER-TOP-COLOR: #e9d2d7; BORDER-RIGHT-COLOR: #e9d2d7; BORDER-LEFT-COLOR: #e9d2d7
+}
+.moderated .row2 {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.moderated {
+	COLOR: #6f3642
+}
+.moderated A {
+	COLOR: #6f3642
+}
+BODY.redirector#ipboard_body {
+	BACKGROUND: #fff
+}
+#header_bar {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/user_navigation.png) #323232 repeat-x 50% bottom; PADDING-TOP: 0px
+}
+#admin_bar {
+	LINE-HEIGHT: 36px; FONT-SIZE: 11px
+}
+#admin_bar LI.active A {
+	COLOR: #fc6d35
+}
+#admin_bar A {
+	COLOR: #8a8a8a
+}
+#admin_bar A:hover {
+	COLOR: #222
+}
+#user_navigation {
+	FONT-SIZE: 11px
+}
+#user_navigation A {
+	COLOR: #fff
+}
+#user_navigation .ipsList_inline LI {
+	MARGIN: 0px
+}
+.not_logged_in#user_navigation {
+	
+}
+#user_link {
+	PADDING-BOTTOM: 0px; MARGIN-TOP: -1px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 12px; OUTLINE-WIDTH: 0px; PADDING-RIGHT: 12px; DISPLAY: inline-block; COLOR: #fff; FONT-SIZE: 12px; MARGIN-RIGHT: 0px; PADDING-TOP: 0px
+}
+.user_links_header UL.main {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/header.png); BORDER-BOTTOM: #0f0f0f 1px solid; BORDER-LEFT: #0f0f0f 1px solid; LINE-HEIGHT: 30px; BACKGROUND-COLOR: #aaa; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px; DISPLAY: inline-block; FLOAT: right; HEIGHT: 30px; BORDER-TOP: #0f0f0f 1px solid; MARGIN-RIGHT: -10px; BORDER-RIGHT: #0f0f0f 1px solid; -moz-box-shadow: inset 0px 1px 0 #5c5c5c; -webkit-box-shadow: inset 0px 1px 0 #5c5c5c; box-shadow: inset 0px 1px 0 #5c5c5c; border-top-right-radius: 3px; border-bottom-left-radius: 3px; -moz-border-top-right-radius: 3px; -moz-border-bottom-left-radius: 3px; -webkit-border-top-right-radius: 3px; -webkit-border-bottom-left-radius: 3px
+}
+.user_links_header UL LI.mainlink A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; DISPLAY: inline-block; HEIGHT: 32px; CLEAR: none; PADDING-TOP: 0px
+}
+.user_links_header UL LI.mainlink A.first_top_nav {
+	border-bottom-left-radius: 3px
+}
+.user_links_header UL LI.mainlink A.last_top_nav {
+	border-top-right-radius: 3px
+}
+#user_link_dd {
+	WIDTH: 9px; DISPLAY: inline-block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/header_dropdown.png) no-repeat left 50%; HEIGHT: 5px
+}
+.dropdownIndicator {
+	WIDTH: 9px; DISPLAY: inline-block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/header_dropdown.png) no-repeat left 50%; HEIGHT: 5px
+}
+#user_link:hover {
+	BORDER-BOTTOM: #80ae1b 1px solid; BORDER-LEFT: #80ae1b 1px solid; BACKGROUND-COLOR: #80af1c; BORDER-TOP: #80ae1b 1px solid; BORDER-RIGHT: #80ae1b 1px solid; -moz-box-shadow: inset 0px 1px 0 #CAE33A; -webkit-box-shadow: inset 0px 1px 0 #CAE33A; box-shadow: inset 0px 1px 0 #CAE33A
+}
+#notify_link:hover {
+	BORDER-BOTTOM: #80ae1b 1px solid; BORDER-LEFT: #80ae1b 1px solid; BACKGROUND-COLOR: #80af1c; BORDER-TOP: #80ae1b 1px solid; BORDER-RIGHT: #80ae1b 1px solid; -moz-box-shadow: inset 0px 1px 0 #CAE33A; -webkit-box-shadow: inset 0px 1px 0 #CAE33A; box-shadow: inset 0px 1px 0 #CAE33A
+}
+#inbox_link:hover {
+	BORDER-BOTTOM: #80ae1b 1px solid; BORDER-LEFT: #80ae1b 1px solid; BACKGROUND-COLOR: #80af1c; BORDER-TOP: #80ae1b 1px solid; BORDER-RIGHT: #80ae1b 1px solid; -moz-box-shadow: inset 0px 1px 0 #CAE33A; -webkit-box-shadow: inset 0px 1px 0 #CAE33A; box-shadow: inset 0px 1px 0 #CAE33A
+}
+#user_link:hover {
+	MARGIN: -2px -1px
+}
+#notify_link:hover {
+	PADDING-BOTTOM: 2px; MARGIN: -2px -2px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 26px; PADDING-TOP: 2px
+}
+#inbox_link:hover {
+	PADDING-BOTTOM: 2px; MARGIN: -2px -2px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 26px; PADDING-TOP: 2px
+}
+.user_links_header UL LI.mainlink A:hover {
+	BORDER-BOTTOM: #80ae1b 1px solid; BORDER-LEFT: #80ae1b 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #80af1c; MARGIN: -1px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 12px; OUTLINE-WIDTH: 0px; PADDING-RIGHT: 12px; HEIGHT: 30px; BORDER-TOP: #80ae1b 1px solid; BORDER-RIGHT: #80ae1b 1px solid; PADDING-TOP: 0px; -moz-box-shadow: inset 0px 1px 0 #CAE33A; -webkit-box-shadow: inset 0px 1px 0 #CAE33A; box-shadow: inset 0px 1px 0 #CAE33A
+}
+#user_link_menucontent #links LI {
+	MARGIN: 3px 0px; WIDTH: 50%; WHITE-SPACE: nowrap; FLOAT: left; text-shadow: 0px 1px 0 rgba(255, 255, 255, 1)
+}
+.menu_active#user_link {
+	
+}
+.menu_active#user_link #user_link_dd {
+	BACKGROUND-POSITION: right 50%
+}
+.menu_active .dropdownIndicator {
+	BACKGROUND-POSITION: right 50%
+}
+LI.active .dropdownIndicator {
+	BACKGROUND-POSITION: right 50%
+}
+#community_app_menu .menu_active .dropdownIndicator {
+	BACKGROUND-POSITION: left 50%
+}
+#community_app_menu LI.active .menu_active .dropdownIndicator {
+	BACKGROUND-POSITION: right 50%
+}
+#user_link_menucontent #statusForm {
+	MARGIN-BOTTOM: 15px
+}
+#user_link_menucontent #statusUpdate {
+	MARGIN-BOTTOM: 5px
+}
+#user_link_menucontent > DIV {
+	TEXT-ALIGN: left; WIDTH: 265px; MARGIN-LEFT: 15px
+}
+#statusSubmitGlobal {
+	MARGIN-TOP: 3px
+}
+.menu_active#user_link {
+	
+}
+.menu_active#notify_link {
+	
+}
+.menu_active#inbox_link {
+	
+}
+#notify_link {
+	POSITION: relative; PADDING-BOTTOM: 0px; MARGIN: -1px; PADDING-LEFT: 0px; WIDTH: 32px; PADDING-RIGHT: 0px; DISPLAY: inline-block; HEIGHT: 32px; VERTICAL-ALIGN: middle; PADDING-TOP: 0px
+}
+#inbox_link {
+	POSITION: relative; PADDING-BOTTOM: 0px; MARGIN: -1px; PADDING-LEFT: 0px; WIDTH: 32px; PADDING-RIGHT: 0px; DISPLAY: inline-block; HEIGHT: 32px; VERTICAL-ALIGN: middle; PADDING-TOP: 0px
+}
+#notify_link {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_notify.png) no-repeat 50% top
+}
+#inbox_link {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_inbox.png) no-repeat 50% top; border-bottom-left-radius: 3px; -moz-border-bottom-left-radius: 3px; -webkit-border-bottom-left-radius: 3px
+}
+#user_navigation #register_link {
+	
+}
+#branding {
+	BORDER-BOTTOM: #1b3759 0px solid; MARGIN: 10px auto 0px; MIN-HEIGHT: 64px; WIDTH: 980px; HEIGHT: 200px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px
+}
+#logo {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 40px; DISPLAY: block; PADDING-TOP: 45px
+}
+#primary_nav {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: #204066; FONT-SIZE: 13px; PADDING-TOP: 4px
+}
+#community_app_menu > LI {
+	POSITION: relative; MARGIN: 0px -1px 0px 0px
+}
+#community_app_menu > LI > A {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 16px; PADDING-RIGHT: 16px; DISPLAY: block; COLOR: #fff; PADDING-TOP: 6px
+}
+#community_app_menu > LI > A:hover {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit_hover.png); BORDER-BOTTOM: #0f0f0f 1px solid; BORDER-LEFT: #0f0f0f 1px solid; PADDING-BOTTOM: 8px; MARGIN: -1px 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; COLOR: #fff; BORDER-TOP: #0f0f0f 1px solid; BORDER-RIGHT: #0f0f0f 1px solid; PADDING-TOP: 6px; -moz-box-shadow: inset 0 1px 0 0 #535353; -webkit-box-shadow: inset 0 1px 0 0 #535353; box-shadow: inset 0 1px 0 0 #535353
+}
+#community_app_menu > LI > A.menu_active {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit_hover.png); BORDER-BOTTOM: #0f0f0f 1px solid; BORDER-LEFT: #0f0f0f 1px solid; PADDING-BOTTOM: 8px; MARGIN: -1px 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; COLOR: #fff; BORDER-TOP: #0f0f0f 1px solid; BORDER-RIGHT: #0f0f0f 1px solid; PADDING-TOP: 6px; -moz-box-shadow: inset 0 1px 0 0 #535353; -webkit-box-shadow: inset 0 1px 0 0 #535353; box-shadow: inset 0 1px 0 0 #535353
+}
+#community_app_menu > LI.active > A:hover {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit_hover.png); BORDER-BOTTOM: #0f0f0f 1px solid; BORDER-LEFT: #0f0f0f 1px solid; PADDING-BOTTOM: 8px; MARGIN: -1px 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; COLOR: #fff; BORDER-TOP: #0f0f0f 1px solid; BORDER-RIGHT: #0f0f0f 1px solid; PADDING-TOP: 6px; -moz-box-shadow: inset 0 1px 0 0 #535353; -webkit-box-shadow: inset 0 1px 0 0 #535353; box-shadow: inset 0 1px 0 0 #535353
+}
+.navigation UL LI:first-child A {
+	border-bottom-left-radius: 0px; border-top-left-radius: 3px
+}
+#community_app_menu > LI.active > A {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit_hover.png); BORDER-BOTTOM: #0f0f0f 1px solid; BORDER-LEFT: #0f0f0f 1px solid; PADDING-BOTTOM: 8px; MARGIN: -1px 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; COLOR: #fff; BORDER-TOP: #0f0f0f 1px solid; BORDER-RIGHT: #0f0f0f 1px solid; PADDING-TOP: 6px; -moz-box-shadow: inset 0 1px 0 0 #535353; -webkit-box-shadow: inset 0 1px 0 0 #535353; box-shadow: inset 0 1px 0 0 #535353
+}
+#quickNavLaunch SPAN {
+	WIDTH: 13px; DISPLAY: inline-block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_quicknav.png) no-repeat 50% top; HEIGHT: 13px
+}
+#quickNavLaunch:hover SPAN {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_quicknav.png) no-repeat 50% bottom
+}
+#primary_nav #quickNavLaunch {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 6px
+}
+#more_apps_menucontent {
+	BORDER-BOTTOM: 0px; MIN-WIDTH: 140px; BORDER-LEFT: 0px; BACKGROUND: #173455; FONT-SIZE: 12px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.submenu_container {
+	BORDER-BOTTOM: 0px; MIN-WIDTH: 140px; BORDER-LEFT: 0px; BACKGROUND: #173455; FONT-SIZE: 12px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+#more_apps_menucontent LI {
+	BORDER-BOTTOM: 0px; MIN-WIDTH: 150px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: none !important; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+.submenu_container LI {
+	BORDER-BOTTOM: 0px; MIN-WIDTH: 150px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: none !important; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+#more_apps_menucontent A {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; COLOR: #fff; PADDING-TOP: 8px; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5)
+}
+.submenu_container A {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; COLOR: #fff; PADDING-TOP: 8px; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5)
+}
+#more_apps_menucontent LI:hover {
+	BACKGROUND-COLOR: #fff !important
+}
+.submenu_container LI:hover {
+	BACKGROUND-COLOR: #fff !important
+}
+#more_apps_menucontent LI:hover A {
+	COLOR: #000; text-shadow: none
+}
+.submenu_container LI:hover A {
+	COLOR: #000; text-shadow: none
+}
+#community_app_menu .submenu_container {
+	WIDTH: 260px
+}
+.submenu_container#more_apps_menucontent {
+	WIDTH: 260px
+}
+#community_app_menu .submenu_container LI {
+	WIDTH: 260px
+}
+.submenu_container#more_apps_menucontent LI {
+	WIDTH: 260px
+}
+.breadcrumb {
+	COLOR: #777; FONT-SIZE: 11px
+}
+.breadcrumb A {
+	COLOR: #777
+}
+.breadcrumb LI .nav_sep {
+	MARGIN: 0px 5px 0px 0px
+}
+.breadcrumb LI:first-child {
+	MARGIN-LEFT: 0px
+}
+.top.breadcrumb {
+	MARGIN-BOTTOM: 10px
+}
+.bottom.breadcrumb {
+	MARGIN-TOP: 10px; WIDTH: 100%
+}
+.ipsHeaderMenu {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 340px; PADDING-RIGHT: 10px; BACKGROUND: #fff; OVERFLOW: hidden; PADDING-TOP: 10px; -moz-border-radius: 0 0 6px 6px; border-radius: 0 0 6px 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px
+}
+.ipsHeaderMenu .ipsType_sectiontitle {
+	MARGIN-BOTTOM: 8px
+}
+.ipsHeaderMenu#user_notifications_link_menucontent {
+	WIDTH: 300px
+}
+.ipsHeaderMenu#user_inbox_link_menucontent {
+	WIDTH: 300px
+}
+#search {
+	MARGIN: 2px 10px 0px
+}
+#main_search {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 0px; OUTLINE-WIDTH: 0px; WIDTH: 130px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FONT-SIZE: 12px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+.inactive#main_search {
+	COLOR: #bcbcbc
+}
+#search_wrap {
+	POSITION: relative; MIN-WIDTH: 230px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; PADDING-LEFT: 4px; PADDING-RIGHT: 26px; DISPLAY: block; BACKGROUND: #fff; HEIGHT: 26px; PADDING-TOP: 0px; -moz-border-radius: 3px 4px 4px 3px; border-radius: 3px 4px 4px 3px; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 4px; -webkit-border-top-left-radius: 3px
+}
+#adv_search {
+	TEXT-INDENT: -3000em; MARGIN: 4px 0px 4px 4px; WIDTH: 16px; DISPLAY: inline-block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/advanced_search.png) no-repeat right 50%; HEIGHT: 16px
+}
+#search .submit_input {
+	BORDER-BOTTOM: #303030 1px solid; POSITION: absolute; BORDER-LEFT: #303030 1px solid; PADDING-BOTTOM: 0px; TEXT-INDENT: -3000em; PADDING-LEFT: 0px; WIDTH: 26px; BOTTOM: 0px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/search_icon.png) #202020 no-repeat 50% 50%; HEIGHT: 26px; BORDER-TOP: #303030 1px solid; TOP: 0px; RIGHT: 0px; BORDER-RIGHT: #303030 1px solid; PADDING-TOP: 0px; -moz-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0; -moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.2); -webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.2); box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.2); -webkit-border-top-right-radius: 3px; -webkit-border-bottom-right-radius: 3px
+}
+#search_options {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; MARGIN: 3px 3px 3px 0px; PADDING-LEFT: 6px; TEXT-OVERFLOW: ellipsis; PADDING-RIGHT: 6px; DISPLAY: inline-block; MAX-WIDTH: 80px; BACKGROUND: #eaeaea; FLOAT: right; HEIGHT: 20px; COLOR: #111; FONT-SIZE: 10px; OVERFLOW: hidden; PADDING-TOP: 0px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px
+}
+#search_options_menucontent {
+	MIN-WIDTH: 100px; WHITE-SPACE: nowrap; COLOR: #111
+}
+#search_options_menucontent INPUT {
+	MARGIN-RIGHT: 10px
+}
+#search_options_menucontent LI {
+	BORDER-BOTTOM: 0px
+}
+#search_options_menucontent LABEL {
+	CURSOR: pointer
+}
+#backtotop {
+	POSITION: absolute; TEXT-ALIGN: center; LINE-HEIGHT: 20px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px; WIDTH: 24px; DISPLAY: inline-block; BACKGROUND: #bdbdbd; HEIGHT: 24px; MARGIN-LEFT: -12px; LEFT: 50%; -moz-border-radius: 16px; -webkit-border-radius: 16px; border-radius: 16px; opacity: 0.4
+}
+#backtotop:hover {
+	BACKGROUND: #af286d; COLOR: #fff; opacity: 1
+}
+#footer_utilities {
+	POSITION: relative; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-SIZE: 11px; PADDING-TOP: 10px
+}
+#footer_utilities .ipsList_inline > LI > A {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #fff; MARGIN-RIGHT: 0px; PADDING-TOP: 4px
+}
+#footer_utilities A.menu_active {
+	Z-INDEX: 20000; BORDER-BOTTOM: #d5dde5 1px solid; POSITION: relative; BORDER-LEFT: #d5dde5 1px solid; PADDING-BOTTOM: 4px !important; MARGIN-TOP: -5px; PADDING-LEFT: 9px !important; PADDING-RIGHT: 9px !important; DISPLAY: inline-block; BACKGROUND: #202020; BORDER-TOP: #d5dde5 1px solid; BORDER-RIGHT: #d5dde5 1px solid; PADDING-TOP: 3px !important
+}
+#copyright {
+	TEXT-ALIGN: right; COLOR: #fff
+}
+#copyright A {
+	COLOR: #fff
+}
+#ipsDebug_footer {
+	TEXT-ALIGN: center; MARGIN: 8px auto 0px; WIDTH: 900px; COLOR: #404040; FONT-SIZE: 11px; text-shadow: 0px 1px 0px #fff
+}
+#ipsDebug_footer STRONG {
+	MARGIN-LEFT: 20px
+}
+#ipsDebug_footer A {
+	COLOR: #404040
+}
+#rss_menu {
+	BORDER-BOTTOM: #ed7710 1px solid; BORDER-LEFT: #ed7710 1px solid; BACKGROUND-COLOR: #fef3d7; BORDER-TOP: #ed7710 1px solid; BORDER-RIGHT: #ed7710 1px solid
+}
+#rss_menu LI {
+	BORDER-BOTTOM: #fce19b 1px solid
+}
+#rss_menu A {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; COLOR: #ed7710; PADDING-TOP: 5px
+}
+#rss_menu A:hover {
+	BACKGROUND-COLOR: #ed7710; COLOR: #fff
+}
+.ipsUserPhoto {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BACKGROUND: #fff; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid; PADDING-TOP: 1px; -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1)
+}
+.ipsUserPhotoLink:hover .ipsUserPhoto {
+	BORDER-BOTTOM-COLOR: #7d7d7d; BORDER-TOP-COLOR: #7d7d7d; BORDER-RIGHT-COLOR: #7d7d7d; BORDER-LEFT-COLOR: #7d7d7d
+}
+.ipsUserPhoto_variable {
+	MAX-WIDTH: 155px
+}
+.ipsUserPhoto_large {
+	MAX-WIDTH: 90px; MAX-HEIGHT: 90px
+}
+.ipsUserPhoto_medium {
+	WIDTH: 50px; HEIGHT: 50px
+}
+.ipsUserPhoto_mini {
+	WIDTH: 30px; HEIGHT: 30px
+}
+.ipsUserPhoto_tiny {
+	WIDTH: 20px; HEIGHT: 20px
+}
+.ipsUserPhoto_icon {
+	WIDTH: 16px; HEIGHT: 16px
+}
+.general_box {
+	MARGIN-BOTTOM: 10px; BACKGROUND: #fcfcfc
+}
+.general_box H3 {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT: 14px helvetica, arial, sans-serif; BACKGROUND: #dbe2ec; COLOR: #204066; PADDING-TOP: 8px
+}
+.general_box .none {
+	COLOR: #bcbcbc
+}
+.ipsBox_padd_top {
+	PADDING-BOTTOM: 9px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px; PADDING-TOP: 9px
+}
+.ipsBox_nopadd {
+	PADDING-BOTTOM: 9px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px; PADDING-TOP: 0px
+}
+.ipsBox {
+	PADDING-BOTTOM: 9px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px; PADDING-TOP: 0px
+}
+.ipsPad {
+	PADDING-BOTTOM: 9px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px; PADDING-TOP: 0px
+}
+.ipsPad_double {
+	PADDING-BOTTOM: 9px; PADDING-LEFT: 19px; PADDING-RIGHT: 19px; PADDING-TOP: 9px
+}
+.ipsBox_withphoto {
+	MARGIN-LEFT: 65px
+}
+.ipsBox_container_shoutbox {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 10px; BACKGROUND: #fff; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px
+}
+.ipsBox_container {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 958px; PADDING-RIGHT: 0px; BACKGROUND: #fff; MARGIN-LEFT: -9px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px
+}
+.ipsBox_notice {
+	PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.6; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; MARGIN-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.ipsBox_container .ipsBox_notice {
+	MARGIN: -10px -10px 10px
+}
+.ipsPad_half {
+	PADDING-BOTTOM: 4px !important; PADDING-LEFT: 4px !important; PADDING-RIGHT: 4px !important; PADDING-TOP: 4px !important
+}
+.ipsPad_left {
+	PADDING-LEFT: 9px
+}
+.ipsPad_top {
+	PADDING-TOP: 9px
+}
+.ipsPad_top_slimmer {
+	PADDING-TOP: 7px
+}
+.ipsPad_top_half {
+	PADDING-TOP: 4px
+}
+.ipsPad_top_bottom {
+	PADDING-BOTTOM: 9px; PADDING-TOP: 9px
+}
+.ipsPad_top_bottom_half {
+	PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.ipsMargin_top {
+	MARGIN-TOP: 9px
+}
+.ipsBlendLinks_target .ipsBlendLinks_here {
+	opacity: 0.5; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.2s ease-in-out
+}
+.ipsBlendLinks_target:hover .ipsBlendLinks_here {
+	opacity: 1
+}
+.block_list > LI {
+	BORDER-BOTTOM: #f2f2f2 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 5px
+}
+.ipsModMenu {
+	TEXT-INDENT: -2000em; WIDTH: 15px; DISPLAY: inline-block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/moderation_cog.png) no-repeat; HEIGHT: 15px; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 5px
+}
+.ipsBadge {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 16px; TEXT-TRANSFORM: uppercase; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; DISPLAY: inline-block; HEIGHT: 16px; COLOR: #fff; FONT-SIZE: 9px; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold; PADDING-TOP: 0px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px
+}
+#nav_app_ipchat .ipsBadge {
+	POSITION: absolute
+}
+#ajax_loading {
+	Z-INDEX: 10000; BORDER-BOTTOM: #7ba60d 1px solid; POSITION: fixed; TEXT-ALIGN: center; BORDER-LEFT: #7ba60d 1px solid; PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; WIDTH: 8%; PADDING-RIGHT: 0px; BACKGROUND: #95c715; COLOR: #fff; BORDER-TOP: #7ba60d 1px solid; TOP: 0px; BORDER-RIGHT: #7ba60d 1px solid; PADDING-TOP: 5px; LEFT: 46%; -moz-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), inset 0px -1px 0px rgba(255, 255, 255, 0.2); -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), inset 0px -1px 0px rgba(255, 255, 255, 0.2); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), inset 0px -1px 0px rgba(255, 255, 255, 0.2); -webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px
+}
+.redirector#ipboard_body {
+	MARGIN: 150px auto 0px; WIDTH: 500px
+}
+.minimal#ipboard_body {
+	MARGIN-TOP: 40px
+}
+.minimal#ipboard_body #content {
+	PADDING-BOTTOM: 20px; PADDING-LEFT: 30px; PADDING-RIGHT: 30px; PADDING-TOP: 20px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px
+}
+.minimal#ipboard_body H1 {
+	FONT-SIZE: 32px
+}
+.minimal#ipboard_body .ipsType_pagedesc {
+	FONT-SIZE: 16px
+}
+.progress_bar {
+	BORDER-BOTTOM: #d5dde5 1px solid; BORDER-LEFT: #d5dde5 1px solid; BACKGROUND-COLOR: #fff; BORDER-TOP: #d5dde5 1px solid; BORDER-RIGHT: #d5dde5 1px solid
+}
+.progress_bar SPAN {
+	TEXT-ALIGN: center; TEXT-INDENT: -2000em; DISPLAY: block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/gradient_bg.png) #243f5c repeat-x left 50%; HEIGHT: 10px; COLOR: #fff; FONT-SIZE: 0em; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.limit.progress_bar SPAN {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/progressbar_warning.png) #b82929 repeat-x center 50%
+}
+.progress_bar SPAN SPAN {
+	DISPLAY: none
+}
+.user_warn.progress_bar {
+	MARGIN: 0px auto; WIDTH: 80%
+}
+.user_warn.progress_bar SPAN {
+	HEIGHT: 6px
+}
+.topic_poll.progress_bar {
+	BORDER-BOTTOM: #d5dde5 1px solid; BORDER-LEFT: #d5dde5 1px solid; MARGIN-TOP: 2px; WIDTH: 40%; BORDER-TOP: #d5dde5 1px solid; BORDER-RIGHT: #d5dde5 1px solid
+}
+LI.rating A {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px
+}
+.antispam_img {
+	MARGIN: 0px 3px 5px 0px
+}
+SPAN.error {
+	COLOR: #ad2930; CLEAR: both; FONT-WEIGHT: bold
+}
+#recaptcha_widget_div {
+	MAX-WIDTH: 350px
+}
+#recaptcha_table {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.tab_filters UL {
+	DISPLAY: inline
+}
+.tab_filters LI {
+	DISPLAY: inline
+}
+FIELDSET.with_subhead SPAN.desc {
+	DISPLAY: inline
+}
+FIELDSET.with_subhead LABEL {
+	DISPLAY: inline
+}
+.user_controls LI {
+	DISPLAY: inline
+}
+.right {
+	FLOAT: right
+}
+.left {
+	FLOAT: left
+}
+.hide {
+	DISPLAY: none
+}
+.short {
+	TEXT-ALIGN: center
+}
+.clear {
+	CLEAR: both
+}
+.clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.faded {
+	opacity: 0.5
+}
+.clickable {
+	CURSOR: pointer
+}
+.reset_cursor {
+	CURSOR: default
+}
+.bullets UL {
+	LINE-HEIGHT: 150%; LIST-STYLE-TYPE: disc; MARGIN-LEFT: 30px; LIST-STYLE-IMAGE: none
+}
+.bullets OL {
+	LINE-HEIGHT: 150%; LIST-STYLE-TYPE: disc; MARGIN-LEFT: 30px; LIST-STYLE-IMAGE: none
+}
+UL.bullets {
+	LINE-HEIGHT: 150%; LIST-STYLE-TYPE: disc; MARGIN-LEFT: 30px; LIST-STYLE-IMAGE: none
+}
+OL.bullets {
+	LINE-HEIGHT: 150%; LIST-STYLE-TYPE: disc; MARGIN-LEFT: 30px; LIST-STYLE-IMAGE: none
+}
+.maintitle {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/header.png); BORDER-BOTTOM: #050505 0px solid; BORDER-LEFT: #050505 1px solid; PADDING-BOTTOM: 9px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; HEIGHT: 14px; COLOR: #fff; FONT-SIZE: 16px; BORDER-TOP: #050505 1px solid; FONT-WEIGHT: 300; BORDER-RIGHT: #050505 1px solid; PADDING-TOP: 8px; -moz-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0; -moz-box-shadow: inset 0px 1px 0 #5c5c5c; -webkit-box-shadow: inset 0px 1px 0 #5c5c5c; box-shadow: inset 0px 1px 0 #5c5c5c; -webkit-border-top-right-radius: 4px; -webkit-border-top-left-radius: 4px
+}
+.maintitle A {
+	COLOR: #fff
+}
+.collapsed .maintitle {
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; opacity: 0.2
+}
+.collapsed .maintitle:hover {
+	opacity: 0.4
+}
+.maintitle .toggle {
+	TEXT-INDENT: -3000em; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px; WIDTH: 25px; DISPLAY: none; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/cat_minimize.png) no-repeat; HEIGHT: 25px; VISIBILITY: hidden
+}
+.maintitle:hover .toggle {
+	DISPLAY: none; VISIBILITY: visible
+}
+.collapsed .toggle {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/cat_maximize.png); DISPLAY: none
+}
+#user_navigation #new_msg_count {
+	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px
+}
+.poll_question H4 {
+	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px
+}
+.rounded {
+	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px
+}
+.desc {
+	COLOR: #777; FONT-SIZE: 12px
+}
+.blend_links.desc A {
+	COLOR: #777; FONT-SIZE: 12px
+}
+P.posted_info {
+	COLOR: #777; FONT-SIZE: 12px
+}
+.lighter.desc {
+	COLOR: #a4a4a4
+}
+.blend_links.lighter.desc A {
+	COLOR: #a4a4a4
+}
+.cancel {
+	COLOR: #ad2930; FONT-SIZE: 0.9em; FONT-WEIGHT: bold
+}
+EM.moderated {
+	FONT-STYLE: normal; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.positive {
+	COLOR: #6f8f52
+}
+.negative {
+	COLOR: #c7172b
+}
+.searchlite {
+	BACKGROUND-COLOR: yellow; COLOR: red; FONT-SIZE: 14px
+}
+.activeuserposting {
+	FONT-STYLE: italic
+}
+.col_f_post {
+	WIDTH: 250px !important
+}
+.is_mod .col_f_post {
+	WIDTH: 210px !important
+}
+TD.col_c_post {
+	WIDTH: 250px; PADDING-TOP: 10px !important
+}
+.col_f_icon {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px !important; PADDING-LEFT: 0px !important; WIDTH: 24px !important; PADDING-RIGHT: 0px !important; VERTICAL-ALIGN: top; PADDING-TOP: 10px !important
+}
+.col_n_icon {
+	PADDING-BOTTOM: 0px !important; PADDING-LEFT: 0px !important; WIDTH: 24px; PADDING-RIGHT: 0px !important; VERTICAL-ALIGN: middle; PADDING-TOP: 0px !important
+}
+.col_f_views {
+	TEXT-ALIGN: right; WIDTH: 100px !important; WHITE-SPACE: nowrap
+}
+.col_m_replies {
+	TEXT-ALIGN: right; WIDTH: 100px !important; WHITE-SPACE: nowrap
+}
+.col_f_mod {
+	TEXT-ALIGN: right; WIDTH: 40px
+}
+.col_m_mod {
+	TEXT-ALIGN: right; WIDTH: 40px
+}
+.col_n_mod {
+	TEXT-ALIGN: right; WIDTH: 40px
+}
+.col_f_preview {
+	TEXT-ALIGN: right; WIDTH: 20px !important
+}
+.col_c_icon {
+	PADDING-BOTTOM: 10px !important; PADDING-LEFT: 5px !important; WIDTH: 30px; PADDING-RIGHT: 5px !important; VERTICAL-ALIGN: middle; PADDING-TOP: 10px !important
+}
+.col_c_post .ipsUserPhoto {
+	MARGIN-TOP: 3px
+}
+.col_n_date {
+	WIDTH: 250px
+}
+.col_m_photo {
+	WIDTH: 30px
+}
+.col_n_photo {
+	WIDTH: 30px
+}
+.col_m_mod {
+	TEXT-ALIGN: right
+}
+.col_r_icon {
+	WIDTH: 3%
+}
+.col_f_topic {
+	WIDTH: 49%
+}
+.col_m_subject {
+	WIDTH: 49%
+}
+.col_f_starter {
+	WIDTH: 10%
+}
+.col_r_total {
+	WIDTH: 10%
+}
+.col_r_comments {
+	WIDTH: 10%
+}
+.col_m_date {
+	WIDTH: 18%
+}
+.col_r_updated {
+	WIDTH: 18%
+}
+.col_r_section {
+	WIDTH: 18%
+}
+.col_c_stats {
+	TEXT-ALIGN: right; WIDTH: 15%
+}
+.col_c_forum {
+	WIDTH: auto
+}
+.col_mod {
+	WIDTH: 3%
+}
+.col_r_mod {
+	WIDTH: 3%
+}
+.col_r_title {
+	WIDTH: 26%
+}
+TABLE.ipb_table {
+	LINE-HEIGHT: 1.3; WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+TABLE.ipb_table TD {
+	BORDER-BOTTOM: #f3f3f3 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+TABLE.ipb_table TR.unread H4 {
+	FONT-WEIGHT: bold
+}
+TABLE.ipb_table TR.highlighted TD {
+	BORDER-BOTTOM: 0px
+}
+TABLE.ipb_table TH {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; FONT-SIZE: 11px; FONT-WEIGHT: bold; PADDING-TOP: 8px
+}
+.last_post {
+	MARGIN-LEFT: 45px
+}
+TABLE.ipb_table H4 {
+	DISPLAY: inline-block; FONT-SIZE: 14px
+}
+TABLE.ipb_table .topic_title {
+	DISPLAY: inline-block; FONT-SIZE: 14px
+}
+TABLE.ipb_table .unread .topic_title {
+	FONT-WEIGHT: bold
+}
+TABLE.ipb_table .ipsModMenu {
+	VISIBILITY: hidden
+}
+TABLE.ipb_table TR:hover .ipsModMenu {
+	VISIBILITY: visible
+}
+TABLE.ipb_table TR .menu_active.ipsModMenu {
+	VISIBILITY: visible
+}
+#announcements H4 {
+	DISPLAY: inline
+}
+#announcements TD {
+	BORDER-BOTTOM: #fff 1px solid
+}
+.forum_data {
+	MARGIN: 0px 0px 0px 8px; DISPLAY: inline-block; WHITE-SPACE: nowrap; COLOR: #5c5c5c; FONT-SIZE: 11px
+}
+.desc_more {
+	TEXT-INDENT: -2000em; WIDTH: 13px; DISPLAY: inline-block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/desc_more.png) no-repeat 50% top; HEIGHT: 13px
+}
+.desc_more:hover {
+	BACKGROUND-POSITION: 50% bottom
+}
+.category_block .ipb_table H4 {
+	WORD-WRAP: break-word; FONT-SIZE: 15px
+}
+TABLE.ipb_table .subforums {
+	MARGIN: 2px 0px 3px 5px; PADDING-LEFT: 20px; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/subforum_stem.png) no-repeat left 4px
+}
+TABLE.ipb_table .subforums LI.unread {
+	FONT-WEIGHT: bold
+}
+TABLE.ipb_table .expander {
+	WIDTH: 16px; DISPLAY: inline-block; HEIGHT: 16px; VISIBILITY: hidden
+}
+TABLE.ipb_table TR:hover .expander {
+	VISIBILITY: visible; opacity: 0.2
+}
+TABLE.ipb_table TD.col_f_preview {
+	CURSOR: pointer
+}
+TABLE.ipb_table TR TD:hover .expander {
+	VISIBILITY: visible !important; opacity: 1
+}
+.open.expander {
+	VISIBILITY: visible !important; opacity: 1
+}
+.loading.expander {
+	VISIBILITY: visible !important; opacity: 1
+}
+TABLE.ipb_table .closed.expander {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_expand_close.png) no-repeat 50% top
+}
+TABLE.ipb_table .open.expander {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_expand_close.png) no-repeat 50% bottom
+}
+TABLE.ipb_table .loading.expander {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/loading.gif) no-repeat
+}
+TABLE.ipb_table .preview TD {
+	Z-INDEX: 20000; PADDING-BOTTOM: 20px; PADDING-LEFT: 29px; PADDING-RIGHT: 10px; BORDER-TOP: 0px; PADDING-TOP: 20px
+}
+TABLE.ipb_table .preview TD > DIV {
+	POSITION: relative; LINE-HEIGHT: 1.4
+}
+TABLE.ipb_table .preview TD {
+	BORDER-BOTTOM: #d6e4f0 1px solid; BORDER-LEFT: #d6e4f0 1px solid; BORDER-TOP: #d6e4f0 1px solid; BORDER-RIGHT: #d6e4f0 1px solid; -moz-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15); box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15)
+}
+.preview_col {
+	MARGIN-LEFT: 80px
+}
+.preview_info {
+	BORDER-BOTTOM: #eaeaea 1px solid; PADDING-BOTTOM: 3px; MARGIN: -3px 0px 3px
+}
+TABLE.ipb_table .mini_pagination {
+	opacity: 0.5
+}
+TABLE.ipb_table TR:hover .mini_pagination {
+	opacity: 1
+}
+.ipsLayout_withleft.ipsLayout {
+	PADDING-LEFT: 210px
+}
+.ipsLayout_withleft.ipsLayout.ipsBox {
+	PADDING-LEFT: 220px
+}
+.ipsLayout_withright.ipsLayout {
+	PADDING-RIGHT: 210px; CLEAR: left
+}
+.ipsLayout_withright.ipsLayout.ipsBox {
+	PADDING-RIGHT: 220px
+}
+.ipsLayout_content {
+	POSITION: relative
+}
+.ipsLayout .ipsLayout_left {
+	POSITION: relative
+}
+.ipsLayout_right {
+	POSITION: relative
+}
+.ipsLayout_content {
+	WIDTH: 100%; FLOAT: left
+}
+.ipsLayout .ipsLayout_left {
+	WIDTH: 200px; FLOAT: left; MARGIN-LEFT: -210px
+}
+.ipsLayout .ipsLayout_right {
+	WIDTH: 200px; FLOAT: right; MARGIN-RIGHT: -210px
+}
+.ipsLayout_withleft.ipsLayout_largeleft {
+	PADDING-LEFT: 280px
+}
+.ipsLayout_withleft.ipsLayout_largeleft.ipsBox {
+	PADDING-LEFT: 290px
+}
+.ipsLayout.ipsLayout_largeleft .ipsLayout_left {
+	WIDTH: 270px; MARGIN-LEFT: -280px
+}
+.ipsLayout_withright.ipsLayout_largeright {
+	PADDING-RIGHT: 280px
+}
+.ipsLayout_withright.ipsLayout_largeright.ipsBox {
+	PADDING-RIGHT: 290px
+}
+.ipsLayout.ipsLayout_largeright .ipsLayout_right {
+	WIDTH: 270px; MARGIN-RIGHT: -280px
+}
+.ipsLayout_withleft.ipsLayout_smallleft {
+	PADDING-LEFT: 150px
+}
+.ipsLayout_withleft.ipsLayout_smallleft.ipsBox {
+	PADDING-LEFT: 160px
+}
+.ipsLayout.ipsLayout_smallleft .ipsLayout_left {
+	WIDTH: 140px; MARGIN-LEFT: -150px
+}
+.ipsLayout_withright.ipsLayout_smallright {
+	PADDING-RIGHT: 150px
+}
+.ipsLayout_withright.ipsLayout_smallright.ipsBox {
+	PADDING-RIGHT: 160px
+}
+.ipsLayout.ipsLayout_smallright .ipsLayout_right {
+	WIDTH: 140px; MARGIN-RIGHT: -150px
+}
+.ipsLayout_withleft.ipsLayout_tinyleft {
+	PADDING-LEFT: 50px
+}
+.ipsLayout_withleft.ipsLayout_tinyleft.ipsBox {
+	PADDING-LEFT: 60px
+}
+.ipsLayout.ipsLayout_tinyleft .ipsLayout_left {
+	WIDTH: 40px; MARGIN-LEFT: -40px
+}
+.ipsLayout_withright.ipsLayout_tinyright {
+	PADDING-RIGHT: 50px
+}
+.ipsLayout_withright.ipsLayout_tinyright.ipsBox {
+	PADDING-RIGHT: 60px
+}
+.ipsLayout.ipsLayout_tinyright .ipsLayout_right {
+	WIDTH: 40px; MARGIN-RIGHT: -40px
+}
+.ipsLayout_withleft.ipsLayout_bigleft {
+	PADDING-LEFT: 330px
+}
+.ipsLayout_withleft.ipsLayout_bigleft.ipsBox {
+	PADDING-LEFT: 340px
+}
+.ipsLayout.ipsLayout_bigleft .ipsLayout_left {
+	WIDTH: 320px; MARGIN-LEFT: -330px
+}
+.ipsLayout_withright.ipsLayout_bigright {
+	PADDING-RIGHT: 330px
+}
+.ipsLayout_withright.ipsLayout_bigright.ipsBox {
+	PADDING-RIGHT: 340px
+}
+.ipsLayout.ipsLayout_bigright .ipsLayout_right {
+	WIDTH: 320px; MARGIN-RIGHT: -330px
+}
+.ipsLayout_withleft.ipsLayout_hugeleft {
+	PADDING-LEFT: 380px
+}
+.ipsLayout_withleft.ipsLayout_hugeleft.ipsBox {
+	PADDING-LEFT: 390px
+}
+.ipsLayout.ipsLayout_hugeleft .ipsLayout_left {
+	WIDTH: 370px; MARGIN-LEFT: -380px
+}
+.ipsLayout_withright.ipsLayout_hugeright {
+	PADDING-RIGHT: 380px
+}
+.ipsLayout_withright.ipsLayout_hugeright.ipsBox {
+	PADDING-RIGHT: 390px
+}
+.ipsLayout.ipsLayout_hugeright .ipsLayout_right {
+	WIDTH: 370px; MARGIN-RIGHT: -380px
+}
+.ipsField .ipsField_title {
+	FONT-SIZE: 15px; FONT-WEIGHT: bold
+}
+.ipsForm_required {
+	COLOR: #ab1f39; FONT-WEIGHT: bold
+}
+.ipsForm_horizontal .ipsField_title {
+	TEXT-ALIGN: right; LINE-HEIGHT: 1.8; WIDTH: 185px; PADDING-RIGHT: 15px; FLOAT: left
+}
+.ipsForm_horizontal .ipsField {
+	MARGIN-BOTTOM: 15px
+}
+.ipsForm_horizontal .ipsField_content {
+	MARGIN-LEFT: 200px
+}
+.ipsForm_horizontal .ipsField_submit {
+	MARGIN-LEFT: 200px
+}
+.ipsForm_horizontal .ipsField_checkbox {
+	MARGIN: 0px 0px 5px 200px
+}
+.ipsForm_horizontal .ipsField_select .ipsField_title {
+	LINE-HEIGHT: 1.6
+}
+.ipsForm_vertical .ipsField {
+	MARGIN-BOTTOM: 10px
+}
+.ipsForm_vertical .ipsField_content {
+	MARGIN-TOP: 3px
+}
+.ipsForm .ipsField_checkbox .ipsField_content {
+	MARGIN-LEFT: 25px
+}
+.ipsForm .ipsField_checkbox INPUT {
+	MARGIN-TOP: 3px; FLOAT: left
+}
+.ipsField_primary INPUT {
+	FONT-SIZE: 18px
+}
+.ipsForm_submit {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 5px; MARGIN-TOP: 25px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #e4e4e4; BORDER-TOP: #ccc 1px solid; PADDING-TOP: 5px
+}
+.ipsForm_right {
+	TEXT-ALIGN: right
+}
+.ipsForm_left {
+	TEXT-ALIGN: left
+}
+.ipsForm_center {
+	TEXT-ALIGN: center
+}
+.ipsSettings_pagetitle {
+	MARGIN-BOTTOM: 5px; FONT-SIZE: 20px
+}
+.ipsSettings {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.ipsSettings_section {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 0px 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #eaeaea 1px solid; PADDING-TOP: 15px
+}
+.ipsSettings_section > DIV {
+	MARGIN-LEFT: 175px
+}
+.ipsSettings_section > DIV UL LI {
+	MARGIN-BOTTOM: 10px
+}
+.ipsSettings_section .desc {
+	MARGIN-TOP: 3px
+}
+.ipsSettings_sectiontitle {
+	PADDING-LEFT: 10px; WIDTH: 165px; FONT: bold 14px Helvetica, Arial, sans-serif; FLOAT: left; COLOR: #151515
+}
+.ipsSettings_fieldtitle {
+	MIN-WIDTH: 100px; DISPLAY: inline-block; FONT-SIZE: 14px; VERTICAL-ALIGN: top; MARGIN-RIGHT: 10px; PADDING-TOP: 3px
+}
+.ipsTooltip {
+	Z-INDEX: 25000; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.ipsTooltip_inner {
+	BORDER-BOTTOM: #333 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #333 1px solid; PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; MAX-WIDTH: 250px; BACKGROUND: #333; COLOR: #fff; FONT-SIZE: 12px; BORDER-TOP: #333 1px solid; BORDER-RIGHT: #333 1px solid; PADDING-TOP: 8px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.1) inset; -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.1) inset; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.1) inset
+}
+.ipsTooltip_inner A {
+	COLOR: #fff
+}
+.ipsTooltip_inner SPAN {
+	COLOR: #d2d2d2; FONT-SIZE: 11px
+}
+.top.ipsTooltip {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/stems/tooltip_top.png) no-repeat center bottom
+}
+.top_left.ipsTooltip {
+	BACKGROUND-POSITION: left bottom
+}
+.bottom.ipsTooltip {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/stems/tooltip_bottom.png) no-repeat center top
+}
+.left.ipsTooltip {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/stems/tooltip_left.png) no-repeat right center
+}
+.right.ipsTooltip {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/stems/tooltip_right.png) no-repeat left center
+}
+.ipsHasNotifications {
+	POSITION: absolute; TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 12px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: #cf2020; HEIGHT: 12px; COLOR: #fff !important; FONT-SIZE: 9px; TOP: 4px; PADDING-TOP: 0px; LEFT: 3px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.1) inset; -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.1) inset; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.1) inset
+}
+.ipsHasNotifications_blank {
+	DISPLAY: none
+}
+.ipsHasNotifications#chat-tab-count {
+	TOP: 0px; RIGHT: -1px; LEFT: auto; text-shadow: none
+}
+.ipsSideMenu {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+.ipsSideMenu H4 {
+	MARGIN: 0px 10px 5px 25px; COLOR: #383838; FONT-WEIGHT: bold
+}
+.ipsSideMenu UL {
+	MARGIN-BOTTOM: 20px; BORDER-TOP: #edf1f5 1px solid
+}
+.ipsSideMenu UL LI {
+	BORDER-BOTTOM: #edf1f5 1px solid; FONT-SIZE: 11px
+}
+.ipsSideMenu UL LI A {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 25px; PADDING-RIGHT: 10px; DISPLAY: block; PADDING-TOP: 5px
+}
+.ipsSideMenu UL LI.active A {
+	BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_check_white.png) #af286d no-repeat 6px 8px; COLOR: #fff; FONT-WEIGHT: bold
+}
+.ipsSteps {
+	BORDER-BOTTOM: #fff 1px solid; BACKGROUND: #dbe2ec; OVERFLOW: hidden
+}
+.ipsSteps UL LI {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/wizard_step_large.png); POSITION: relative; PADDING-BOTTOM: 11px; PADDING-LEFT: 18px; PADDING-RIGHT: 33px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right bottom; FLOAT: left; COLOR: #323232; MAX-HEIGHT: 53px; PADDING-TOP: 11px
+}
+.ipsSteps .ipsSteps_active {
+	BACKGROUND-POSITION: right top; COLOR: #fff; text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.7)
+}
+.ipsSteps .ipsSteps_done {
+	COLOR: #aeaeae
+}
+.ipsSteps_desc {
+	FONT-SIZE: 11px
+}
+.ipsSteps_arrow {
+	DISPLAY: none
+}
+.ipsSteps_title {
+	DISPLAY: block; FONT-SIZE: 14px
+}
+.ipsSteps_active .ipsSteps_arrow {
+	POSITION: absolute; WIDTH: 23px; DISPLAY: block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/wizard_step_extra.png) no-repeat; HEIGHT: 54px; TOP: 0px; LEFT: -23px
+}
+.ipsSteps UL LI:first-child .ipsSteps_arrow {
+	DISPLAY: none !important
+}
+.ipsVerticalTabbed {
+	
+}
+.ipsVerticalTabbed_content {
+	MIN-HEIGHT: 400px
+}
+.ipsVerticalTabbed_tabs > UL {
+	BORDER-LEFT: #dbe4ef 1px solid; MARGIN-TOP: 10px; WIDTH: 149px !important; BORDER-TOP: #dbe4ef 1px solid
+}
+.ipsVerticalTabbed_tabs.ipsVerticalTabbed_minitabs > UL {
+	WIDTH: 40px !important
+}
+.ipsVerticalTabbed_tabs LI {
+	BORDER-BOTTOM: #dbe4ef 1px solid; BACKGROUND: #f6f8fb; COLOR: #808080; FONT-SIZE: 13px
+}
+.ipsVerticalTabbed_tabs LI A {
+	PADDING-BOTTOM: 10px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 8px; OUTLINE-WIDTH: 0px; PADDING-RIGHT: 8px; DISPLAY: block; COLOR: #8d8d8d; PADDING-TOP: 10px; -webkit-transition: background-color 0.1s ease-in-out; -moz-transition: background-color 0.3s ease-in-out
+}
+.ipsVerticalTabbed_tabs LI A:hover {
+	BACKGROUND: #eaeff5; COLOR: #808080
+}
+.ipsVerticalTabbed_tabs LI.active A {
+	Z-INDEX: 8000; POSITION: relative; WIDTH: 135px; BACKGROUND: #fff; COLOR: #353535; FONT-WEIGHT: bold; BORDER-RIGHT: #fff 1px solid
+}
+.ipsVerticalTabbed_tabs.ipsVerticalTabbed_minitabs LI.active A {
+	WIDTH: 24px
+}
+.ipsLikeBar {
+	MARGIN: 10px 0px; FONT-SIZE: 11px
+}
+.ipsLikeBar_info {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 19px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; BACKGROUND: #f4f4f4; PADDING-TOP: 0px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.ipsLikeButton {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 17px; PADDING-LEFT: 24px; PADDING-RIGHT: 6px; DISPLAY: inline-block; COLOR: #fff !important; FONT-SIZE: 11px; PADDING-TOP: 0px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.ipsLikeButton:hover {
+	COLOR: #fff !important
+}
+.ipsLikeButton_enabled.ipsLikeButton {
+	BORDER-BOTTOM: #7b96bb 1px solid; BORDER-LEFT: #7b96bb 1px solid; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/like_button.png) #7b96bb no-repeat left top; BORDER-TOP: #7b96bb 1px solid; BORDER-RIGHT: #7b96bb 1px solid
+}
+.ipsLikeButton_disabled.ipsLikeButton {
+	BORDER-BOTTOM: #acacac 1px solid; BORDER-LEFT: #acacac 1px solid; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/like_button.png) #acacac no-repeat left bottom; BORDER-TOP: #acacac 1px solid; BORDER-RIGHT: #acacac 1px solid
+}
+.ipsTag {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; MARGIN: 5px 5px 0px 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 7px; DISPLAY: inline-block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/tag_bg.png); HEIGHT: 20px; COLOR: #656565; FONT-SIZE: 11px; PADDING-TOP: 0px; -moz-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0; -webkit-border-top-right-radius: 3px; text-shadow: 0 1px 0 rgba(255, 255, 255, 1); -webkit-border-bottom-right-radius: 3px
+}
+.ipsTagBox_wrapper {
+	LINE-HEIGHT: 1.3; MIN-HEIGHT: 18px; WIDTH: 350px; DISPLAY: inline-block
+}
+.ipsTagBox_hiddeninput {
+	BACKGROUND: #fff
+}
+.inactive.ipsTagBox_hiddeninput {
+	MIN-WIDTH: 200px; FONT-SIZE: 11px
+}
+.ipsTagBox_wrapper INPUT {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.ipsTagBox_wrapper LI {
+	DISPLAY: inline-block
+}
+.with_prefixes.ipsTagBox_wrapper LI.ipsTagBox_tag:first-child {
+	BORDER-BOTTOM-COLOR: #a8e3ff; BORDER-TOP-COLOR: #a8e3ff; BACKGROUND: #dbf3ff; COLOR: #136db5; BORDER-RIGHT-COLOR: #a8e3ff; BORDER-LEFT-COLOR: #a8e3ff
+}
+.ipsTagBox_tag {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; PADDING-BOTTOM: 2px; MARGIN: 0px 3px 2px 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 1px; BACKGROUND: #f4f4f4; FONT-SIZE: 11px; BORDER-TOP: #ddd 1px solid; CURSOR: pointer; BORDER-RIGHT: #ddd 1px solid; PADDING-TOP: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.ipsTagBox_tag:hover {
+	BORDER-BOTTOM-COLOR: #bdbdbd; BORDER-TOP-COLOR: #bdbdbd; BORDER-RIGHT-COLOR: #bdbdbd; BORDER-LEFT-COLOR: #bdbdbd
+}
+.selected.ipsTagBox_tag {
+	BORDER-BOTTOM-COLOR: #c0c0c0 !important; BORDER-TOP-COLOR: #c0c0c0 !important; BACKGROUND: #e2e2e2; COLOR: #424242 !important; BORDER-RIGHT-COLOR: #c0c0c0 !important; BORDER-LEFT-COLOR: #c0c0c0 !important
+}
+.ipsTagBox_closetag {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; DISPLAY: inline-block; COLOR: #c7c7c7; MARGIN-LEFT: 2px; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.ipsTagBox_closetag:hover {
+	COLOR: #454545
+}
+.selected.ipsTagBox_tag .ipsTagBox_closetag {
+	COLOR: #424242
+}
+.selected.ipsTagBox_tag .ipsTagBox_closetag:hover {
+	COLOR: #2f2f2f
+}
+.with_prefixes.ipsTagBox_wrapper LI.ipsTagBox_tag:first-child .ipsTagBox_closetag {
+	COLOR: #4f87bb
+}
+.with_prefixes.ipsTagBox_wrapper LI.ipsTagBox_tag:first-child .ipsTagBox_closetag:hover {
+	COLOR: #003b71
+}
+.ipsTagBox_addlink {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px; MARGIN-LEFT: 3px; FONT-SIZE: 10px
+}
+.ipsTagBox_dropdown {
+	Z-INDEX: 16000; BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; BACKGROUND: #fff; HEIGHT: 100px; OVERFLOW: scroll; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2)
+}
+.ipsTagBox_dropdown LI {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; FONT-SIZE: 12px; CURSOR: pointer; PADDING-TOP: 4px
+}
+.ipsTagBox_dropdown LI:hover {
+	BACKGROUND: #dbf3ff; COLOR: #003b71
+}
+.ipsTagWeight_1 {
+	opacity: 1.0
+}
+.ipsTagWeight_2 {
+	opacity: 0.9
+}
+.ipsTagWeight_3 {
+	opacity: 0.8
+}
+.ipsTagWeight_4 {
+	opacity: 0.7
+}
+.ipsTagWeight_5 {
+	opacity: 0.6
+}
+.ipsTagWeight_6 {
+	opacity: 0.5
+}
+.ipsTagWeight_7 {
+	opacity: 0.4
+}
+.ipsTagWeight_8 {
+	opacity: 0.3
+}
+.ipsFilterbar LI {
+	MARGIN: 0px 15px 0px 0px; FONT-SIZE: 11px
+}
+.ipsFilterbar LI A {
+	COLOR: #fff; text-shadow: 0px 1px 0px #0d273e; opacity: 0.5; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out
+}
+.altbar.bar.ipsFilterbar LI A {
+	COLOR: #244156; text-shadow: none; opacity: .8
+}
+.ipsFilterbar:hover LI A {
+	opacity: 0.8
+}
+.ipsFilterbar LI A:hover {
+	COLOR: #fff; opacity: 1
+}
+.ipsFilterbar LI.active {
+	opacity: 1
+}
+.ipsFilterbar LI.active A {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #244156; COLOR: #fff; FONT-WEIGHT: bold; PADDING-TOP: 4px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2); box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2); opacity: 1
+}
+.altbar.bar.ipsFilterbar LI.active A {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #244156; COLOR: #fff; FONT-WEIGHT: bold; PADDING-TOP: 4px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2); box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2); opacity: 1
+}
+.ipsPostForm {
+	
+}
+.ipsLayout_withright.ipsPostForm {
+	PADDING-RIGHT: 260px !important
+}
+.ipsPostForm .ipsLayout_content {
+	Z-INDEX: 900; FLOAT: none; -moz-box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1); box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1)
+}
+.ipsPostForm .ipsLayout_right {
+	Z-INDEX: 800; BORDER-LEFT: 0px; WIDTH: 250px; MARGIN-RIGHT: -251px
+}
+.ipsPostForm_sidebar .closed.ipsPostForm_sidebar_block H3 {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/folder_closed.png); PADDING-LEFT: 26px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 10px 9px; MARGIN-BOTTOM: 2px
+}
+.ipsMemberList .ipsButton_secondary {
+	opacity: 0.3
+}
+.ipsMemberList LI:hover .ipsButton_secondary {
+	opacity: 1
+}
+.ipsMemberList TR:hover .ipsButton_secondary {
+	opacity: 1
+}
+.ipsMemberList LI .reputation {
+	MARGIN: 5px 10px 0px 0px
+}
+.ipsMemberList > LI .ipsButton_secondary {
+	MARGIN-TOP: 15px
+}
+.ipsMemberList LI .rating {
+	DISPLAY: inline
+}
+.ipsComment_wrap {
+	MARGIN-TOP: 10px
+}
+.ipsComment_wrap .ipsLikeBar {
+	MARGIN: 0px
+}
+.ipsComment_wrap INPUT[type='checkbox'] {
+	VERTICAL-ALIGN: middle
+}
+.ipsComment {
+	BORDER-BOTTOM: #e9e9e9 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 5px; PADDING-TOP: 10px
+}
+.ipsComment_author {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.3; PADDING-LEFT: 10px; WIDTH: 160px; PADDING-RIGHT: 10px; FLOAT: left; PADDING-TOP: 0px
+}
+.ipsComment_reply_user {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.3; PADDING-LEFT: 10px; WIDTH: 160px; PADDING-RIGHT: 10px; FLOAT: left; PADDING-TOP: 0px
+}
+.ipsComment_author .ipsUserPhoto {
+	MARGIN-BOTTOM: 5px
+}
+.ipsComment_comment {
+	LINE-HEIGHT: 1.5; MARGIN-LEFT: 190px
+}
+.ipsComment_comment > DIV {
+	MIN-HEIGHT: 33px
+}
+.ipsComment_controls {
+	MARGIN-TOP: 10px
+}
+.ipsComment_controls > LI {
+	opacity: 0.2
+}
+.ipsComment:hover .ipsComment_controls > LI {
+	opacity: 1
+}
+.ipsComment .ipsComment_controls > LI.right {
+	opacity: 1
+}
+.ipsFloatingAction {
+	Z-INDEX: 15000; BORDER-BOTTOM: #464646 4px solid; POSITION: fixed; BORDER-LEFT: #464646 4px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; BOTTOM: 10px; PADDING-RIGHT: 10px; BACKGROUND: #fff; BORDER-TOP: #464646 4px solid; RIGHT: 10px; BORDER-RIGHT: #464646 4px solid; PADDING-TOP: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4); box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4)
+}
+BODY#ipboard_body FIELDSET.submit {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 15px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 15px
+}
+BODY#ipboard_body P.submit {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 15px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 15px
+}
+.input_text {
+	BORDER-BOTTOM: #e1e1e1 1px solid; BORDER-LEFT: #c1c1c1 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: #fff; BORDER-TOP: #a6a6a6 1px solid; BORDER-RIGHT: #c1c1c1 1px solid; PADDING-TOP: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.ipsTagBox_wrapper {
+	BORDER-BOTTOM: #e1e1e1 1px solid; BORDER-LEFT: #c1c1c1 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: #fff; BORDER-TOP: #a6a6a6 1px solid; BORDER-RIGHT: #c1c1c1 1px solid; PADDING-TOP: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.input_text:focus {
+	BORDER-BOTTOM-COLOR: #a3a3a3; BORDER-TOP-COLOR: #4e4e4e; BORDER-RIGHT-COLOR: #7c7c7c; BORDER-LEFT-COLOR: #7c7c7c; -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3)
+}
+INPUT.inactive {
+	COLOR: #c4c4c4
+}
+SELECT.inactive {
+	COLOR: #c4c4c4
+}
+TEXTAREA.inactive {
+	COLOR: #c4c4c4
+}
+.error.input_text {
+	BACKGROUND-COLOR: #f3dddd
+}
+.accept.input_text {
+	BACKGROUND-COLOR: #f1f6ec
+}
+.input_submit {
+	BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: 1px solid; CURSOR: pointer; BORDER-RIGHT: 1px solid; TEXT-DECORATION: none; PADDING-TOP: 4px
+}
+.alt.input_submit {
+	TEXT-DECORATION: none
+}
+P.field {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; PADDING-TOP: 15px
+}
+LI.field {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; MARGIN-LEFT: 5px; PADDING-TOP: 5px
+}
+LI.field LABEL {
+	DISPLAY: block
+}
+LI.field SPAN.desc {
+	DISPLAY: block
+}
+LI.error.field {
+	COLOR: #ad2930
+}
+LI.error.field LABEL {
+	FONT-WEIGHT: bold
+}
+LI.checkbox.field {
+	MARGIN-LEFT: 0px
+}
+LI.cbox.field {
+	MARGIN-LEFT: 0px
+}
+LI.checkbox.field .input_check {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 10px
+}
+LI.checkbox.field .input_radio {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 10px
+}
+LI.cbox.field .input_check {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 10px
+}
+LI.cbox.field .input_radio {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 10px
+}
+LI.checkbox.field LABEL {
+	WIDTH: auto; DISPLAY: inline; FLOAT: none
+}
+LI.cbox.field LABEL {
+	WIDTH: auto; DISPLAY: inline; FLOAT: none
+}
+LI.checkbox.field P {
+	POSITION: relative; DISPLAY: block; LEFT: 245px
+}
+LI.cbox.field P {
+	POSITION: relative; DISPLAY: block; LEFT: 245px
+}
+LI.checkbox.field SPAN.desc {
+	PADDING-LEFT: 27px; DISPLAY: block; MARGIN-LEFT: auto
+}
+LI.cbox.field SPAN.desc {
+	PADDING-LEFT: 27px; DISPLAY: block; MARGIN-LEFT: auto
+}
+.message {
+	BORDER-BOTTOM: #a4cfa4 1px solid; BORDER-LEFT: #a4cfa4 1px solid; PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.6; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #ebfcdf; COLOR: #0e440e; FONT-SIZE: 12px; BORDER-TOP: #a4cfa4 1px solid; BORDER-RIGHT: #a4cfa4 1px solid; PADDING-TOP: 10px
+}
+.message H3 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #323232; PADDING-TOP: 0px
+}
+.error.message {
+	BORDER-BOTTOM-COLOR: #e599aa; BACKGROUND-COLOR: #f3e3e6; BORDER-TOP-COLOR: #e599aa; COLOR: #80001c; BORDER-RIGHT-COLOR: #e599aa; BORDER-LEFT-COLOR: #e599aa
+}
+.usercp.error.message {
+	BACKGROUND-IMAGE: none; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; FLOAT: right; PADDING-TOP: 4px
+}
+.unspecific.message {
+	BORDER-BOTTOM-COLOR: #d4d4d4; BACKGROUND-COLOR: #f3f3f3; BORDER-TOP-COLOR: #d4d4d4; MARGIN: 0px 0px 10px; COLOR: #515151; BORDER-RIGHT-COLOR: #d4d4d4; CLEAR: both; BORDER-LEFT-COLOR: #d4d4d4
+}
+.ipbmenu_content {
+	Z-INDEX: 2000; MIN-WIDTH: 85px; FONT-SIZE: 12px
+}
+.ipb_autocomplete {
+	Z-INDEX: 2000; MIN-WIDTH: 85px; FONT-SIZE: 12px
+}
+.ipbmenu_content LI:first-child {
+	PADDING-TOP: 0px
+}
+.with_checks.ipbmenu_content A {
+	PADDING-LEFT: 26px
+}
+.ipbmenu_content A .icon {
+	MARGIN-RIGHT: 10px
+}
+.ipbmenu_content A {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 6px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; TEXT-DECORATION: none; PADDING-TOP: 6px
+}
+.with_checks.ipbmenu_content LI.selected A {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_check.png); BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 7px 10px
+}
+.popupWrapper {
+	PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #464646; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7); -webkit-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7); box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7 )
+}
+.popupInner {
+	OVERFLOW-X: hidden; WIDTH: 500px; BACKGROUND: #fff; OVERFLOW: auto; -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4)
+}
+.black_mode.popupInner {
+	BORDER-BOTTOM: #555 3px solid; BORDER-LEFT: #555 3px solid; BACKGROUND: #000; COLOR: #eee; BORDER-TOP: #555 3px solid; BORDER-RIGHT: #555 3px solid
+}
+.warning_mode.popupInner {
+	BORDER-BOTTOM: #7d1b1b 3px solid; BORDER-LEFT: #7d1b1b 3px solid; BORDER-TOP: #7d1b1b 3px solid; BORDER-RIGHT: #7d1b1b 3px solid
+}
+.popupInner H3 {
+	BORDER-BOTTOM: #316897 0px solid; BORDER-LEFT: #316897 1px solid; PADDING-BOTTOM: 9px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/maintitle.png) #2c5687 repeat-x 50% top; COLOR: #fff; FONT-SIZE: 16px; BORDER-TOP: #316897 1px solid; FONT-WEIGHT: 300; BORDER-RIGHT: #316897 1px solid; PADDING-TOP: 8px; -moz-box-shadow: inset 0px 1px 0 #528cbc; -webkit-box-shadow: inset 0px 1px 0 #528cbc; box-shadow: inset 0px 1px 0 #528cbc; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)
+}
+.popupInner H3 A {
+	COLOR: #fff
+}
+.black_mode.popupInner H3 {
+	BACKGROUND-COLOR: #545c66; COLOR: #ddd
+}
+.warning_mode.popupInner H3 {
+	PADDING-BOTTOM: 6px; BACKGROUND-COLOR: #7d1b1b; COLOR: #fff; PADDING-TOP: 6px
+}
+.warning_mode.popupInner INPUT.input_submit {
+	BACKGROUND-COLOR: #7d1b1b
+}
+.popupClose {
+	POSITION: absolute; TOP: 12px; RIGHT: 16px
+}
+.light_close_button.popupClose {
+	WIDTH: 13px; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/close_popup_light.png) no-repeat left top; HEIGHT: 13px; TOP: 17px; opacity: 0.8
+}
+.light_close_button.popupClose IMG {
+	DISPLAY: none
+}
+.popup_footer {
+	POSITION: absolute; PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; BOTTOM: 0px; PADDING-RIGHT: 15px; RIGHT: 0px; PADDING-TOP: 15px
+}
+.popup_body {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.stem {
+	POSITION: absolute; WIDTH: 31px; HEIGHT: 16px
+}
+.topleft.stem {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/stems/topleft.png)
+}
+.topright.stem {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/stems/topright.png)
+}
+.bottomleft.stem {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/stems/bottomleft.png)
+}
+.bottomright.stem {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/stems/bottomright.png)
+}
+.modal {
+	BACKGROUND-COLOR: #3e3e3e
+}
+.userpopup H3 {
+	FONT-SIZE: 17px
+}
+.userpopup H3 {
+	PADDING-LEFT: 110px
+}
+.userpopup .side + DIV {
+	PADDING-LEFT: 110px
+}
+.userpopup .side {
+	POSITION: absolute; MARGIN-TOP: -40px
+}
+.userpopup .side .ipsButton_secondary {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; LINE-HEIGHT: 1; MARGIN-TOP: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; MAX-WIDTH: 75px; WHITE-SPACE: normal; HEIGHT: auto; PADDING-TOP: 5px
+}
+.userpopup .user_controls {
+	TEXT-ALIGN: left
+}
+.userpopup .user_status {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; MARGIN-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.userpopup .reputation {
+	TEXT-ALIGN: center; MARGIN-TOP: 5px; DISPLAY: block
+}
+.userpopup {
+	POSITION: relative; FONT-SIZE: 0.9em; OVERFLOW: hidden
+}
+.userpopup DL {
+	BORDER-BOTTOM: #d4d4d4 1px solid; PADDING-BOTTOM: 10px; MARGIN-BOTTOM: 4px
+}
+.info DT {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 6px; WIDTH: 30%; PADDING-RIGHT: 6px; FLOAT: left; CLEAR: both; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.info DD {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 6px; WIDTH: 60%; PADDING-RIGHT: 6px; MARGIN-LEFT: 35%; PADDING-TOP: 3px
+}
+.topic_buttons LI {
+	MARGIN: 0px 0px 10px 10px; FLOAT: right
+}
+.topic_buttons LI.important A {
+	BORDER-BOTTOM: #212121 0px solid; MIN-WIDTH: 125px; TEXT-ALIGN: center; BORDER-LEFT: #212121 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; FONT: 300 12px/30px Helvetica, Arial, sans-serif; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button.png) #212121 repeat-x 50% top; HEIGHT: 30px; COLOR: #fff; BORDER-TOP: #212121 1px solid; CURSOR: pointer; BORDER-RIGHT: #212121 1px solid; PADDING-TOP: 0px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); text-shadow: 0 -1px 0 #191919
+}
+.topic_buttons LI.important SPAN {
+	BORDER-BOTTOM: #212121 0px solid; MIN-WIDTH: 125px; TEXT-ALIGN: center; BORDER-LEFT: #212121 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; FONT: 300 12px/30px Helvetica, Arial, sans-serif; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button.png) #212121 repeat-x 50% top; HEIGHT: 30px; COLOR: #fff; BORDER-TOP: #212121 1px solid; CURSOR: pointer; BORDER-RIGHT: #212121 1px solid; PADDING-TOP: 0px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); text-shadow: 0 -1px 0 #191919
+}
+.ipsButton .important {
+	BORDER-BOTTOM: #212121 0px solid; MIN-WIDTH: 125px; TEXT-ALIGN: center; BORDER-LEFT: #212121 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; FONT: 300 12px/30px Helvetica, Arial, sans-serif; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button.png) #212121 repeat-x 50% top; HEIGHT: 30px; COLOR: #fff; BORDER-TOP: #212121 1px solid; CURSOR: pointer; BORDER-RIGHT: #212121 1px solid; PADDING-TOP: 0px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); text-shadow: 0 -1px 0 #191919
+}
+.topic_buttons LI A {
+	BORDER-BOTTOM: #212121 0px solid; MIN-WIDTH: 125px; TEXT-ALIGN: center; BORDER-LEFT: #212121 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; FONT: 300 12px/30px Helvetica, Arial, sans-serif; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button.png) #212121 repeat-x 50% top; HEIGHT: 30px; COLOR: #fff; BORDER-TOP: #212121 1px solid; CURSOR: pointer; BORDER-RIGHT: #212121 1px solid; PADDING-TOP: 0px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); text-shadow: 0 -1px 0 #191919
+}
+.topic_buttons LI SPAN {
+	BORDER-BOTTOM: #212121 0px solid; MIN-WIDTH: 125px; TEXT-ALIGN: center; BORDER-LEFT: #212121 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; FONT: 300 12px/30px Helvetica, Arial, sans-serif; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button.png) #212121 repeat-x 50% top; HEIGHT: 30px; COLOR: #fff; BORDER-TOP: #212121 1px solid; CURSOR: pointer; BORDER-RIGHT: #212121 1px solid; PADDING-TOP: 0px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); text-shadow: 0 -1px 0 #191919
+}
+.ipsButton {
+	BORDER-BOTTOM: #212121 0px solid; MIN-WIDTH: 125px; TEXT-ALIGN: center; BORDER-LEFT: #212121 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; FONT: 300 12px/30px Helvetica, Arial, sans-serif; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button.png) #212121 repeat-x 50% top; HEIGHT: 30px; COLOR: #fff; BORDER-TOP: #212121 1px solid; CURSOR: pointer; BORDER-RIGHT: #212121 1px solid; PADDING-TOP: 0px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #5c5c5c, 0px 2px 3px rgba(0, 0, 0, 0.2); text-shadow: 0 -1px 0 #191919
+}
+.topic_buttons LI.important A {
+	BORDER-BOTTOM-COLOR: #812200; BORDER-TOP-COLOR: #812200; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button_closed.png) #812200 repeat-x 50% top; BORDER-RIGHT-COLOR: #812200; BORDER-LEFT-COLOR: #812200; -moz-box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2)
+}
+.topic_buttons LI.important SPAN {
+	BORDER-BOTTOM-COLOR: #812200; BORDER-TOP-COLOR: #812200; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button_closed.png) #812200 repeat-x 50% top; BORDER-RIGHT-COLOR: #812200; BORDER-LEFT-COLOR: #812200; -moz-box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2)
+}
+.ipsButton .important {
+	BORDER-BOTTOM-COLOR: #812200; BORDER-TOP-COLOR: #812200; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button_closed.png) #812200 repeat-x 50% top; BORDER-RIGHT-COLOR: #812200; BORDER-LEFT-COLOR: #812200; -moz-box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2)
+}
+.important.ipsButton {
+	BORDER-BOTTOM-COLOR: #812200; BORDER-TOP-COLOR: #812200; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_button_closed.png) #812200 repeat-x 50% top; BORDER-RIGHT-COLOR: #812200; BORDER-LEFT-COLOR: #812200; -moz-box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 0 0 #db6e46, 0px 2px 3px rgba(0, 0, 0, 0.2)
+}
+.topic_buttons LI A:hover {
+	COLOR: #fff
+}
+.ipsButton:hover {
+	COLOR: #fff
+}
+.topic_buttons LI.non_button A {
+	BORDER-BOTTOM: 0px; MIN-WIDTH: 0px; BORDER-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #777; BORDER-TOP: 0px; FONT-WEIGHT: normal; BORDER-RIGHT: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; text-shadow: none
+}
+.topic_buttons LI.disabled A {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: #ebebeb; COLOR: #7f7f7f; BORDER-TOP: 0px; BORDER-RIGHT: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; text-shadow: none
+}
+.topic_buttons LI.disabled SPAN {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND: #ebebeb; COLOR: #7f7f7f; BORDER-TOP: 0px; BORDER-RIGHT: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; text-shadow: none
+}
+.topic_buttons LI SPAN {
+	CURSOR: default !important
+}
+.ipsButton_secondary {
+	BORDER-BOTTOM: #dbdbdb 1px solid; BORDER-LEFT: #dbdbdb 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; WHITE-SPACE: nowrap; BACKGROUND: #f6f6f6; HEIGHT: 22px; COLOR: #616161; FONT-SIZE: 12px; BORDER-TOP: #dbdbdb 1px solid; BORDER-RIGHT: #dbdbdb 1px solid; PADDING-TOP: 0px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 1) inset, 0px 1px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 1) inset, 0px 1px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 1px 0px rgba(255, 255, 255, 1) inset, 0px 1px 0px rgba(0, 0, 0, 0.3); -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out
+}
+.ipsButton_secondary A {
+	COLOR: #616161
+}
+.ipsButton_secondary:hover {
+	BORDER-BOTTOM-COLOR: #9a9a9a; BORDER-TOP-COLOR: #9a9a9a; COLOR: #4c4c4c; BORDER-RIGHT-COLOR: #9a9a9a; BORDER-LEFT-COLOR: #9a9a9a
+}
+.important.ipsButton_secondary {
+	BORDER-BOTTOM: #812200 1px solid; BORDER-LEFT: #812200 1px solid; BACKGROUND: #9f2a00; COLOR: #fbf4f4; BORDER-TOP: #812200 1px solid; BORDER-RIGHT: #812200 1px solid; -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) inset, 0px 1px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) inset, 0px 1px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) inset, 0px 1px 0px rgba(0, 0, 0, 0.3)
+}
+.important.ipsButton_secondary A {
+	COLOR: #fbf4f4
+}
+.important.ipsButton_secondary A:hover {
+	BORDER-BOTTOM-COLOR: #571700; BORDER-TOP-COLOR: #571700; COLOR: #fff; BORDER-RIGHT-COLOR: #571700; BORDER-LEFT-COLOR: #571700
+}
+.ipsButton_secondary.ipsField_checkbox.ipsField {
+	LINE-HEIGHT: 18px
+}
+.ipsButton_secondary.ipsField_checkbox.ipsField INPUT {
+	MARGIN-TOP: 6px
+}
+.ipsButton_secondary.ipsField_checkbox.ipsField .ipsField_content {
+	MARGIN-LEFT: 18px
+}
+.ipsButton_extra {
+	LINE-HEIGHT: 22px; HEIGHT: 22px; COLOR: #5c5c5c; MARGIN-LEFT: 5px; FONT-SIZE: 11px
+}
+.fixed_width.ipsButton_secondary {
+	MIN-WIDTH: 170px
+}
+.no_width.ipsButton {
+	MIN-WIDTH: 0px
+}
+.topic_controls {
+	MIN-HEIGHT: 30px
+}
+UL.post_controls {
+	PADDING-BOTTOM: 6px; MARGIN: 0px 0px 10px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; CLEAR: both; PADDING-TOP: 6px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px
+}
+UL.post_controls LI {
+	FLOAT: right; FONT-SIZE: 12px
+}
+UL.post_controls A {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; DISPLAY: block; HEIGHT: 22px; COLOR: #1d3652; MARGIN-LEFT: 4px; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+UL.post_controls A:hover {
+	COLOR: #3d70a3
+}
+UL.post_controls A.ipsButton_secondary {
+	LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+UL.post_controls LI.selected.multiquote A {
+	BORDER-BOTTOM-COLOR: #7ba60d; BORDER-TOP-COLOR: #7ba60d; BACKGROUND: #a1dc00; COLOR: #fff; BORDER-RIGHT-COLOR: #7ba60d; BORDER-LEFT-COLOR: #7ba60d; -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) inset, 0px 1px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) inset, 0px 1px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) inset, 0px 1px 0px rgba(0, 0, 0, 0.3)
+}
+.post_block .post_controls LI A {
+	opacity: 0.2; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.5s ease-in-out
+}
+.post_block .post_controls LI A.ipsButton_secondary {
+	opacity: 1
+}
+.post_block:hover .post_controls LI A {
+	opacity: 1
+}
+.hide_signature {
+	FLOAT: right
+}
+.sigIconStay {
+	FLOAT: right
+}
+.post_block:hover .signature A.hide_signature {
+	POSITION: absolute; WIDTH: 13px; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/cross_sml.png) no-repeat right top; HEIGHT: 13px; RIGHT: 0px; opacity: 0.6
+}
+.sigIconStay {
+	POSITION: absolute; WIDTH: 13px; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/cross_sml.png) no-repeat right top; HEIGHT: 13px; RIGHT: 0px; opacity: 0.6
+}
+.pagination {
+	PADDING-BOTTOM: 5px; LINE-HEIGHT: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+.no_numbers.pagination .page {
+	DISPLAY: none
+}
+.pagination .pages {
+	TEXT-ALIGN: center
+}
+.pagination .back {
+	MARGIN-RIGHT: 6px
+}
+.pagination .back LI {
+	MARGIN: 0px 2px 0px 0px
+}
+.pagination .forward {
+	MARGIN-LEFT: 6px
+}
+.pagination .forward LI {
+	MARGIN: 0px 0px 0px 2px
+}
+.pagination .back A {
+	PADDING-BOTTOM: 0px; TEXT-TRANSFORM: uppercase; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; DISPLAY: inline-block; BACKGROUND: #eaeaea; HEIGHT: 20px; COLOR: #5a5a5a; FONT-SIZE: 11px; FONT-WEIGHT: bold; PADDING-TOP: 0px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.pagination .forward A {
+	PADDING-BOTTOM: 0px; TEXT-TRANSFORM: uppercase; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; DISPLAY: inline-block; BACKGROUND: #eaeaea; HEIGHT: 20px; COLOR: #5a5a5a; FONT-SIZE: 11px; FONT-WEIGHT: bold; PADDING-TOP: 0px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.pagination .back A:hover {
+	BACKGROUND: #af286d; COLOR: #fff
+}
+.pagination .forward A:hover {
+	BACKGROUND: #af286d; COLOR: #fff
+}
+.pagination .disabled A {
+	DISPLAY: none; opacity: 0.4
+}
+.pagination .pages {
+	FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.pagination .pages A {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; DISPLAY: inline-block; COLOR: #999; PADDING-TOP: 1px
+}
+.pagejump {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; DISPLAY: inline-block; COLOR: #999; PADDING-TOP: 1px
+}
+.pagination .pages .pagejump {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.pagination .pages A:hover {
+	BACKGROUND: #ececec; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.pagination .pages LI {
+	MARGIN: 0px 1px
+}
+.pagination .pages LI.active {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #7ba60d; COLOR: #fff; FONT-WEIGHT: bold; PADDING-TOP: 1px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.no_pages.pagination SPAN {
+	LINE-HEIGHT: 20px; DISPLAY: inline-block; HEIGHT: 20px; COLOR: #acacac
+}
+UL.mini_pagination {
+	DISPLAY: inline; MARGIN-LEFT: 7px; FONT-SIZE: 10px
+}
+UL.mini_pagination LI A {
+	BORDER-BOTTOM: #d3d3d3 1px solid; BORDER-LEFT: #d3d3d3 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; BACKGROUND: #fff; BORDER-TOP: #d3d3d3 1px solid; BORDER-RIGHT: #d3d3d3 1px solid; PADDING-TOP: 1px
+}
+UL.mini_pagination LI {
+	MARGIN: 0px 2px; DISPLAY: inline
+}
+.moderation_bar {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 8px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 8px
+}
+.with_action.moderation_bar {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/topic_mod_arrow.png); PADDING-RIGHT: 35px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right center
+}
+.author_info {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 15px; PADDING-LEFT: 10px; WIDTH: 155px; PADDING-RIGHT: 10px; FLOAT: left; FONT-SIZE: 12px; PADDING-TOP: 15px
+}
+.author_info .group_title {
+	MARGIN-TOP: 5px; COLOR: #5a5a5a
+}
+.author_info .member_title {
+	WORD-WRAP: break-word; MARGIN-BOTTOM: 5px
+}
+.author_info .group_icon {
+	MARGIN-BOTTOM: 3px
+}
+.custom_fields {
+	MARGIN-TOP: 8px; COLOR: #818181
+}
+.custom_fields .ft {
+	COLOR: #505050; MARGIN-RIGHT: 3px
+}
+.custom_fields .fc {
+	WORD-WRAP: break-word
+}
+.user_controls {
+	TEXT-ALIGN: center; MARGIN: 6px 0px
+}
+.user_controls LI A {
+	BORDER-BOTTOM: #dbdbdb 1px solid; BORDER-LEFT: #dbdbdb 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; DISPLAY: inline-block; BACKGROUND: #f6f6f6; COLOR: #616161; BORDER-TOP: #dbdbdb 1px solid; BORDER-RIGHT: #dbdbdb 1px solid; PADDING-TOP: 5px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 1) inset, 0px 1px 0px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 1) inset, 0px 1px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 1px 0px rgba(255, 255, 255, 1) inset, 0px 1px 0px rgba(0, 0, 0, 0.3)
+}
+#board_index #categories {
+	OVERFLOW: hidden
+}
+#board_index {
+	POSITION: relative
+}
+.no_sidebar#board_index {
+	PADDING-RIGHT: 0px
+}
+.force_sidebar#board_index {
+	PADDING-RIGHT: 290px
+}
+#toggle_sidebar {
+	Z-INDEX: 8000; POSITION: absolute; PADDING-BOTTOM: 3px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; BACKGROUND: #333; COLOR: #fff; TOP: -13px; RIGHT: -5px; PADDING-TOP: 3px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; opacity: 0; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out
+}
+#index_stats:hover + #toggle_sidebar {
+	opacity: 0.1
+}
+.no_sidebar#board_index #toggle_sidebar {
+	opacity: 0.1
+}
+#toggle_sidebar:hover {
+	opacity: 1
+}
+.ipsSideBlock {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; MARGIN-BOTTOM: 10px; BACKGROUND: #f7fbfc; PADDING-TOP: 10px
+}
+.ipsSideBlock H3 {
+	PADDING-BOTTOM: 5px; MARGIN: -10px -10px 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT: 14px helvetica, arial, sans-serif; BACKGROUND: #dbe2ec; COLOR: #204066; PADDING-TOP: 5px
+}
+.ipsSideBlock H3 .mod_links {
+	opacity: 0.0
+}
+.ipsSideBlock H3:hover .mod_links {
+	opacity: 1
+}
+.status_list .status_list {
+	MARGIN: 10px 0px 0px 50px
+}
+.status_list P.index_status_update {
+	LINE-HEIGHT: 120%; MARGIN: 4px 0px
+}
+.status_list LI {
+	POSITION: relative
+}
+.status_reply {
+	MARGIN-TOP: 8px
+}
+.status_list LI .mod_links {
+	opacity: 0.1; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out
+}
+.status_list LI:hover .mod_links {
+	opacity: 1
+}
+#board_stats UL {
+	
+}
+#board_stats LI {
+	MARGIN-RIGHT: 20px
+}
+#board_stats .value {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; DISPLAY: inline-block; BACKGROUND: #e2e2e2; COLOR: #4a4a4a; FONT-WEIGHT: bold; MARGIN-RIGHT: 3px; PADDING-TOP: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px
+}
+.statistics {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.3; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.statistics_head {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.friend_list UL LI {
+	MIN-WIDTH: 80px; TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN: 5px 0px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; HEIGHT: 70px; PADDING-TOP: 8px
+}
+#top_posters LI {
+	MIN-WIDTH: 80px; TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN: 5px 0px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; HEIGHT: 70px; PADDING-TOP: 8px
+}
+.friend_list UL LI SPAN.name {
+	FONT-SIZE: 0.8em
+}
+#top_posters LI SPAN.name {
+	FONT-SIZE: 0.8em
+}
+#hook_watched_items UL LI {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 8px
+}
+BODY#ipboard_body #hook_watched_items FIELDSET.submit {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 8px
+}
+#hook_birthdays .list_content {
+	PADDING-TOP: 8px
+}
+#hook_calendar .ipsBox_container {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+#hook_calendar TD {
+	TEXT-ALIGN: center
+}
+#hook_calendar TH {
+	TEXT-ALIGN: center
+}
+#hook_calendar TH {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+#more_topics {
+	TEXT-ALIGN: center; FONT-WEIGHT: bold
+}
+#more_topics A {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-TOP: 10px
+}
+.dynamic_update {
+	BORDER-TOP: #b3b3b3 2px solid
+}
+.topic_preview {
+	Z-INDEX: 300; MARGIN-TOP: -2px
+}
+UL.topic_moderation {
+	Z-INDEX: 300; MARGIN-TOP: -2px
+}
+UL.topic_moderation LI {
+	FLOAT: left
+}
+.topic_preview A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; DISPLAY: block; FLOAT: left; PADDING-TOP: 0px
+}
+UL.topic_moderation LI A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; DISPLAY: block; FLOAT: left; PADDING-TOP: 0px
+}
+SPAN.mini_rate {
+	DISPLAY: inline-block; MARGIN-RIGHT: 12px
+}
+IMG.mini_rate {
+	MARGIN-RIGHT: -5px
+}
+BODY .ip {
+	COLOR: #475769
+}
+SPAN.post_id {
+	MARGIN-LEFT: 15px
+}
+INPUT.post_mod {
+	MARGIN: 12px 5px 0px 10px
+}
+.signature {
+	POSITION: relative; PADDING-BOTTOM: 10px; MARGIN: 6px 0px 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #a4a4a4; CLEAR: right; FONT-SIZE: 0.9em; BORDER-TOP: #d5d5d5 1px solid; PADDING-TOP: 10px
+}
+.signature A {
+	TEXT-DECORATION: underline
+}
+.post_block {
+	POSITION: relative
+}
+.no_sidebar.post_block {
+	BACKGROUND-IMAGE: none
+}
+.post_block H3 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 36px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #d8dde8; HEIGHT: 36px; FONT-SIZE: 16px; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+.post_wrap {
+	TOP: 0px
+}
+.post_body {
+	MARGIN: 0px 10px 0px 185px; PADDING-TOP: 15px
+}
+.post_body .post {
+	LINE-HEIGHT: 1.6; WORD-WRAP: break-word; FONT-SIZE: 14px
+}
+.no_sidebar.post_block .post_body {
+	MARGIN-LEFT: 10px !important
+}
+.posted_info {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.posted_info STRONG.event {
+	COLOR: #1c2837; FONT-SIZE: 1.2em
+}
+.post_ignore {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; BACKGROUND: #fafbfc; COLOR: #777; FONT-SIZE: 0.9em; PADDING-TOP: 15px
+}
+.post_ignore .reputation {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 2px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; DISPLAY: inline; FLOAT: none; PADDING-TOP: 2px
+}
+.rep_bar {
+	MARGIN: 6px 4px; WHITE-SPACE: nowrap
+}
+.rep_bar .reputation {
+	PADDING-BOTTOM: 2px !important; PADDING-LEFT: 10px !important; PADDING-RIGHT: 10px !important; FONT-SIZE: 10px; PADDING-TOP: 2px !important
+}
+P.rep_highlight {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; MARGIN: 5px 10px 10px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; DISPLAY: inline-block; BACKGROUND: #d5dee5; FLOAT: right; COLOR: #1d3652; FONT-SIZE: 0.8em; FONT-WEIGHT: bold; PADDING-TOP: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px
+}
+P.rep_highlight IMG {
+	MARGIN-BOTTOM: 4px
+}
+.edit {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 14px; MARGIN-TOP: 15px; PADDING-LEFT: 24px; PADDING-RIGHT: 0px; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_warning.png) no-repeat left 4px; COLOR: #7c7c7c; FONT-SIZE: 12px; PADDING-TOP: 2px
+}
+.poll FIELDSET {
+	PADDING-BOTTOM: 9px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px; PADDING-TOP: 9px
+}
+.poll_question {
+	PADDING-BOTTOM: 10px; MARGIN: 10px 10px 10px 20px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.poll_question H4 {
+	PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #e4ebf2; MARGIN: 0px -7px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.poll_question OL {
+	PADDING-BOTTOM: 8px; BACKGROUND-COLOR: #fafbfc; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 8px
+}
+.poll_question LI {
+	MARGIN: 6px 0px; FONT-SIZE: 0.9em
+}
+.poll_question .votes {
+	MARGIN-LEFT: 5px
+}
+.snapback {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 0px; MARGIN-RIGHT: 5px; PADDING-TOP: 1px
+}
+.rating {
+	LINE-HEIGHT: 16px; DISPLAY: block; MARGIN-BOTTOM: 4px
+}
+.rating IMG {
+	VERTICAL-ALIGN: top
+}
+#rating_text {
+	MARGIN-LEFT: 4px
+}
+DIV.post_form LABEL {
+	TEXT-ALIGN: right; WIDTH: 275px; PADDING-RIGHT: 15px; FLOAT: left; CLEAR: both
+}
+DIV.post_form SPAN.desc {
+	DISPLAY: block; MARGIN-LEFT: 290px; CLEAR: both
+}
+FIELDSET#poll_wrap SPAN.desc {
+	DISPLAY: block; MARGIN-LEFT: 290px; CLEAR: both
+}
+DIV.post_form .checkbox INPUT.input_check {
+	MARGIN-LEFT: 295px
+}
+#mod_form .checkbox INPUT.input_check {
+	MARGIN-LEFT: 295px
+}
+DIV.post_form .antispam_img {
+	MARGIN-LEFT: 290px
+}
+DIV.post_form .captcha .input_text {
+	FLOAT: left
+}
+DIV.post_form FIELDSET {
+	PADDING-BOTTOM: 15px
+}
+DIV.post_form H3 {
+	MARGIN-BOTTOM: 10px
+}
+FIELDSET.with_subhead {
+	PADDING-BOTTOM: 0px; MARGIN-BOTTOM: 0px
+}
+FIELDSET.with_subhead H4 {
+	TEXT-ALIGN: right; MARGIN-TOP: 6px; WIDTH: 300px; FLOAT: left
+}
+FIELDSET.with_subhead UL {
+	BORDER-BOTTOM: #d5dde5 1px solid; PADDING-BOTTOM: 6px; MARGIN: 0px 15px 6px 320px
+}
+FIELDSET.with_subhead SPAN.desc {
+	MARGIN: 0px; WIDTH: auto
+}
+FIELDSET.with_subhead LABEL {
+	MARGIN: 0px; WIDTH: auto
+}
+FIELDSET.with_subhead .checkbox INPUT.input_check {
+	MARGIN-LEFT: 0px
+}
+#toggle_post_options {
+	PADDING-BOTTOM: 2px; MARGIN: 15px; PADDING-LEFT: 22px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/add.png) no-repeat; FONT-SIZE: 0.9em; PADDING-TOP: 2px
+}
+#poll_wrap .question {
+	MARGIN-BOTTOM: 10px
+}
+#poll_wrap .question .wrap OL {
+	LIST-STYLE-TYPE: decimal; MARGIN-LEFT: 25px
+}
+#poll_wrap .question .wrap OL LI {
+	MARGIN: 5px
+}
+.question_title {
+	PADDING-BOTTOM: 0px; MARGIN-LEFT: 30px
+}
+.question_title .input_text {
+	FONT-WEIGHT: bold
+}
+#poll_wrap {
+	POSITION: relative
+}
+#poll_footer {
+	
+}
+#poll_container_wrap {
+	OVERFLOW: auto
+}
+#poll_popup_inner {
+	OVERFLOW: hidden
+}
+.poll_control {
+	MARGIN-LEFT: 20px
+}
+.post_form .tag_field UL {
+	MARGIN-LEFT: 290px
+}
+.swfupload {
+	Z-INDEX: 1; POSITION: absolute
+}
+#attachments {
+	
+}
+#attachments LI {
+	BORDER-BOTTOM: #d5dde5 1px solid; POSITION: relative; BORDER-LEFT: #d5dde5 1px solid; PADDING-BOTTOM: 6px; BACKGROUND-COLOR: #e4ebf2; PADDING-LEFT: 42px; PADDING-RIGHT: 20px; MARGIN-BOTTOM: 10px; BORDER-TOP: #d5dde5 1px solid; BORDER-RIGHT: #d5dde5 1px solid; PADDING-TOP: 6px
+}
+#attachments LI P.info {
+	WIDTH: 300px; COLOR: #69727b; FONT-SIZE: 0.8em
+}
+#attachments LI .links {
+	DISPLAY: none
+}
+#attachments LI.error .links {
+	DISPLAY: none
+}
+.traditional#attachments .progress_bar {
+	DISPLAY: none
+}
+#attachments LI.complete .links {
+	POSITION: absolute; DISPLAY: block; FONT-SIZE: 0.9em; TOP: 12px; RIGHT: 0px; MARGIN-RIGHT: 15px
+}
+#attachments LI .progress_bar {
+	POSITION: absolute; WIDTH: 200px; TOP: 15px; RIGHT: 0px; MARGIN-RIGHT: 15px
+}
+#attachments LI.complete {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 12px 12px
+}
+#attachments LI.in_progress {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 12px 12px
+}
+#attachments LI.error {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 12px 12px
+}
+#attachments LI.in_progress {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/loading.gif)
+}
+#attachments LI.error {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/exclamation.png); BORDER-BOTTOM: #ddafaf 1px solid; BORDER-LEFT: #ddafaf 1px solid; BACKGROUND-COLOR: #e8caca; BORDER-TOP: #ddafaf 1px solid; BORDER-RIGHT: #ddafaf 1px solid
+}
+#attachments LI.error .info {
+	COLOR: #8f2d2d
+}
+#attachments LI.complete {
+	BACKGROUND-IMAGE: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/accept.png)
+}
+#attachments LI .thumb_img {
+	POSITION: absolute; WIDTH: 30px; HEIGHT: 30px; OVERFLOW: hidden; TOP: 6px; LEFT: 6px
+}
+.attach_controls {
+	MIN-HEIGHT: 82px; PADDING-LEFT: 30px; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/icon_attach.png) no-repeat 3px top
+}
+.attach_controls .ipsType_subtitle {
+	MARGIN-BOTTOM: 5px
+}
+.attach_controls IFRAME {
+	DISPLAY: block; MARGIN-BOTTOM: 5px
+}
+.attach_button {
+	FONT-WEIGHT: bold
+}
+#help_msg {
+	MARGIN-TOP: 8px
+}
+#attach_wrap {
+	MARGIN-TOP: 10px; OVERFLOW: hidden
+}
+#attach_wrap H4 {
+	PADDING-LEFT: 0px; FONT-SIZE: 16px
+}
+#attach_wrap UL {
+	LIST-STYLE-TYPE: none; MARGIN-LEFT: 0px
+}
+#attach_wrap LI {
+	MARGIN: 5px 0px; FLOAT: left
+}
+#attach_wrap .attachment {
+	FLOAT: none
+}
+#attach_wrap .info.desc {
+	MARGIN-LEFT: 24px
+}
+#attach_error_box {
+	MARGIN-BOTTOM: 10px
+}
+.resized_img {
+	MARGIN: 0px 5px 5px 0px; DISPLAY: inline-block
+}
+.reputation {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; DISPLAY: inline-block; FONT-WEIGHT: bold; PADDING-TOP: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px
+}
+.positive.reputation {
+	BACKGROUND: #6f8f52
+}
+.members LI.positive {
+	BACKGROUND: #6f8f52
+}
+.negative.reputation {
+	BACKGROUND: #b82929
+}
+.members LI.negative {
+	BACKGROUND: #b82929
+}
+.positive.reputation {
+	COLOR: #fff
+}
+.negative.reputation {
+	COLOR: #fff
+}
+.zero.reputation {
+	BACKGROUND: #dedede; COLOR: #6e6e6e
+}
+.status_main_content {
+	
+}
+.status_main_content H4 {
+	FONT-SIZE: 1.2em; FONT-WEIGHT: normal
+}
+.status_main_content H4 .su_links A {
+	FONT-WEIGHT: normal
+}
+.status_main_content P {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 6px
+}
+.status_main_content H4 A {
+	FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.status_mini_wrap {
+	PADDING-BOTTOM: 7px; MARGIN-TOP: 2px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; FONT-SIZE: 0.95em; PADDING-TOP: 7px
+}
+.status_mini_photo {
+	FLOAT: left
+}
+.status_textarea {
+	WIDTH: 99%
+}
+.status_replies_many {
+	HEIGHT: 300px; OVERFLOW: auto
+}
+.status_update {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; BACKGROUND: #71a5c9; COLOR: #fff; PADDING-TOP: 15px
+}
+.status_update .input_text {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 4px; WIDTH: 70%; PADDING-RIGHT: 4px; PADDING-TOP: 6px
+}
+.status_update .status_inactive {
+	COLOR: #bbb
+}
+#status_wrapper H4 {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.status_content {
+	LINE-HEIGHT: 1.4
+}
+.status_content .mod_links {
+	opacity: 0.2
+}
+.status_content:hover .mod_links {
+	opacity: 1
+}
+.status_content .h4 {
+	WORD-WRAP: break-word; FONT-SIZE: 14px
+}
+.status_content .status_status {
+	WORD-WRAP: break-word; FONT-SIZE: 14px
+}
+.status_feedback {
+	MARGIN: 10px 0px 0px -10px
+}
+.status_feedback .row2 {
+	MARGIN-BOTTOM: 1px
+}
+.ips_like {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 130%; BACKGROUND-COLOR: #f1f4f7; MIN-HEIGHT: 18px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; COLOR: #878787; CLEAR: both; FONT-SIZE: 0.9em; PADDING-TOP: 8px
+}
+.ips_like A {
+	COLOR: #878787
+}
+.ips_like A.ftoggle {
+	BORDER-BOTTOM: #cbcbcb 1px solid; BORDER-LEFT: #cbcbcb 1px solid; PADDING-BOTTOM: 2px; MARGIN-TOP: -4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; FLOAT: right; COLOR: #656565; FONT-SIZE: 0.8em; BORDER-TOP: #cbcbcb 1px solid; BORDER-RIGHT: #cbcbcb 1px solid; TEXT-DECORATION: none; PADDING-TOP: 3px; -webkit-border-top-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -webkit-border-bottom-right-radius: 4px; -webkit-border-top-left-radius: 4px
+}
+.ips_like A.on.ftoggle {
+	MARGIN-LEFT: 3px
+}
+.ips_like A._newline.ftoggle {
+	TEXT-ALIGN: center; MARGIN-TOP: 5px; WIDTH: 70px; DISPLAY: block; FLOAT: none; MARGIN-LEFT: auto; MARGIN-RIGHT: 0px
+}
+.ips_like A._newline.on.ftoggle {
+	TEXT-ALIGN: center; MARGIN-TOP: 5px; WIDTH: 70px; DISPLAY: block; FLOAT: none; MARGIN-LEFT: auto; MARGIN-RIGHT: 0px
+}
+.ips_like A.on.ftoggle:hover {
+	BACKGROUND-COLOR: #d5dde5
+}
+.ips_like A.ftoggle:hover {
+	BACKGROUND-COLOR: #d5dde5
+}
+.facebook-like {
+	MARGIN-TOP: 5px
+}
+.boxShadow {
+	-moz-box-shadow: rgba(0, 0, 0, 0.58) 0px 12px 25px; -webkit-box-shadow: rgba(0, 0, 0, 0.58) 0px 12px 25px; box-shadow: rgba(0, 0, 0, 0.58) 0px 12px 25px
+}
+#ipsGlobalNotification {
+	POSITION: fixed; TEXT-ALIGN: center; MARGIN-LEFT: -250px; TOP: 20px; FONT-WEIGHT: bold; LEFT: 50%
+}
+#ips_NotificationCloseButton {
+	POSITION: absolute; WIDTH: 13px; BACKGROUND: url(http://www.touchofdeathforums.com/community/public/style_images/eclipse31/close_popup.png) no-repeat left top; HEIGHT: 13px; TOP: 5px; CURSOR: pointer; LEFT: 5px; opacity: 0.8
+}
+.googlePlusOne {
+	MARGIN-TOP: 1px; DISPLAY: inline-block; VERTICAL-ALIGN: middle
+}
+.fbLike {
+	PADDING-LEFT: 2px; FLOAT: right !important
+}
+#mymedia_inserted {
+	Z-INDEX: 20000; POSITION: absolute; TEXT-ALIGN: center; PADDING-BOTTOM: 20px; PADDING-LEFT: 0px; WIDTH: 400px; PADDING-RIGHT: 0px; BACKGROUND: black; COLOR: #fff; MARGIN-LEFT: -200px; FONT-SIZE: 15px; TOP: 100px; FONT-WEIGHT: bold; PADDING-TOP: 20px; LEFT: 50%; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px
+}
+#mymedia_toolbar {
+	POSITION: absolute; PADDING-BOTTOM: 0px; LINE-HEIGHT: 42px; PADDING-LEFT: 5px; BOTTOM: 0px; PADDING-RIGHT: 5px; BACKGROUND: #dbe4ef; HEIGHT: 42px; BORDER-TOP: #dbe4ef 1px solid; RIGHT: 0px; PADDING-TOP: 0px; LEFT: 0px; -moz-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5) inset; -webkit-box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5) inset; box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5) inset
+}
+#mymedia_finish {
+	POSITION: absolute; TOP: 5px; RIGHT: 5px
+}
+#mymedia_content {
+	HEIGHT: 339px; OVERFLOW: auto
+}
+.media_results LI.result {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; WIDTH: 20%; PADDING-RIGHT: 0px; FLOAT: left; HEIGHT: 100px; CURSOR: pointer; PADDING-TOP: 15px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px
+}
+.media_results LI:hover {
+	BACKGROUND: #f9f9f9
+}
+.media_results LI:active {
+	BACKGROUND: #ededed
+}
+.media_image {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; MARGIN-BOTTOM: 5px; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid; PADDING-TOP: 1px
+}
+.templateError {
+	BORDER-BOTTOM: black 1px dotted; BORDER-LEFT: black 1px dotted; PADDING-BOTTOM: 10px !important; MARGIN: 0px; PADDING-LEFT: 10px !important; PADDING-RIGHT: 10px !important; BACKGROUND: #fff; COLOR: #000 !important; BORDER-TOP: black 1px dotted; BORDER-RIGHT: black 1px dotted; PADDING-TOP: 10px !important
+}
+.modcp_post_controls {
+	PADDING-BOTTOM: 15px
+}
+.modcp_post_controls .ipsButton_secondary {
+	opacity: 0.5
+}
+.post_body:hover .modcp_post_controls .ipsButton_secondary {
+	opacity: 1
+}
+#modcp_content .ipsFilterbar LI.active A {
+	DISPLAY: inline-block; MARGIN-BOTTOM: 1px
+}
+.nexusad {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; CLEAR: both; PADDING-TOP: 10px
+}
+#bbcode-description {
+	WORD-WRAP: break-word; WHITE-SPACE: normal !important; COLOR: #666 !important
+}
+.navigation {
+	MARGIN-LEFT: -1px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px
+}
+.nav_search_bar {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit.png); BORDER-BOTTOM: #80ae1b 1px solid; BORDER-LEFT: #80ae1b 1px solid; MARGIN-TOP: 24px; PADDING-RIGHT: 0px; HEIGHT: 30px; COLOR: #fff; BORDER-TOP: #80ae1b 1px solid; BORDER-RIGHT: #80ae1b 1px solid; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; box-shadow: inset 0 1px 0 0 #cae33e; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px
+}
+UL.hfeed_home .hentry {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px; border-radius: 5px
+}
+.mavra_thead {
+	BORDER-BOTTOM: #bababa 1px solid; FILTER: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#bababa',GradientType=0 ); BORDER-LEFT: #bababa 1px solid; WIDTH: auto; BACKGROUND: #ededed; FLOAT: left; HEIGHT: 35px; BORDER-TOP: #bababa 1px solid; BORDER-RIGHT: #bababa 1px solid; box-shadow: inset 0px 1px 0px #FFF; border-top-right-radius: 4px; border-top-left-radius: 4px
+}
+.mavra_thead-p {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; COLOR: #666; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 8px; text-shadow: 0px 1px 0px #FFF
+}
+.mavra_content {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; WIDTH: auto; FLOAT: left; HEIGHT: auto; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; border-top-right-radius: 4px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px
+}
+.announcement_notice-p {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: red; PADDING-TOP: 10px
+}
+.announcement_notice {
+	BORDER-BOTTOM: #ffc6c6 1px solid; FILTER: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe8e8', endColorstr='#ffc6c6',GradientType=0 ); BORDER-LEFT: #ffc6c6 1px solid; BACKGROUND: #ffe8e8; BORDER-TOP: #ffc6c6 1px solid; BORDER-RIGHT: #ffc6c6 1px solid; border-radius: 4px; box-shadow: inset 0px 1px 0px #FFF; animation: blink .5s step-end infinite alternate
+}
+.announcement_input_submit {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit.png); BORDER-BOTTOM-COLOR: #80ae1b; BORDER-TOP-COLOR: #80ae1b; COLOR: #fff; BORDER-RIGHT-COLOR: #80ae1b; MARGIN-LEFT: 3px; BORDER-LEFT-COLOR: #80ae1b; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #cae33e; -webkit-box-shadow: inset 0 1px 0 0 #cae33e; box-shadow: inset 0 1px 0 0 #cae33e
+}
+.announcement_input_submit:hover {
+	BACKGROUND-IMAGE: url(http://www.burstingforce.com/eclipse/img/input_submit_hover.png); BORDER-BOTTOM-COLOR: #0f0f0f; BORDER-TOP-COLOR: #0f0f0f; COLOR: #fff; BORDER-RIGHT-COLOR: #0f0f0f; BORDER-LEFT-COLOR: #0f0f0f; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 1px 0 0 #535353; -webkit-box-shadow: inset 0 1px 0 0 #535353; box-shadow: inset 0 1px 0 0 #535353
+}
+.dateWrap {
+	BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 7px; BACKGROUND-COLOR: #dedede; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; BORDER-TOP: white 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 7px; text-shadow: 0px 1px 0px #FFF
+}
+.dateWrap .desc {
+	FONT-SIZE: 12px
+}
+.dateWrap .desc A {
+	COLOR: #202020
+}
+TABLE.shoutbox_table TR TD {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 4px
+}
+#shoutbox-shouts {
+	
+}
+#shoutbox-global-shout {
+	
+}
+TABLE.shoutbox_table TR TD {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+TABLE.shoutbox_table {
+	MARGIN-BOTTOM: 4px
+}
+.shoutbox_disabled {
+	FONT-STYLE: italic; COLOR: red
+}
+#shoutbox-smilies-button_menucontent TABLE {
+	BORDER-BOTTOM: #d5dde5 1px solid; BORDER-LEFT: #d5dde5 1px solid; BORDER-COLLAPSE: separate; BORDER-TOP: #d5dde5 1px solid; BORDER-RIGHT: #d5dde5 1px solid
+}
+#shoutbox-smilies-button_menucontent TD {
+	WIDTH: 20%
+}
+#shoutbox-smilies-button_menucontent SPAN.pager {
+	WIDTH: 20px; DISPLAY: inline-block
+}
+#shoutbox_sidebar TABLE.shoutbox_table.ipb_table {
+	BORDER-BOTTOM: 0px; MARGIN: -5px 0px
+}
+#shoutbox_sidebar TABLE.shoutbox_table.ipb_table TR TD {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 4px
+}
+.sidebar_shout {
+	BORDER-BOTTOM: #d5dde5 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.sidebar_shout_div {
+	BORDER-BOTTOM: #d5dde5 1px dashed; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+#shoutbox-shouts-table {
+	BORDER-BOTTOM: #d5dde5 1px solid; BORDER-LEFT: #d5dde5 1px solid; BORDER-TOP: #d5dde5 1px solid; BORDER-RIGHT: #d5dde5 1px solid
+}
+#shoutbox-shouts-table .row2 TD {
+	BORDER-BOTTOM: #d5dde5 1px solid; VERTICAL-ALIGN: middle
+}
+#shouts-global-resizer {
+	BACKGROUND-COLOR: #ccc; HEIGHT: 6px; BORDER-TOP: #aaa 1px dotted; CURSOR: n-resize
+}
+#shouts-resizer {
+	BACKGROUND-COLOR: #ccc; HEIGHT: 6px; BORDER-TOP: #aaa 1px dotted; CURSOR: n-resize
+}
+.ipsHasNotifications#shoutbox-tab-count {
+	TOP: 0px; RIGHT: -1px; LEFT: auto; text-shadow: none
+}
+.str {
+	COLOR: #080
+}
+.kwd {
+	COLOR: #008
+}
+.com {
+	COLOR: #800
+}
+.typ {
+	COLOR: #606
+}
+.lit {
+	COLOR: #066
+}
+.pun {
+	COLOR: #660
+}
+.pln {
+	COLOR: #000
+}
+.tag {
+	COLOR: #008
+}
+.atn {
+	COLOR: #606
+}
+.atv {
+	COLOR: #080
+}
+.dec {
+	COLOR: #606
+}
+
+@media Print    
+{
+.str {
+	COLOR: #060
+}
+.kwd {
+	COLOR: #006; FONT-WEIGHT: bold
+}
+.com {
+	FONT-STYLE: italic; COLOR: #600
+}
+.typ {
+	COLOR: #404; FONT-WEIGHT: bold
+}
+.lit {
+	COLOR: #044
+}
+.pun {
+	COLOR: #440
+}
+.pln {
+	COLOR: #000
+}
+.tag {
+	COLOR: #006; FONT-WEIGHT: bold
+}
+.atn {
+	COLOR: #404
+}
+.atv {
+	COLOR: #060
+}
+
+}
